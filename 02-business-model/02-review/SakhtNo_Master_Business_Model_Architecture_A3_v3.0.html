@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>معماری جامع مدل کسب‌وکار ساخت‌نو — ویرایش ۳.۰</title>
+<style>
+@page{size:A3 landscape;margin:0}
+*{box-sizing:border-box}
+:root{--ink:#172335;--muted:#607086;--line:#d9e1e8;--paper:#fff;--soft:#f4f7fa;--navy:#173b5f;--r1:#2672d9;--r1s:#eaf3ff;--r2:#15937f;--r2s:#e7f8f4;--r3:#b76a12;--r3s:#fff3df;--gold:#c89a35;--red:#b43a46;--purple:#6746a5}
+html,body{margin:0;background:#dce3e9;color:var(--ink);font-family:"Vazirmatn","Segoe UI",Tahoma,Arial,sans-serif;font-size:15px;line-height:1.55}
+.page{width:420mm;height:297mm;background:var(--paper);margin:0 auto 12px;padding:13mm 15mm 11mm;position:relative;overflow:hidden;page-break-after:always}
+.page:last-child{page-break-after:auto}
+h1,h2,h3,p{margin:0} h1{font-size:31px;line-height:1.25;color:var(--navy)} h2{font-size:24px;color:var(--navy)} h3{font-size:17px;color:var(--navy)}
+.en{font-family:"Segoe UI",Arial,sans-serif;direction:ltr;unicode-bidi:embed}.eyebrow{font:700 11px "Segoe UI",Arial,sans-serif;letter-spacing:1.7px;color:var(--gold);direction:ltr;text-align:right}.lead{font-size:17px;color:#405168;margin-top:3px}.small{font-size:12px;color:var(--muted)}.tiny{font-size:10px;color:var(--muted)}
+.header{display:flex;align-items:flex-start;justify-content:space-between;border-bottom:2px solid var(--navy);padding-bottom:6px;margin-bottom:8px}.headmeta{text-align:left;direction:ltr;color:var(--muted);font:11px "Segoe UI",Arial}.num{font-size:30px;font-weight:800;color:#d6dee6;line-height:1}
+.footer{position:absolute;left:15mm;right:15mm;bottom:5mm;border-top:1px solid var(--line);padding-top:3px;display:flex;justify-content:space-between;color:#758397;font-size:9.5px}.footer span:first-child{direction:ltr}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.card{border:1px solid var(--line);border-radius:9px;padding:9px;background:#fff}.card.soft{background:var(--soft)}.card h3{margin-bottom:4px}.r1{border-top:5px solid var(--r1);background:linear-gradient(180deg,var(--r1s),#fff 52%)}.r2{border-top:5px solid var(--r2);background:linear-gradient(180deg,var(--r2s),#fff 52%)}.r3{border-top:5px solid var(--r3);background:linear-gradient(180deg,var(--r3s),#fff 52%)}
+.tag{display:inline-block;border-radius:20px;padding:2px 8px;font-size:11px;font-weight:700}.tag.r1c{background:var(--r1s);color:var(--r1)}.tag.r2c{background:var(--r2s);color:var(--r2)}.tag.r3c{background:var(--r3s);color:var(--r3)}.tag.dark{background:var(--navy);color:#fff}.tag.gray{background:#e9eef3;color:#516175}
+ul{margin:4px 0 0;padding-right:18px}li{margin:1px 0} .compact li{margin:0}
+.flow{display:flex;direction:rtl;align-items:stretch;gap:4px}.step{position:relative;flex:1;border:1px solid var(--line);border-radius:7px;background:#fff;padding:7px;text-align:center}.step:not(:last-child):after{content:"←";position:absolute;left:-8px;top:34%;z-index:2;color:#8b99aa;font-weight:800}.step b{display:block;color:var(--navy)}
+.core{border:2px solid var(--navy);border-radius:12px;padding:9px;background:linear-gradient(135deg,#f0f5fa,#fff)}
+.callout{border-right:5px solid var(--gold);background:#fff8e9;border-radius:8px;padding:8px 11px}.callout.red{border-color:var(--red);background:#fff0f1}.callout.purple{border-color:var(--purple);background:#f5f0ff}
+.kpi{padding:7px;border-radius:7px;background:var(--soft);border:1px solid var(--line)}.kpi b{font:700 12px "Segoe UI",Arial;color:var(--navy);direction:ltr;display:block}.kpi span{font-size:11px;color:#536379}
+.table{width:100%;border-collapse:separate;border-spacing:0;font-size:12px;border:1px solid var(--line);border-radius:8px;overflow:hidden}.table th,.table td{padding:6px 7px;border-left:1px solid var(--line);border-bottom:1px solid var(--line);vertical-align:top}.table th:last-child,.table td:last-child{border-left:0}.table tr:last-child td{border-bottom:0}.table th{background:#eaf0f5;color:var(--navy);font-weight:800}.table .c1{background:var(--r1s)}.table .c2{background:var(--r2s)}.table .c3{background:var(--r3s)}
+.metric{font-size:25px;font-weight:800;color:var(--navy)}.sep{height:1px;background:var(--line);margin:7px 0}.center{text-align:center}.ltr{direction:ltr;text-align:left}.note{font-size:11px;color:#59697c}.pillrow{display:flex;flex-wrap:wrap;gap:5px}.layer{border:1px solid var(--line);border-radius:8px;padding:7px;background:#fff;text-align:center}.layer strong{display:block;color:var(--navy)}
+.canvas{display:grid;grid-template-columns:1.2fr 1fr 1.35fr 1fr 1.2fr;grid-template-rows:1fr 1fr;gap:6px;height:194mm}.canvas .card{padding:8px}.canvas .value{grid-column:3;grid-row:1/3}.canvas .partners{grid-column:5;grid-row:1/3}.canvas .activities{grid-column:4;grid-row:1}.canvas .resources{grid-column:4;grid-row:2}.canvas .relations{grid-column:2;grid-row:1}.canvas .channels{grid-column:2;grid-row:2}.canvas .segments{grid-column:1;grid-row:1/3}
+.stamp{border:2px solid var(--gold);border-radius:50%;width:92px;height:92px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--navy);font-weight:800;transform:rotate(-7deg);background:#fff9eb}
+@media print{html,body{background:#fff}.page{margin:0}}
+</style>
+</head>
+<body>
+
+<section class="page">
+  <div class="header"><div><div class="eyebrow">MASTER BUSINESS MODEL ARCHITECTURE</div><h1>مدل کسب‌وکار ساخت‌نو در یک نگاه</h1><p class="lead">یک پلتفرم، سه مسیر اصلی و هم‌سطح، یک هسته مشترک داده و کنترل</p></div><div class="headmeta"><div>VERSION 3.0 · REVIEW DRAFT</div><div>A3 LANDSCAPE · 12 PAGES</div></div></div>
+  <div class="grid3" style="height:91mm">
+    <div class="card r1"><span class="tag r1c">مسیر ۱</span><h2>مدل B2C اسپیناس</h2><p><b>مشتری:</b> شخص حقیقی و خانوار</p><p><b>مسئله:</b> خرید محدود، فوری و قابل‌تحویل کالا یا خدمت ساختمانی</p><p><b>واحد کسب‌وکار:</b> سفارش / پرونده خدمت</p><p><b>ریل مالی داخلی:</b> اعتبار خرید و BNPL حلقه‌بسته</p><p><b>نتیجه:</b> تحویل قابل‌مشاهده + برنامه بازپرداخت روشن</p></div>
+    <div class="card r2"><span class="tag r2c">مسیر ۲</span><h2>مدل B2B اسپیناس</h2><p><b>مشتری:</b> کسب‌وکار، فروشنده حرفه‌ای، پیمانکار خرد و خریدار سازمانی</p><p><b>مسئله:</b> خرید تکرارشونده و شکاف سرمایه در گردش</p><p><b>واحد کسب‌وکار:</b> سفارش تجاری / فاکتور / PO</p><p><b>ریل مالی داخلی:</b> اعتبار تجاری و سرمایه در گردش</p><p><b>نتیجه:</b> گردش خرید سریع‌تر + تسویه شبکه‌ای</p></div>
+    <div class="card r3"><span class="tag r3c">مسیر ۳</span><h2>مدل پروژه اسپیناس</h2><p><b>مشتری:</b> مالک، توسعه‌دهنده، سازنده و سازمان پروژه‌محور</p><p><b>مسئله:</b> پیوند قرارداد، پیشرفت، شواهد و نقدینگی</p><p><b>واحد کسب‌وکار:</b> پروژه / قرارداد / بسته کاری</p><p><b>ریل مالی داخلی:</b> SCF و تأمین مالی مبتنی بر رویداد پروژه</p><p><b>نتیجه:</b> پرداخت مرحله‌ای بر مبنای معامله تأییدشده</p></div>
+  </div>
+  <div class="core" style="margin-top:8px"><div class="grid5"><div class="layer"><strong>هویت و اختیار</strong><span class="small">طرف، نقش، رضایت</span></div><div class="layer"><strong>شبکه ساخت</strong><span class="small">عرضه، اجرا، لجستیک</span></div><div class="layer"><strong>شیء معامله</strong><span class="small">سفارش، فاکتور، قرارداد</span></div><div class="layer"><strong>شواهد و ریسک</strong><span class="small">اصالت، کیفیت، حد</span></div><div class="layer"><strong>پرداخت و تسویه</strong><span class="small">ذی‌نفع، مصرف، بازپرداخت</span></div></div><p class="center" style="margin-top:6px"><b>اصل معماری:</b> اشتراک زیرساخت، بدون اختلاط مشتری، قرارداد، چرخه عمر، ریسک، اقتصاد و دفتر مالی سه مسیر.</p></div>
+  <div class="callout" style="margin-top:8px"><b>Embedded Finance</b> روش ارائه خدمات مالی در متن تجربه خرید و پروژه است؛ نه مسیر چهارم، نه دسته مستقل وام، و نه نام سرویس مشتری.</div>
+  <div class="flow" style="margin-top:8px"><div class="step"><b>رویداد واقعی</b>نیاز، سفارش یا پیشرفت</div><div class="step"><b>معامله تأییدشده</b>طرف + تعهد + شاهد</div><div class="step"><b>تصمیم مالی</b>حد + قیمت + شرط</div><div class="step"><b>پرداخت کنترل‌شده</b>به ذی‌نفع مجاز</div><div class="step"><b>تسویه و یادگیری</b>نتیجه + سابقه ریسک</div></div>
+  <div class="footer"><span>SakhtNo · Master Business Model v3.0</span><span>صفحه ۱ از ۱۲</span></div>
+</section>
+
+<section class="page">
+  <div class="header"><div><div class="eyebrow">STRATEGIC THESIS</div><h2>تز راهبردی و مرز هویت کسب‌وکار</h2></div><div class="num">۰۲</div></div>
+  <div class="grid2">
+    <div class="card soft"><h3>ساخت‌نو چیست؟</h3><p>لایه هماهنگ‌کننده تجارت و اجرای ساخت است که رویداد واقعی را به پرونده معامله قابل‌اعتماد تبدیل می‌کند و همان پرونده را به تصمیم مالی، پرداخت و تسویه متصل می‌سازد.</p><div class="sep"></div><p><b>وعده مرکزی:</b> هر ریال پرداخت‌شده به طرف، تعهد، موضوع معامله و شاهد عملکرد قابل‌بازسازی متصل باشد.</p></div>
+    <div class="card soft"><h3>ساخت‌نو چه نیست؟</h3><ul><li>بانک، بیمه‌گر یا مالک خودکار ریسک اعتباری نیست.</li><li>صرفاً بازارگاه فهرست‌کردن فروشنده یا نرم‌افزار مدیریت پروژه نیست.</li><li>BNPL و SCF نام خدمت مشتری نیستند؛ ابزارهای داخلی طراحی مالی‌اند.</li><li>مسیرها برای گزارش‌گیری نیستند؛ مرز واقعی قرارداد، عملیات و P&amp;L هستند.</li></ul></div>
+  </div>
+  <h3 style="margin:9px 0 5px">چهار انتخاب راهبردی</h3>
+  <div class="grid4">
+    <div class="card"><span class="metric">01</span><h3>تمرکز عمودی</h3><p>قواعد، اقلام، تحویل، QC، صورت‌وضعیت و شبکه تخصصی صنعت ساخت.</p></div>
+    <div class="card"><span class="metric">02</span><h3>معامله‌محوری</h3><p>اعتبار بر مبنای پرونده معامله و رفتار واقعی؛ نه صرفاً پروفایل ثابت مشتری.</p></div>
+    <div class="card"><span class="metric">03</span><h3>کنترل مصرف</h3><p>پرداخت به ذی‌نفع تأییدشده و مرتبط با کالا، خدمت یا پیشرفت پذیرفته‌شده.</p></div>
+    <div class="card"><span class="metric">04</span><h3>جداسازی مسیر</h3><p>هسته فنی مشترک؛ سیاست، اقتصاد، ریسک و عملیات مستقل برای هر مسیر.</p></div>
+  </div>
+  <h3 style="margin:9px 0 5px">فرضیه‌های قابل آزمون</h3>
+  <table class="table"><thead><tr><th>فرضیه</th><th>نشانه اثبات</th><th>تصمیم در صورت رد</th></tr></thead><tbody>
+    <tr><td>شواهد معامله، ریسک و اختلاف را کاهش می‌دهد.</td><td>کاهش نرخ مغایرت، برگشت، تقلب و زمان رسیدگی</td><td>کاهش دامنه و بازطراحی گیت شاهد</td></tr>
+    <tr><td>سه مسیر، قیف تقاضای مکمل می‌سازند.</td><td>تبدیل کنترل‌شده مشتری و تأمین‌کننده میان مسیرها بدون آلودگی داده</td><td>استقلال کامل GTM و عدم اجبار cross-sell</td></tr>
+    <tr><td>شبکه تأمین تخصصی، تکرار خرید و کیفیت را بالا می‌برد.</td><td>Retention، OTIF، نرخ پذیرش و سهم فروشنده فعال</td><td>محدودکردن دسته و حذف عضو ضعیف</td></tr>
+    <tr><td>چند تأمین‌کننده مالی ظرفیت و قیمت را بهبود می‌دهد.</td><td>نرخ پذیرش، زمان پاسخ و کاهش تمرکز منبع</td><td>توقف مقیاس تا تنوع نقدینگی</td></tr>
+  </tbody></table>
+  <div class="callout red" style="margin-top:8px"><b>خط قرمز:</b> هیچ مسیر نباید برای افزایش GMV، کنترل هویت، اصالت معامله، پذیرش تحویل، مالک ریسک یا حد تمرکز را دور بزند.</div>
+  <div class="footer"><span>SakhtNo · Strategic Thesis</span><span>صفحه ۲ از ۱۲</span></div>
+</section>
+
+<section class="page">
+  <div class="header"><div><div class="eyebrow">CUSTOMER · JOB · VALUE</div><h2>مشتری، کار مورد انتظار و ارزش پیشنهادی سه مسیر</h2></div><div class="num">۰۳</div></div>
+  <table class="table" style="font-size:12.5px"><thead><tr><th style="width:16%">بعد</th><th class="c1">مسیر ۱ · B2C اسپیناس</th><th class="c2">مسیر ۲ · B2B اسپیناس</th><th class="c3">مسیر ۳ · پروژه اسپیناس</th></tr></thead><tbody>
+    <tr><td><b>مشتری پرداخت‌کننده</b></td><td>شخص حقیقی / خانوار</td><td>کسب‌وکار، پیمانکار خرد، فروشنده حرفه‌ای، خریدار سازمانی</td><td>مالک، توسعه‌دهنده، سازنده یا سازمان پروژه‌محور</td></tr>
+    <tr><td><b>کار مورد انتظار</b></td><td>خرید و تحویل مطمئن یک نیاز ساختمانی با پرداخت قابل‌مدیریت</td><td>تأمین تکرارشونده و سریع کالا/خدمت بدون قفل‌شدن سرمایه در گردش</td><td>کنترل دامنه، پیشرفت، تعهد، تغییر و نقدینگی یک پروژه یا بسته</td></tr>
+    <tr><td><b>محرک ورود</b></td><td>نیاز فوری، بودجه ناکافی، اعتماد پایین به عرضه</td><td>PO/فاکتور، چرخه وصول، سفارش تکراری، نیاز به حد گردشی</td><td>قرارداد، بودجه مصوب، WBS/BOQ، برنامه مبنا و زنجیره اجرا</td></tr>
+    <tr><td><b>ارزش تحویلی</b></td><td>انتخاب معتبر، قیمت و شرایط روشن، تحویل قابل‌پیگیری، اقساط شفاف</td><td>شبکه معتبر، خرید استاندارد، حد تجاری، تسویه و سابقه عملکرد</td><td>Project OS، شواهد پیشرفت، معامله تأییدشده و پرداخت مرحله‌ای کنترل‌شده</td></tr>
+    <tr><td><b>لحظه اثبات ارزش</b></td><td>تحویل پذیرفته‌شده + برنامه بازپرداخت فعال</td><td>تطبیق سفارش/فاکتور + تسویه صحیح + امکان استفاده مجدد از حد</td><td>تأیید پیشرفت/QC + مبلغ واجد پرداخت + تسویه با ذی‌نفع</td></tr>
+    <tr><td><b>مبنای رابطه</b></td><td>تجربه دیجیتال و پشتیبانی موردی</td><td>حساب تجاری، پنل خرید/فروش و مدیریت حد</td><td>استقرار سازمانی، حاکمیت پروژه و مدیر موفقیت</td></tr>
+    <tr><td><b>عدم تناسب مسیر</b></td><td>خرید شرکتی تکرارشونده یا تعهد پروژه‌ای</td><td>خرید مصرفی خانوار یا پروژه دارای baseline و صورت‌وضعیت</td><td>خرید خرد بدون Project ID و قرارداد معتبر</td></tr>
+  </tbody></table>
+  <div class="grid3" style="margin-top:9px">
+    <div class="card r1"><h3>وعده کوتاه مسیر ۱</h3><p>«نیاز ساختمانی مشخص را از شبکه معتبر دریافت کن و با شرایط پرداخت روشن تسویه کن.»</p></div>
+    <div class="card r2"><h3>وعده کوتاه مسیر ۲</h3><p>«خرید تجاری و سرمایه در گردش را در یک پرونده تکرارشونده و قابل‌تسویه اداره کن.»</p></div>
+    <div class="card r3"><h3>وعده کوتاه مسیر ۳</h3><p>«قرارداد، پیشرفت، شواهد و نقدینگی پروژه را در یک زنجیره تصمیم قابل‌حسابرسی متصل کن.»</p></div>
+  </div>
+  <div class="callout" style="margin-top:8px"><b>قاعده نام‌گذاری:</b> B2C اسپیناس، B2B اسپیناس و پروژه اسپیناس نام مدل‌های بازار و عملیات‌اند. ابزار مالی در پشت صحنه انتخاب می‌شود و نباید جای ارزش پیشنهادی مشتری را بگیرد.</div>
+  <div class="footer"><span>SakhtNo · Customer / Job / Value</span><span>صفحه ۳ از ۱۲</span></div>
+</section>
+
+<section class="page">
+  <div class="header"><div><div class="eyebrow">ROUTE BUSINESS DESIGNS</div><h2>طراحی مستقل کسب‌وکار برای هر مسیر</h2></div><div class="num">۰۴</div></div>
+  <div class="grid3">
+    <div class="card r1"><h2>مسیر ۱</h2><span class="tag r1c">B2C اسپیناس</span><h3 style="margin-top:7px">پیشنهاد اصلی</h3><p>تجارت ساخت برای مصرف‌کننده با امکان اعتبار خرید حلقه‌بسته.</p><h3>عرضه اولیه</h3><ul class="compact"><li>کالاهای استاندارد و قابل‌تحویل</li><li>خدمات کوتاه‌چرخه با معیار پذیرش روشن</li><li>اسپیناس کارت برای مصرف در شبکه مجاز</li></ul><h3>قراردادهای پایه</h3><p>شرایط خرید، تحویل/مرجوعی، اعتبار و بازپرداخت.</p><h3>مالک P&amp;L</h3><p>مدیر Route 1؛ با تفکیک درآمد تجاری و سهم خدمات مالی.</p></div>
+    <div class="card r2"><h2>مسیر ۲</h2><span class="tag r2c">B2B اسپیناس</span><h3 style="margin-top:7px">پیشنهاد اصلی</h3><p>شبکه تدارکات و اعتبار تجاری برای خرید تکرارشونده کسب‌وکارها.</p><h3>عرضه اولیه</h3><ul class="compact"><li>کاتالوگ و قیمت قراردادی</li><li>PO/Invoice و حد گردشی</li><li>تسویه فروشنده و گزارش حساب</li></ul><h3>قراردادهای پایه</h3><p>عضویت تجاری، خرید/فروش، حد و تسویه شبکه.</p><h3>مالک P&amp;L</h3><p>مدیر Route 2؛ با اقتصاد حساب، سفارش و گردش حد.</p></div>
+    <div class="card r3"><h2>مسیر ۳</h2><span class="tag r3c">پروژه اسپیناس</span><h3 style="margin-top:7px">پیشنهاد اصلی</h3><p>سیستم‌عامل پروژه و تأمین مالی متصل به قرارداد و شواهد پیشرفت.</p><h3>عرضه اولیه</h3><ul class="compact"><li>Project ID، WBS/BOQ و baseline</li><li>گردش تغییر، پیشرفت، QC و صورت‌وضعیت</li><li>Verified Transaction و پرداخت مرحله‌ای</li></ul><h3>قراردادهای پایه</h3><p>استقرار پلتفرم، پروژه، داده، اجرا و تأمین مالی.</p><h3>مالک P&amp;L</h3><p>مدیر Route 3؛ با اقتصاد پروژه و بسته کاری.</p></div>
+  </div>
+  <h3 style="margin:9px 0 5px">سطح خدمت و معیار خروج</h3>
+  <table class="table"><thead><tr><th>مسیر</th><th>ورود استاندارد</th><th>خروج موفق</th><th>خروج ناموفق / توقف</th></tr></thead><tbody>
+    <tr><td class="c1"><b>۱</b></td><td>هویت معتبر + سبد واجد شرایط + فروشنده مجاز</td><td>تحویل پذیرفته‌شده، تسویه فروشنده، بازپرداخت طبق برنامه</td><td>عدم تحویل، اختلاف حل‌نشده، نکول یا تقلب</td></tr>
+    <tr><td class="c2"><b>۲</b></td><td>KYB + حساب تجاری + PO/Invoice معتبر + حد</td><td>تطبیق سه‌طرفه، تسویه، آزادسازی حد و تکرار سالم</td><td>فاکتور نامعتبر، تمرکز بیش‌ازحد، تأخیر یا برگشت تجاری</td></tr>
+    <tr><td class="c3"><b>۳</b></td><td>Project ID + قرارداد + baseline + نقش‌ها + بودجه</td><td>بسته تحویل‌شده، تسویه، بستن تعهد و حفظ پرونده شواهد</td><td>تغییر تصویب‌نشده، پیشرفت نامعتبر، claim باز یا کسری بودجه</td></tr>
+  </tbody></table>
+  <div class="footer"><span>SakhtNo · Route Business Designs</span><span>صفحه ۴ از ۱۲</span></div>
+</section>
+
+<section class="page">
+  <div class="header"><div><div class="eyebrow">SHARED PLATFORM CORE</div><h2>هسته مشترک پلتفرم و مرز اشتراک</h2></div><div class="num">۰۵</div></div>
+  <div class="grid4">
+    <div class="card"><h3>۱. هویت و اختیار</h3><p>KYC/KYB، نقش، نمایندگی، رضایت، امضا، تفکیک وظایف و تاریخ اعتبار.</p></div>
+    <div class="card"><h3>۲. شبکه ساخت</h3><p>پذیرش، صلاحیت، کاتالوگ، ظرفیت، محدوده خدمت، لجستیک و رتبه عملکرد.</p></div>
+    <div class="card"><h3>۳. اشیای معامله</h3><p>Order، Service Case، PO، Invoice، Contract، Work Package و Claim.</p></div>
+    <div class="card"><h3>۴. دفتر شواهد</h3><p>سند، نسخه، رویداد، رسید، تصویر، QC، پذیرش، تصمیم و مرجع زمانی.</p></div>
+    <div class="card"><h3>۵. موتور ریسک</h3><p>اهلیت، اصالت، توان بازپرداخت، حد، تمرکز، تقلب، هشدار و استثنا.</p></div>
+    <div class="card"><h3>۶. هماهنگ‌کننده مالی</h3><p>ارسال پرونده، دریافت پیشنهاد، انتخاب مجاز، drawdown و وضعیت تأمین.</p></div>
+    <div class="card"><h3>۷. پرداخت و تسویه</h3><p>ذی‌نفع، مبلغ خالص، گیت آزادسازی، مرجع بانکی، بازپرداخت و reconciliation.</p></div>
+    <div class="card"><h3>۸. داده و تحلیل</h3><p>ledger مسیر، lineage، KPI، پرتفوی، مدل نسخه‌دار و یادگیری نتیجه.</p></div>
+  </div>
+  <div class="core" style="margin-top:10px"><h3 class="center">Construction Transaction Data Layer</h3><div class="flow" style="margin-top:6px"><div class="step"><b>Party</b>طرف و اختیار</div><div class="step"><b>Object</b>سفارش/فاکتور/قرارداد</div><div class="step"><b>Evidence</b>تحویل/پیشرفت/QC</div><div class="step"><b>Decision</b>اعتبار/پذیرش/تغییر</div><div class="step"><b>Money</b>پرداخت/تسویه/وصول</div></div></div>
+  <h3 style="margin:9px 0 5px">چه چیز مشترک نیست؟</h3>
+  <div class="grid5"><div class="callout red"><b>قرارداد</b><br><span class="small">شرایط و مسئولیت مستقل</span></div><div class="callout red"><b>چرخه عمر</b><br><span class="small">state machine مستقل</span></div><div class="callout red"><b>سیاست ریسک</b><br><span class="small">حد و توقف مستقل</span></div><div class="callout red"><b>دفتر مالی</b><br><span class="small">ledger و reconciliation مستقل</span></div><div class="callout red"><b>اقتصاد</b><br><span class="small">P&amp;L و KPI مستقل</span></div></div>
+  <div class="callout purple" style="margin-top:9px"><b>تصمیم معماری:</b> استفاده مجدد از قابلیت مشترک تنها زمانی مجاز است که شناسه Route، مالک تصمیم، policy version و مرجع قرارداد در هر رویداد حفظ شود.</div>
+  <div class="footer"><span>SakhtNo · Shared Platform Core</span><span>صفحه ۵ از ۱۲</span></div>
+</section>
+
+<section class="page">
+  <div class="header"><div><div class="eyebrow">ROUTE LIFECYCLES</div><h2>چرخه عمر و ماشین وضعیت سه مسیر</h2></div><div class="num">۰۶</div></div>
+  <div class="card r1"><div style="display:flex;justify-content:space-between"><h3>Route 1 · B2C اسپیناس</h3><span class="tag r1c">Order / Service Case</span></div><div class="flow" style="margin-top:6px"><div class="step">نیاز و سبد</div><div class="step">احراز و پیشنهاد</div><div class="step">تأیید سفارش</div><div class="step">تحویل / اجرا</div><div class="step">پذیرش</div><div class="step">تسویه فروشنده</div><div class="step">اقساط / بستن</div></div></div>
+  <div class="card r2" style="margin-top:8px"><div style="display:flex;justify-content:space-between"><h3>Route 2 · B2B اسپیناس</h3><span class="tag r2c">Account / PO / Invoice</span></div><div class="flow" style="margin-top:6px"><div class="step">حساب تجاری</div><div class="step">نیاز / RFQ</div><div class="step">PO و رزرو حد</div><div class="step">حمل / خدمت</div><div class="step">تطبیق فاکتور</div><div class="step">تسویه</div><div class="step">وصول / احیای حد</div></div></div>
+  <div class="card r3" style="margin-top:8px"><div style="display:flex;justify-content:space-between"><h3>Route 3 · پروژه اسپیناس</h3><span class="tag r3c">Project / Contract / Work Package</span></div><div class="flow" style="margin-top:6px"><div class="step">راه‌اندازی پروژه</div><div class="step">baseline و قرارداد</div><div class="step">تعهد / تجهیز</div><div class="step">اجرا و پیشرفت</div><div class="step">QC / تأیید</div><div class="step">Verified Transaction</div><div class="step">پرداخت / بستن</div></div></div>
+  <div class="grid3" style="margin-top:9px">
+    <div class="card"><h3>رویدادهای توقف مشترک</h3><p>هویت یا اختیار نامعتبر؛ معامله تکراری؛ ذی‌نفع ناسازگار؛ شاهد ناکافی؛ نقض حد؛ داده مخدوش.</p></div>
+    <div class="card"><h3>قاعده بازگشت</h3><p>هیچ توقفی با override شفاهی رفع نمی‌شود؛ دلیل، مالک، مدرک اصلاحی و نسخه تصمیم باید ثبت گردد.</p></div>
+    <div class="card"><h3>شرط بستن</h3><p>تعهد، پرداخت، بازپرداخت/وصول، اختلاف و اسناد نگهداری‌شده باید تعیین‌تکلیف شوند.</p></div>
+  </div>
+  <div class="callout" style="margin-top:8px"><b>مرز Business Model:</b> این صفحه منطق مدیریتی چرخه را تعریف می‌کند. وضعیت‌های تفصیلی، event schema، drawdown، limit و settlement در Finance Model v2.0 کنترل می‌شوند.</div>
+  <div class="footer"><span>SakhtNo · Route Lifecycles</span><span>صفحه ۶ از ۱۲</span></div>
+</section>
+
+<section class="page">
+  <div class="header"><div><div class="eyebrow">CONVERSION GATES</div><h2>Gate رسمی تبدیل و جلوگیری از اختلاط مسیرها</h2></div><div class="num">۰۷</div></div>
+  <div class="grid2">
+    <div class="card"><h3>تبدیل Route 1 → Route 3</h3><p class="small">خرید مصرفی تنها با ایجاد پرونده پروژه می‌تواند وارد مسیر پروژه شود.</p><div class="pillrow" style="margin-top:6px"><span class="tag dark">Project ID</span><span class="tag dark">قرارداد معتبر</span><span class="tag dark">WBS/BOQ</span><span class="tag dark">Baseline</span><span class="tag dark">نقش‌ها و اختیار</span><span class="tag dark">بودجه و منبع پرداخت</span><span class="tag dark">Evidence Plan</span></div><div class="callout red" style="margin-top:8px">سابقه سفارش حفظ می‌شود؛ اما Order نباید بدون تبدیل رسمی به Contract/Work Package تعبیر شود.</div></div>
+    <div class="card"><h3>تبدیل Route 2 → Route 3</h3><p class="small">خرید تجاری تکرارشونده هنگامی پروژه‌ای است که به دامنه، زمان و پذیرش پروژه متصل شود.</p><div class="pillrow" style="margin-top:6px"><span class="tag dark">Project/Package ID</span><span class="tag dark">قرارداد و طرف‌ها</span><span class="tag dark">Scope &amp; Baseline</span><span class="tag dark">Acceptance Matrix</span><span class="tag dark">Change Control</span><span class="tag dark">Payment Milestones</span><span class="tag dark">Risk Owner</span></div><div class="callout red" style="margin-top:8px">فاکتور و PO قبلی lineage خود را حفظ می‌کنند؛ حد تجاری به‌طور خودکار به حد پروژه منتقل نمی‌شود.</div></div>
+  </div>
+  <h3 style="margin:10px 0 5px">ماتریس تصمیم Route</h3>
+  <table class="table"><thead><tr><th>پرسش تعیین‌کننده</th><th>اگر پاسخ مثبت است</th><th>Route</th></tr></thead><tbody>
+    <tr><td>آیا خریدار شخص حقیقی و موضوع خرید محدود و کوتاه‌چرخه است؟</td><td>Order/Service Case، تحویل روشن، بازپرداخت شخصی</td><td class="c1"><b>۱</b></td></tr>
+    <tr><td>آیا خریدار کسب‌وکار است و خرید با PO/Invoice و حد گردشی اداره می‌شود؟</td><td>Account-based trade، تکرار خرید و تسویه تجاری</td><td class="c2"><b>۲</b></td></tr>
+    <tr><td>آیا تعهد به Project ID، قرارداد، baseline، پیشرفت و acceptance متصل است؟</td><td>Project/Contract/Work Package و پرداخت مرحله‌ای</td><td class="c3"><b>۳</b></td></tr>
+  </tbody></table>
+  <h3 style="margin:9px 0 5px">مالکیت Gate</h3>
+  <div class="grid4"><div class="card"><h3>درخواست</h3><p>مالک حساب یا پروژه</p></div><div class="card"><h3>تکمیل پرونده</h3><p>عملیات Route مقصد</p></div><div class="card"><h3>تصویب</h3><p>مالک قرارداد + ریسک + مالی</p></div><div class="card"><h3>فعال‌سازی</h3><p>سامانه پس از ثبت نسخه تصمیم</p></div></div>
+  <div class="callout purple" style="margin-top:9px"><b>اصل ضد دورزدن:</b> تغییر Route برای گرفتن حد بیشتر، پنهان‌کردن تمرکز یا حذف کنترل پروژه ممنوع است؛ سابقه Route مبدأ در risk graph باقی می‌ماند.</div>
+  <div class="footer"><span>SakhtNo · Conversion Gates</span><span>صفحه ۷ از ۱۲</span></div>
+</section>
+
+<section class="page">
+  <div class="header"><div><div class="eyebrow">REVENUE & UNIT ECONOMICS</div><h2>مدل درآمد، ساختار هزینه و اقتصاد واحد</h2></div><div class="num">۰۸</div></div>
+  <table class="table"><thead><tr><th>عنصر</th><th class="c1">Route 1</th><th class="c2">Route 2</th><th class="c3">Route 3</th></tr></thead><tbody>
+    <tr><td><b>واحد سنجش</b></td><td>سفارش / پرونده خدمت</td><td>حساب + سفارش تجاری / فاکتور</td><td>پروژه / قرارداد / بسته کاری</td></tr>
+    <tr><td><b>درآمد اصلی</b></td><td>کارمزد معامله، خدمت، شبکه و سهم قراردادی خدمات مالی</td><td>کارمزد شبکه و معامله، اشتراک حساب، تسویه و داده</td><td>Setup، اشتراک Project OS، Managed Service، Evidence/QC، کارمزد معامله و داده</td></tr>
+    <tr><td><b>هزینه متغیر</b></td><td>فعال‌سازی، پرداخت، fulfilment، پشتیبانی، مرجوعی و وصول</td><td>پذیرش KYB، مدیریت حساب/حد، تطبیق، پشتیبانی و وصول</td><td>استقرار، یکپارچه‌سازی، عملیات پروژه، کنترل شواهد، اختلاف و پشتیبانی</td></tr>
+    <tr><td><b>ریسک قراردادی</b></td><td>فقط سهم پذیرفته‌شده از تقلب، بازگشت یا زیان</td><td>فقط سهم پذیرفته‌شده از نکول، اختلاف و guarantee</td><td>فقط سهم پذیرفته‌شده از SLA، مسئولیت داده/عملیات و ریسک مالی</td></tr>
+    <tr><td><b>شرط مقیاس</b></td><td>Contribution مثبت پس از زیان واقعی و Cost-to-Serve</td><td>تکرار سالم، utilization و concentration در حدود مصوب</td><td>حاشیه پروژه مثبت و نسبت integration/ops قابل‌کاهش</td></tr>
+  </tbody></table>
+  <div class="grid3" style="margin-top:9px">
+    <div class="card r1 ltr"><h3>Contribution R1</h3><p>Transaction + Service + Finance Share − Payment − Fulfilment − Support − Contractual Loss</p></div>
+    <div class="card r2 ltr"><h3>Contribution R2</h3><p>Account + Trade + Settlement + Data − Onboarding − Matching − Support − Contractual Loss</p></div>
+    <div class="card r3 ltr"><h3>Contribution R3</h3><p>Setup + Subscription + Managed Service + Transaction − Delivery Ops − Integration − Support − Contractual Risk</p></div>
+  </div>
+  <h3 style="margin:9px 0 5px">داشبورد اقتصاد واحد</h3>
+  <div class="grid5"><div class="kpi"><b>CAC / Activation</b><span>هزینه جذب و فعال‌سازی</span></div><div class="kpi"><b>Net Take Rate</b><span>درآمد خالص / GMV واجد</span></div><div class="kpi"><b>Cost to Serve</b><span>هزینه متغیر واقعی</span></div><div class="kpi"><b>Expected / Actual Loss</b><span>زیان بر عهده ساخت‌نو</span></div><div class="kpi"><b>Contribution Margin</b><span>حاشیه پس از هزینه و زیان</span></div><div class="kpi"><b>Repeat / Retention</b><span>تکرار سالم مشتری</span></div><div class="kpi"><b>Cycle Time</b><span>ورود تا معامله/پرداخت</span></div><div class="kpi"><b>Evidence Coverage</b><span>پرونده کامل و معتبر</span></div><div class="kpi"><b>Utilization</b><span>مصرف سالم حد</span></div><div class="kpi"><b>Concentration</b><span>تمرکز مشتری/عرضه/مالی</span></div></div>
+  <div class="callout red" style="margin-top:9px"><b>قاعده مالی:</b> GMV، سقف اعتبار یا تعداد عضو به‌تنهایی شاخص موفقیت نیست. هر Route باید P&amp;L، زیان واقعی و هزینه خدمت خود را مستقل نشان دهد.</div>
+  <div class="footer"><span>SakhtNo · Revenue &amp; Unit Economics</span><span>صفحه ۸ از ۱۲</span></div>
+</section>
+
+<section class="page">
+  <div class="header"><div><div class="eyebrow">OPERATING MODEL & GOVERNANCE</div><h2>مدل عملیاتی، مالکیت تصمیم و کنترل ریسک</h2></div><div class="num">۰۹</div></div>
+  <table class="table"><thead><tr><th>تصمیم</th><th>آماده‌سازی</th><th>تصویب نهایی</th><th>کنترل پلتفرم</th><th>خروجی ثبت‌شده</th></tr></thead><tbody>
+    <tr><td>پذیرش طرف و نقش</td><td>عملیات عضویت</td><td>مالک تطبیق / سازمان</td><td>احراز، انقضا، تعارض</td><td>Party &amp; Authority Profile</td></tr>
+    <tr><td>پذیرش شبکه</td><td>عملیات تأمین</td><td>کمیته شبکه</td><td>صلاحیت، ظرفیت، رتبه</td><td>Approved Network Record</td></tr>
+    <tr><td>پذیرش معامله</td><td>عملیات هر Route</td><td>مالک Route / قرارداد</td><td>اصالت، تکرار، قیمت، تعهد</td><td>Verified Transaction</td></tr>
+    <tr><td>اعتبار و قیمت پول</td><td>Risk Engine / تحلیل‌گر</td><td>بانک / تأمین‌کننده مالی</td><td>کامل‌بودن پرونده و policy version</td><td>Credit Decision</td></tr>
+    <tr><td>آزادسازی پرداخت</td><td>سامانه پس از Gate</td><td>بانک / امضاداران</td><td>ذی‌نفع، مبلغ، limit، عدم تکرار</td><td>Payment Instruction</td></tr>
+    <tr><td>تغییر پروژه</td><td>درخواست‌کننده مجاز</td><td>مالک / کمیته تغییر</td><td>اثر دامنه، زمان، مبلغ و اعتبار</td><td>Approved Change Version</td></tr>
+  </tbody></table>
+  <div class="grid3" style="margin-top:9px">
+    <div class="card"><h3>خط اول: عملیات Route</h3><p>اجرای کنترل روزمره، تکمیل شواهد، رسیدگی اولیه به استثنا و پاسخ‌گویی به SLA.</p></div>
+    <div class="card"><h3>خط دوم: ریسک و انطباق</h3><p>policy، حدود، پایش پرتفوی، آزمون کنترل، مدل، تقلب و قواعد توقف.</p></div>
+    <div class="card"><h3>خط سوم: اطمینان</h3><p>حسابرسی trail، نمونه‌گیری پرونده، آزمون دسترسی و ارزیابی مستقل اثربخشی.</p></div>
+  </div>
+  <h3 style="margin:9px 0 5px">مالک ریسک</h3>
+  <div class="grid4"><div class="callout"><b>ریسک خرید/پروژه</b><br>خریدار، مالک یا طرف قراردادی</div><div class="callout"><b>ریسک اعتباری</b><br>نهاد مالی طبق قرارداد</div><div class="callout"><b>ریسک عرضه/اجرا</b><br>فروشنده، مجری یا تضمین‌کننده</div><div class="callout"><b>ریسک پلتفرم</b><br>ساخت‌نو در حدود تعهد داده و عملیات</div></div>
+  <div class="callout purple" style="margin-top:9px"><b>اصل پاسخ‌گویی:</b> ساخت‌نو پرونده و کنترل را اداره می‌کند؛ تصمیم تخصصی بانک، ناظر، مالک یا مرجع قانونی را تصاحب نمی‌کند.</div>
+  <div class="footer"><span>SakhtNo · Operating Model &amp; Governance</span><span>صفحه ۹ از ۱۲</span></div>
+</section>
+
+<section class="page">
+  <div class="header"><div><div class="eyebrow">GROWTH · NETWORK · MOAT</div><h2>موتور رشد، اثر شبکه و مزیت دفاع‌پذیر</h2></div><div class="num">۱۰</div></div>
+  <div class="grid4">
+    <div class="card"><h3>حلقه تقاضا و عرضه</h3><p>تقاضای معتبر بیشتر ← عرضه بهتر ← تحویل قابل‌اتکاتر ← تکرار خرید بیشتر.</p></div>
+    <div class="card"><h3>حلقه معامله و داده</h3><p>معامله بیشتر ← شواهد بهتر ← تطبیق و قیمت‌گذاری دقیق‌تر ← تکمیل سریع‌تر.</p></div>
+    <div class="card"><h3>حلقه مالی</h3><p>دید بهتر بر ریسک ← مشارکت بیشتر مالی ← پیشنهاد مناسب‌تر ← پذیرش سالم‌تر شبکه.</p></div>
+    <div class="card"><h3>حلقه استاندارد</h3><p>گردش تکرارشونده ← قواعد مشترک ← هزینه عملیات کمتر ← ظرفیت مقیاس بیشتر.</p></div>
+  </div>
+  <h3 style="margin:9px 0 5px">دارایی‌های دفاع‌پذیر</h3>
+  <div class="grid3">
+    <div class="card"><h3>گراف عملکرد تأییدشده</h3><p>پیوند طرف، سفارش، قرارداد، تحویل، کیفیت، پرداخت، وصول و نتیجه؛ قابل‌کپی نیست مگر با حجم واقعی معامله.</p></div>
+    <div class="card"><h3>جای‌گیری در گردش کار</h3><p>اتصال دفتر، کارگاه، تأمین، مالی و تسویه؛ ارزش از تعامل مداوم می‌آید نه فهرست فروشندگان.</p></div>
+    <div class="card"><h3>قواعد تخصصی ساخت</h3><p>شناخت BOQ/WBS، مصالح، QC، صورت‌وضعیت، تغییر و بسته کاری، کنترل را عمودی و قابل‌دفاع می‌کند.</p></div>
+    <div class="card"><h3>شبکه نهادی</h3><p>روابط قراردادی و اتصال‌های هویت، پرداخت، لجستیک، بیمه و سامانه‌های سازمانی.</p></div>
+    <div class="card"><h3>نقدینگی چندمنبعی</h3><p>هدایت پرونده واجد شرایط بین منابع مالی و کاهش وابستگی و تمرکز.</p></div>
+    <div class="card"><h3>اعتماد داده‌ای</h3><p>مالکیت داده، رضایت، نسخه، تفکیک وظایف، audit trail و قابلیت بازسازی تصمیم.</p></div>
+  </div>
+  <h3 style="margin:9px 0 5px">ضداثر شبکه و کنترل</h3>
+  <table class="table"><thead><tr><th>تهدید</th><th>پیامد</th><th>کنترل رشد</th></tr></thead><tbody>
+    <tr><td>ورود عضو ضعیف</td><td>افت کیفیت و اعتماد</td><td>Qualification، tiering، تعلیق و حد ظرفیت</td></tr>
+    <tr><td>داده زیاد اما نامعتبر</td><td>مدل ریسک گمراه‌کننده</td><td>منبع رسمی، completeness، drift test و نمونه‌گیری</td></tr>
+    <tr><td>تمرکز خریدار/عرضه/مالی</td><td>آسیب‌پذیری درآمد و نقدینگی</td><td>حد تمرکز، تنوع تقاضا و چندمنبعی</td></tr>
+    <tr><td>رشد عملیات دستی</td><td>افت margin و SLA</td><td>استانداردسازی، automation و منع custom work بدون اقتصاد</td></tr>
+  </tbody></table>
+  <div class="footer"><span>SakhtNo · Growth, Network &amp; Moat</span><span>صفحه ۱۰ از ۱۲</span></div>
+</section>
+
+<section class="page">
+  <div class="header"><div><div class="eyebrow">BUSINESS MODEL CANVAS</div><h2>Canvas مدیریتی مدل کسب‌وکار سه‌مسیره</h2></div><div class="num">۱۱</div></div>
+  <div class="canvas">
+    <div class="card segments"><h3>بخش‌های مشتری</h3><p><span class="tag r1c">R1</span> اشخاص حقیقی و خانوار</p><p><span class="tag r2c">R2</span> کسب‌وکار، پیمانکار خرد، فروشنده و خریدار سازمانی</p><p><span class="tag r3c">R3</span> مالک، توسعه‌دهنده، سازنده و سازمان پروژه‌محور</p><div class="sep"></div><h3>طرف‌های شبکه</h3><p>تولیدکننده، توزیع‌کننده، مجری، مشاور، ناظر، لجستیک، بانک و تأمین‌کننده مالی.</p></div>
+    <div class="card relations"><h3>رابطه با مشتری</h3><ul><li>Self-service و پشتیبانی Route 1</li><li>Account management در Route 2</li><li>Success/Operations در Route 3</li><li>شفافیت وضعیت، دلیل رد و اعتراض</li></ul></div>
+    <div class="card channels"><h3>کانال‌ها</h3><ul><li>وب و اپ مشتری</li><li>پنل فروشنده/مجری</li><li>داشبورد سازمان و پروژه</li><li>API مالی و سازمانی</li><li>شبکه شرکای توزیع</li></ul></div>
+    <div class="card value"><h3>ارزش پیشنهادی مرکزی</h3><p class="center" style="font-size:20px;color:var(--navy);margin:8px 0"><b>معامله واقعی، تصمیم قابل‌توضیح، پرداخت کنترل‌شده</b></p><div class="flow" style="flex-direction:column"><div class="step"><b>Route 1</b>خرید و تحویل مطمئن با پرداخت قابل‌مدیریت</div><div class="step"><b>Route 2</b>تدارکات تکرارشونده و سرمایه در گردش شفاف</div><div class="step"><b>Route 3</b>Project OS و نقدینگی متصل به پیشرفت تأییدشده</div></div><div class="callout" style="margin-top:8px"><b>تمایز:</b> اتصال evidence و transaction به credit، payment و settlement در یک گراف قابل‌حسابرسی.</div></div>
+    <div class="card activities"><h3>فعالیت‌های کلیدی</h3><ul><li>پذیرش شبکه</li><li>گردش سفارش/قرارداد</li><li>ساخت پرونده شواهد</li><li>هماهنگی مالی و پرداخت</li><li>استثنا و عملکرد</li></ul></div>
+    <div class="card resources"><h3>منابع کلیدی</h3><ul><li>Transaction Data Layer</li><li>Credit/Risk Engine</li><li>Evidence Ledger</li><li>شبکه تأییدشده</li><li>تیم ساخت، مالی و فناوری</li></ul></div>
+    <div class="card partners"><h3>شرکای کلیدی</h3><ul><li>بانک‌ها و تأمین‌کنندگان مالی</li><li>تولید، توزیع و لجستیک</li><li>پیمانکار، مجری، مشاور و ناظر</li><li>هویت، پرداخت، بیمه و تضمین</li><li>ارائه‌دهندگان داده و سامانه سازمانی</li></ul><div class="sep"></div><h3>درآمد</h3><p>Transaction، Network، Subscription، Setup، Managed Service، Evidence/Data و سهم قراردادی خدمات مالی.</p><div class="sep"></div><h3>هزینه</h3><p>محصول، زیرساخت، پذیرش، یکپارچه‌سازی، عملیات کنترل، پشتیبانی، انطباق و ریسک قراردادی.</p></div>
+  </div>
+  <div class="footer"><span>SakhtNo · Three-Route Business Model Canvas</span><span>صفحه ۱۱ از ۱۲</span></div>
+</section>
+
+<section class="page">
+  <div class="header"><div><div class="eyebrow">DECISION GATE & IMPLEMENTATION</div><h2>تصمیم مدیریتی، اثر بر Operating Model و نقشه اقدام</h2></div><div class="num">۱۲</div></div>
+  <div style="display:grid;grid-template-columns:1fr 110px;gap:12px;align-items:center"><div class="callout"><h3>تصمیم پیشنهادی برای تصویب</h3><p>ساخت‌نو با سه مسیر اصلی و هم‌سطح اداره شود: B2C اسپیناس، B2B اسپیناس و پروژه اسپیناس. زیرساخت فنی و داده مشترک است؛ اما هر مسیر مشتری، قرارداد، چرخه عمر، سیاست ریسک، دفتر مالی، اقتصاد و KPI مستقل دارد.</p></div><div class="stamp">v3.0<br>REVIEW<br>GATE</div></div>
+  <h3 style="margin:9px 0 5px">اصلاح الزامی Operating Model — اولویت فصل‌های ۱ تا ۳</h3>
+  <table class="table"><thead><tr><th>فصل</th><th>بازنویسی الزامی</th><th>خروجی Gate</th></tr></thead><tbody>
+    <tr><td><b>۱ · منشور اجرایی</b></td><td>سه Route، تعریف مشتری، مرز خدمت، P&amp;L، risk appetite، state machine و اشیای داده</td><td>Reference Architecture مصوب</td></tr>
+    <tr><td><b>۲ · بازیگران و حاکمیت</b></td><td>RACI مستقل Routeها، مالک قرارداد/ریسک/تحویل، اختیار بانک و کمیته‌های تصمیم</td><td>Authority &amp; Decision Matrix</td></tr>
+    <tr><td><b>۳ · چرخه عملیات</b></td><td>سه lifecycle، رویدادهای توقف، conversion gate، exception و close-out</td><td>Approved Route State Machines</td></tr>
+  </tbody></table>
+  <h3 style="margin:9px 0 5px">بسته اسناد و مرجع کنترل</h3>
+  <div class="grid3">
+    <div class="card"><h3>Business Model v3.0</h3><p>سند حاضر: تصمیم راهبردی، مشتری، ارزش، درآمد، اقتصاد، حاکمیت و مرز سه مسیر.</p></div>
+    <div class="card"><h3>Finance Model v2.0</h3><p><span class="en">SakhtNo_Integrated_3_Route_Finance_Model_A3_v2.0</span><br>مرجع تفصیلی state machine، limit، drawdown، evidence، risk و settlement.</p></div>
+    <div class="card"><h3>Operating Model — Next</h3><p>ترجمه تصمیم Business Model به نقش، فرایند، SLA، کنترل، داده و ظرفیت عملیاتی.</p></div>
+  </div>
+  <h3 style="margin:9px 0 5px">نقشه اقدام کنترل‌شده</h3>
+  <div class="flow"><div class="step"><b>۱. تصویب معماری</b>Routeها و مرزها</div><div class="step"><b>۲. بازنویسی OM 1–3</b>نقش و lifecycle</div><div class="step"><b>۳. Pilot مستقل</b>یک cohort برای هر Route</div><div class="step"><b>۴. سنجش اقتصاد</b>margin، loss، SLA</div><div class="step"><b>۵. Scale Gate</b>رشد فقط پس از اثبات</div></div>
+  <div class="grid4" style="margin-top:9px"><div class="kpi"><b>Gate A</b><span>تعریف مشتری/قرارداد بدون ابهام</span></div><div class="kpi"><b>Gate B</b><span>مالک ریسک و زیان مصوب</span></div><div class="kpi"><b>Gate C</b><span>پرونده شاهد و تسویه قابل‌بازسازی</span></div><div class="kpi"><b>Gate D</b><span>Contribution مثبت در Pilot</span></div></div>
+  <div class="callout red" style="margin-top:9px"><b>شرط ادامه:</b> توسعه دامنه، ابزار مالی یا شبکه جدید تنها پس از تثبیت معیارهای توقف، اقتصاد واحد و ظرفیت عملیات همان Route مجاز است.</div>
+  <div class="footer"><span>SakhtNo · Decision Gate &amp; Implementation</span><span>صفحه ۱۲ از ۱۲</span></div>
+</section>
+
+</body>
+</html>
