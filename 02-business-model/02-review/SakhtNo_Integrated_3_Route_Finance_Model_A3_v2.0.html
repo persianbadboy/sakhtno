@@ -1,0 +1,587 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>معماری یکپارچه سه مسیر مالی و عملیاتی ساخت‌نو - نسخه ۲.۰</title><style>
+@page{size:A3 landscape;margin:0}*{box-sizing:border-box}html,body{margin:0;background:#dfe6ef;color:#172033;font-family:Tahoma,"Segoe UI",Arial,sans-serif}.page{position:relative;width:420mm;height:297mm;margin:6mm auto;padding:10mm 12mm 9mm;overflow:hidden;background:#f7f9fc;break-after:page;page-break-after:always}.page:last-child{break-after:auto}.header{height:28mm;margin:-10mm -12mm 5mm;padding:5.5mm 12mm 4.5mm;display:flex;align-items:center;justify-content:space-between;gap:6mm;color:#fff;background:#12233f}.header>div:first-child{min-width:0;max-width:296mm}.head-title{font-size:20pt;line-height:1.2;font-weight:800}.head-sub{margin-top:1.2mm;color:#cbd7e8;font-size:8.7pt}.head-meta{flex:0 0 78mm;direction:ltr;text-align:left;color:#9ed6e5;font-size:8.5pt;font-weight:700;line-height:1.55}h2{margin:0 0 2.8mm;color:#12233f;font-size:14pt}h3{margin:0 0 1.6mm;font-size:11pt}p{margin:0}.en{direction:ltr;unicode-bidi:isolate;font-family:"Segoe UI",Arial,sans-serif}.muted{color:#607087}.small{font-size:8.2pt;line-height:1.5}.tiny{font-size:7.2pt;line-height:1.42}.card{background:#fff;border:.4mm solid #dbe3ed;border-radius:3.2mm;padding:3mm}.teal{border-color:#1598a8!important;background:#eefafa!important}.blue{border-color:#2c6cad!important;background:#eff5fc!important}.purple{border-color:#7b54b8!important;background:#f6f1fd!important}.amber{border-color:#d89b24!important;background:#fff8e9!important}.navy{border-color:#29456f!important;background:#edf2f8!important}.band{border-radius:2.5mm;padding:2mm 3mm;color:#fff;font-weight:800}.band.teal{background:#1598a8}.band.blue{background:#2c6cad}.band.purple{background:#7b54b8}.band.amber{background:#d89b24}.band.navy{background:#1f3a63}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3.5mm}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm}.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:2.5mm}.decision{display:grid;grid-template-columns:32mm 1fr;gap:3mm;align-items:center;margin-bottom:3mm;padding:2.5mm 3mm;border-right:1.7mm solid #1598a8;border-radius:2.5mm;background:#e9f6f8;font-size:8.4pt;line-height:1.5}.decision strong{color:#0c7280;font-size:10pt}.route{min-height:61mm;padding-top:12mm;position:relative}.route .tag{position:absolute;top:0;right:0;left:0;padding:2.4mm 3mm;border-radius:3mm 3mm 0 0;color:#fff;font-size:9.5pt;font-weight:800}.route .tag.teal{background:#1598a8}.route .tag.blue{background:#2c6cad}.route .tag.purple{background:#7b54b8}.route ul,.compact{margin:1.7mm 0 0;padding:0 4mm 0 0}.route li,.compact li{margin:.8mm 0;line-height:1.45}.flow{display:flex;align-items:stretch;gap:2mm;direction:rtl}.step{flex:1;min-height:19mm;padding:2mm 2.2mm;display:flex;align-items:center;justify-content:center;text-align:center;border:.4mm solid #cdd7e5;border-radius:2.5mm;background:#fff;font-size:7.6pt;font-weight:700;line-height:1.35}.step:not(:last-child){position:relative}.step:not(:last-child)::after{content:"←";position:absolute;left:-3.5mm;top:5mm;z-index:3;color:#718097;background:#f7f9fc;font-size:11pt}.core{margin-top:3mm;padding:2.7mm;text-align:center;border:.5mm solid #29456f;border-radius:3mm;background:#e8eef7}.core-title{direction:ltr;font-size:9.3pt;font-weight:800}.gate{margin-top:3mm;padding:2.8mm;display:grid;grid-template-columns:34mm 1fr;gap:3mm;align-items:center;border:.5mm dashed #7b54b8;border-radius:3mm;background:#fbf8ff}.gate strong{color:#68439f;font-size:9.6pt}.stategrid{display:grid;grid-template-columns:repeat(5,1fr);gap:2mm}.state{padding:2mm;text-align:center;border-radius:2.2mm;border:.35mm solid #aebdd0;background:#edf2f8;font-size:7.3pt;font-weight:700}.state.teal{border-color:#1598a8;background:#e8f7f8}.state.blue{border-color:#2c6cad;background:#eaf2fb}.state.purple{border-color:#7b54b8;background:#f1eafd}.state.amber{border-color:#d89b24;background:#fff5dc}.state.navy{border-color:#29456f;background:#e8eef7}table{width:100%;border-collapse:separate;border-spacing:0;font-size:7.5pt;line-height:1.35}th{padding:1.6mm 1.8mm;color:#fff;background:#29456f;font-weight:800}td{padding:1.4mm 1.7mm;vertical-align:top;border-bottom:.25mm solid #dbe3ed;background:#fff}tbody tr:nth-child(even) td{background:#f4f7fb}table.teal th{background:#1598a8}table.blue th{background:#2c6cad}table.purple th{background:#7b54b8}table.amber th{background:#d89b24}.proc td:nth-child(1){width:9mm;text-align:center;font-weight:800}.proc td:nth-child(2){width:35mm;direction:ltr;text-align:left;font-size:6.8pt;font-weight:700;color:#42536a}.proc td:nth-child(4){width:47mm;color:#53647b}.note{padding:2mm 2.7mm;border-right:1.2mm solid #d89b24;background:#fff8e9;font-size:7.3pt;line-height:1.45}.role{min-height:29mm}.role b{display:block;margin-bottom:1.5mm;color:#29456f;font-size:9pt}.formula{direction:ltr;padding:2.7mm;border-radius:2.5mm;background:#12233f;color:#fff;font-size:7.6pt;line-height:1.55;text-align:center}.pill{display:inline-block;margin:.6mm;padding:1.2mm 2mm;border-radius:8mm;background:#e8eef7;font-size:7.4pt}.phase{min-height:37mm;padding:3mm;border-radius:3mm;color:#fff}.phase p{direction:rtl;margin-top:1.5mm;font-size:7.4pt;line-height:1.45}.p0{background:#51647d}.p1{background:#1598a8}.p2{background:#2c6cad}.p3{background:#7b54b8}.footer{position:absolute;right:12mm;left:12mm;bottom:3.5mm;display:flex;justify-content:space-between;color:#718097;font-size:6.5pt;direction:ltr}@media print{html,body{background:#fff}.page{margin:0;box-shadow:none}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}
+</style>
+<style>
+  .band.teal,.route .tag.teal{background:#1598a8!important}
+  .band.blue,.route .tag.blue{background:#2c6cad!important}
+  .band.purple,.route .tag.purple{background:#7b54b8!important}
+  .band.amber{background:#d89b24!important}
+  .band.navy{background:#1f3a63!important}
+</style>
+<style>
+    @page { size: A3 landscape; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #dfe6ef; color: #172033; }
+    body { font-family: Tahoma, "Segoe UI", Arial, sans-serif; }
+    .page {
+      position: relative; width: 420mm; height: 297mm; margin: 6mm auto;
+      padding: 10mm 12mm 9mm; overflow: hidden; background: #f7f9fc;
+      break-after: page; page-break-after: always;
+    }
+    .page:last-child { break-after: auto; page-break-after: auto; }
+    .header {
+      height: 28mm; margin: -10mm -12mm 5mm; padding: 5.5mm 12mm 4.5mm;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 6mm; color: #fff; background: #12233f;
+    }
+    .header > div:first-child { min-width: 0; max-width: 296mm; }
+    .head-title { font-size: 20pt; line-height: 1.2; font-weight: 800; }
+    .head-sub { margin-top: 1.2mm; color: #cbd7e8; font-size: 8.7pt; }
+    .head-meta { flex: 0 0 78mm; direction: ltr; text-align: left; color: #9ed6e5; font-size: 8.5pt; font-weight: 700; line-height: 1.55; }
+    h2 { margin: 0 0 2.8mm; color: #12233f; font-size: 14.2pt; }
+    h3 { margin: 0 0 1.6mm; font-size: 11pt; }
+    p { margin: 0; }
+    .en { direction: ltr; unicode-bidi: isolate; font-family: "Segoe UI", Arial, sans-serif; }
+    .muted { color: #607087; }
+    .small { font-size: 8.4pt; line-height: 1.5; }
+    .tiny { font-size: 7.4pt; line-height: 1.42; }
+    .card { background: #fff; border: .4mm solid #dbe3ed; border-radius: 3.2mm; padding: 3mm; }
+    .card.teal { border-color: #1598a8; background: #eefafa; }
+    .card.blue { border-color: #2c6cad; background: #eff5fc; }
+    .card.purple { border-color: #7b54b8; background: #f6f1fd; }
+    .card.amber { border-color: #d89b24; background: #fff8e9; }
+    .card.navy { border-color: #29456f; background: #edf2f8; }
+    .band { border-radius: 2.5mm; padding: 2mm 3mm; color: #fff; font-weight: 800; }
+    .band.teal { background: #1598a8; }
+    .band.blue { background: #2c6cad; }
+    .band.purple { background: #7b54b8; }
+    .band.navy { background: #1f3a63; }
+    .band.amber { background: #d89b24; }
+    .decision {
+      display: grid; grid-template-columns: 31mm 1fr; align-items: center; gap: 3mm;
+      margin-bottom: 3mm; padding: 2.4mm 3mm; border-right: 1.7mm solid #1598a8;
+      border-radius: 2.5mm; background: #e9f6f8; font-size: 8.5pt; line-height: 1.5;
+    }
+    .decision strong { font-size: 10pt; color: #0c7280; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5mm; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3.5mm; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; }
+    .route-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 44mm; gap: 3mm; }
+    .route-card { position: relative; min-height: 62mm; padding-top: 12mm; }
+    .route-card .tag { position: absolute; top: 0; right: 0; left: 0; padding: 2.4mm 3mm; color: #fff; font-size: 9.4pt; font-weight: 800; border-radius: 3mm 3mm 0 0; }
+    .route-card .tag.teal { background: #1598a8; }
+    .route-card .tag.blue { background: #2c6cad; }
+    .route-card .tag.purple { background: #7b54b8; }
+    .route-card ul, .compact-list { margin: 1.7mm 0 0; padding: 0 4mm 0 0; }
+    .route-card li, .compact-list li { margin: .8mm 0; line-height: 1.45; }
+    .flow {
+      display: flex; align-items: stretch; gap: 2mm; direction: rtl;
+    }
+    .step {
+      flex: 1; position: relative; min-height: 19mm; padding: 2mm 2.4mm;
+      display: flex; align-items: center; justify-content: center; text-align: center;
+      border: .45mm solid #cdd7e5; border-radius: 3mm; background: #fff;
+      font-size: 7.9pt; font-weight: 700; line-height: 1.35;
+    }
+    .step:not(:last-child)::after {
+      content: "←"; position: absolute; left: -3.3mm; top: 5mm; z-index: 3;
+      width: 4.8mm; height: 4.8mm; display: grid; place-items: center;
+      color: #718097; background: #f7f9fc; font-size: 11pt;
+    }
+    .core {
+      margin-top: 3mm; padding: 2.7mm; text-align: center; border: .5mm solid #29456f;
+      border-radius: 4mm; background: #e8eef7;
+    }
+    .core-title { direction: ltr; font-size: 9.5pt; font-weight: 800; }
+    .gate {
+      margin-top: 3mm; padding: 2.8mm; display: grid; grid-template-columns: 34mm 1fr; gap: 3mm;
+      align-items: center; border: .55mm dashed #7b54b8; border-radius: 4mm; background: #fbf8ff;
+    }
+    .gate strong { color: #68439f; font-size: 9.5pt; }
+    .brand-map { display: grid; gap: 1.7mm; }
+    .brand-item { padding: 2mm; border: .35mm solid #ead19b; border-radius: 2.3mm; background: #fff; }
+    .brand-item b { display: block; color: #916411; font-size: 8.3pt; margin-bottom: .7mm; }
+    table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 7.7pt; line-height: 1.33; }
+    th { padding: 1.5mm 1.8mm; color: #fff; background: #29456f; font-weight: 800; }
+    th:first-child { border-radius: 0 2.5mm 0 0; }
+    th:last-child { border-radius: 2.5mm 0 0 0; }
+    td { padding: 1.35mm 1.7mm; vertical-align: top; border-bottom: .25mm solid #dbe3ed; background: #fff; }
+    tbody tr:nth-child(even) td { background: #f4f7fb; }
+    .proc th { background: #1598a8; }
+    .proc.blue th { background: #2c6cad; }
+    .proc td:nth-child(1) { width: 10mm; text-align: center; font-weight: 800; }
+    .proc td:nth-child(2) { width: 30mm; direction: ltr; text-align: left; font-size: 6.8pt; font-weight: 700; color: #42536a; }
+    .proc td:nth-child(4) { width: 43mm; color: #53647b; }
+    .state-row { display: flex; align-items: center; gap: 2mm; direction: ltr; }
+    .state { flex: 1; padding: 1.8mm; text-align: center; border-radius: 2.2mm; background: #edf2f8; border: .35mm solid #aebdd0; font-size: 7.1pt; font-weight: 700; }
+    .arrow { color: #6c7c92; font-size: 14pt; }
+    .swim { display: grid; grid-template-columns: 36mm 1fr; gap: 1.5mm; align-items: center; margin: 1.5mm 0; }
+    .swim .label { padding: 2mm; color: #fff; text-align: center; border-radius: 2mm; background: #29456f; font-weight: 800; }
+    .swim .line { padding: 2mm; border-radius: 2mm; border: .35mm solid #d5deea; background: #fff; font-size: 7.3pt; }
+    .pill { display: inline-block; margin: .6mm; padding: 1.3mm 2.2mm; border-radius: 8mm; background: #e8eef7; font-size: 8.3pt; }
+    .value { min-height: 33mm; }
+    .value b { display: block; margin-bottom: 2mm; font-size: 11pt; }
+    .matrix { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2mm; }
+    .matrix .mcol { border-radius: 2.5mm; padding: 2mm; background: #fff; border: .35mm solid #dbe3ed; }
+    .matrix .mcol h3 { padding-bottom: 1.5mm; border-bottom: .6mm solid; }
+    .matrix .mcol.adopt h3 { color: #168355; border-color: #168355; }
+    .matrix .mcol.adapt h3 { color: #246aa9; border-color: #246aa9; }
+    .matrix .mcol.build h3 { color: #7250aa; border-color: #7250aa; }
+    .matrix .mcol.reject h3 { color: #b24a50; border-color: #b24a50; }
+    .formula { direction: ltr; padding: 2.7mm; border-radius: 2.5mm; background: #12233f; color: #fff; font-size: 7.5pt; line-height: 1.55; text-align: center; }
+    .kpi { min-height: 42mm; }
+    .kpi h3 { color: #1f3a63; }
+    .gate-card { min-height: 43mm; }
+    .gate-card .n { float: left; direction: ltr; color: #9eb1ca; font-size: 19pt; font-weight: 800; }
+    .risk td:first-child { width: 43mm; font-weight: 800; color: #243e65; }
+    .risk td:nth-child(2) { width: 82mm; }
+    .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5mm; direction: ltr; }
+    .phase { position: relative; min-height: 37mm; padding: 3mm; border-radius: 3mm; color: #fff; }
+    .phase:not(:last-child)::after { content: "→"; position: absolute; right: -3.6mm; top: 12mm; z-index: 3; color: #78879b; font-size: 13pt; }
+    .phase p { direction: rtl; margin-top: 1.5mm; font-size: 7.3pt; line-height: 1.42; }
+    .phase.p0 { background: #51647d; }
+    .phase.p1 { background: #1598a8; }
+    .phase.p2 { background: #2c6cad; }
+    .phase.p3 { background: #7b54b8; }
+    .note { padding: 2mm 2.7mm; border-right: 1.2mm solid #d89b24; background: #fff8e9; font-size: 7.2pt; line-height: 1.42; }
+    .footer { position: absolute; right: 12mm; left: 12mm; bottom: 3.5mm; display: flex; justify-content: space-between; color: #718097; font-size: 6.5pt; direction: ltr; }
+    @media print {
+      html, body { background: #fff; }
+      .page { margin: 0; box-shadow: none; }
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    }
+  </style>
+<style>
+@page{size:A3 landscape;margin:0}*{box-sizing:border-box}html,body{margin:0;background:#dfe6ef;color:#172033;font-family:Tahoma,"Segoe UI",Arial,sans-serif}.page{position:relative;width:420mm;height:297mm;margin:6mm auto;padding:10mm 12mm 9mm;overflow:hidden;background:#f7f9fc;break-after:page;page-break-after:always}.page:last-child{break-after:auto}.header{height:28mm;margin:-10mm -12mm 5mm;padding:5.5mm 12mm 4.5mm;display:flex;align-items:center;justify-content:space-between;gap:6mm;color:#fff;background:#12233f}.header>div:first-child{min-width:0;max-width:296mm}.head-title{font-size:20pt;line-height:1.2;font-weight:800}.head-sub{margin-top:1.2mm;color:#cbd7e8;font-size:8.7pt}.head-meta{flex:0 0 78mm;direction:ltr;text-align:left;color:#9ed6e5;font-size:8.5pt;font-weight:700;line-height:1.55}h2{margin:0 0 2.8mm;color:#12233f;font-size:14pt}h3{margin:0 0 1.6mm;font-size:11pt}p{margin:0}.en{direction:ltr;unicode-bidi:isolate;font-family:"Segoe UI",Arial,sans-serif}.muted{color:#607087}.small{font-size:8.3pt;line-height:1.5}.tiny{font-size:7.2pt;line-height:1.42}.card{background:#fff;border:.4mm solid #dbe3ed;border-radius:3.2mm;padding:3mm}.card.teal{border-color:#1598a8;background:#eefafa}.card.blue{border-color:#2c6cad;background:#eff5fc}.card.purple{border-color:#7b54b8;background:#f6f1fd}.card.amber{border-color:#d89b24;background:#fff8e9}.card.navy{border-color:#29456f;background:#edf2f8}.band{border-radius:2.5mm;padding:2mm 3mm;color:#fff;font-weight:800}.band.teal{background:#1598a8}.band.blue{background:#2c6cad}.band.purple{background:#7b54b8}.band.navy{background:#1f3a63}.band.amber{background:#d89b24}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3.5mm}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm}.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:2.5mm}.decision{display:grid;grid-template-columns:32mm 1fr;gap:3mm;align-items:center;margin-bottom:3mm;padding:2.5mm 3mm;border-right:1.7mm solid #7b54b8;border-radius:2.5mm;background:#f4effd;font-size:8.4pt;line-height:1.5}.decision strong{color:#68439f;font-size:10pt}.flow{display:flex;align-items:stretch;gap:2mm;direction:rtl}.step{flex:1;min-height:19mm;padding:2mm 2.2mm;display:flex;align-items:center;justify-content:center;text-align:center;border:.4mm solid #cdd7e5;border-radius:2.5mm;background:#fff;font-size:7.6pt;font-weight:700;line-height:1.35}.step:not(:last-child){position:relative}.step:not(:last-child)::after{content:"←";position:absolute;left:-3.5mm;top:5mm;z-index:3;color:#718097;background:#f7f9fc;font-size:11pt}.core{margin-top:3mm;padding:2.7mm;text-align:center;border:.5mm solid #29456f;border-radius:3mm;background:#e8eef7}.core-title{direction:ltr;font-size:9.3pt;font-weight:800}.gate{margin-top:3mm;padding:2.8mm;display:grid;grid-template-columns:34mm 1fr;gap:3mm;align-items:center;border:.5mm dashed #7b54b8;border-radius:3mm;background:#fbf8ff}.gate strong{color:#68439f;font-size:9.6pt}.pill{display:inline-block;margin:.6mm;padding:1.2mm 2mm;border-radius:8mm;background:#e8eef7;font-size:7.4pt}.stategrid{display:grid;grid-template-columns:repeat(4,1fr);gap:2mm}.state{padding:2mm;text-align:center;border-radius:2.2mm;border:.35mm solid #aebdd0;background:#edf2f8;font-size:7.3pt;font-weight:700}.state.teal{border-color:#1598a8;background:#e8f7f8}.state.blue{border-color:#2c6cad;background:#eaf2fb}.state.purple{border-color:#7b54b8;background:#f1eafd}.state.amber{border-color:#d89b24;background:#fff5dc}table{width:100%;border-collapse:separate;border-spacing:0;font-size:7.5pt;line-height:1.35}th{padding:1.6mm 1.8mm;color:#fff;background:#29456f;font-weight:800}td{padding:1.4mm 1.7mm;vertical-align:top;border-bottom:.25mm solid #dbe3ed;background:#fff}tbody tr:nth-child(even) td{background:#f4f7fb}table.teal th{background:#1598a8}table.blue th{background:#2c6cad}table.purple th{background:#7b54b8}.proc td:nth-child(1){width:9mm;text-align:center;font-weight:800}.proc td:nth-child(2){width:35mm;direction:ltr;text-align:left;font-size:6.8pt;font-weight:700;color:#42536a}.proc td:nth-child(4){width:47mm;color:#53647b}.note{padding:2mm 2.7mm;border-right:1.2mm solid #d89b24;background:#fff8e9;font-size:7.3pt;line-height:1.45}.role{min-height:32mm}.role b{display:block;margin-bottom:1.5mm;color:#29456f;font-size:9pt}.risk td:first-child{width:39mm;font-weight:800;color:#243e65}.risk td:nth-child(2){width:74mm}.formula{direction:ltr;padding:2.7mm;border-radius:2.5mm;background:#12233f;color:#fff;font-size:7.6pt;line-height:1.55;text-align:center}.phase{min-height:38mm;padding:3mm;border-radius:3mm;color:#fff}.phase p{direction:rtl;margin-top:1.5mm;font-size:7.4pt;line-height:1.45}.p0{background:#51647d}.p1{background:#1598a8}.p2{background:#2c6cad}.p3{background:#7b54b8}.footer{position:absolute;right:12mm;left:12mm;bottom:3.5mm;display:flex;justify-content:space-between;color:#718097;font-size:6.5pt;direction:ltr}@media print{html,body{background:#fff}.page{margin:0;box-shadow:none}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}
+</style></head><body><section class="page"><header class="header"><div><div class="head-title">معماری یکپارچه سه مسیر مالی و عملیاتی ساخت‌نو</div><div class="head-sub">Master Business Model Architecture | مدل B2C، مدل B2B و مدل پروژه | نسخه ۲.۰</div></div><div class="head-meta">SAKHTNO / MASTER MODEL<br>A3 LANDSCAPE / 1 OF 20</div></header>
+<div class="decision"><strong>تصمیم معماری</strong><div>ساخت‌نو یک پلتفرم سه‌مسیره است: <b>Route 1</b> برای اعتبار خرید مشتری نهایی، <b>Route 2</b> برای اعتبار تجاری و سرمایه در گردش کسب‌وکار، و <b>Route 3</b> برای پروژه، قرارداد، پیشرفت و تأمین مالی زنجیره‌ای. این سه مسیر هم‌سطح‌اند و هیچ‌کدام جایگزین یا زیرمجموعه دیگری نیست.</div></div>
+<div class="grid3"><div class="card teal route"><div class="tag teal"><span class="en">ROUTE 1</span> | مدل B2C اسپیناس</div><h3>اعتبار خرید مشتری نهایی</h3><ul class="small"><li>شخص حقیقی و نیاز محدود خرید</li><li>کالا یا خدمت ساختمانی</li><li>اعتبار حلقه‌بسته و اقساطی</li><li>تحویل، پذیرش و تسویه پذیرنده</li><li>اسپیناس کارت / OTP / QR / token</li></ul></div><div class="card blue route"><div class="tag blue"><span class="en">ROUTE 2</span> | مدل B2B اسپیناس</div><h3>اعتبار تجاری و سرمایه در گردش</h3><ul class="small"><li>فروشگاه، مجری خرد و خریدار تجاری</li><li>خرید از عرضه‌کننده مجاز</li><li>فاکتور/PO و سررسید معامله</li><li>خط اعتبار گردان و بازگشت اصل</li><li>اسپیناس کارت / درگاه / توکن معامله</li></ul></div><div class="card purple route"><div class="tag purple"><span class="en">ROUTE 3</span> | مدل پروژه اسپیناس</div><h3>Construction Project OS + SCF</h3><ul class="small"><li>Project ID، قرارداد و نقش‌ها</li><li>WBS، بودجه، Baseline و milestone</li><li>تحویل/پیشرفت/QC و Verified Transaction</li><li>Payables، Receivables و Inventory Finance</li><li>پرداخت مرحله‌ای و تسویه پروژه</li></ul></div></div>
+<h2 style="margin-top:4mm;">نقشه سطح‌بالای سه مسیر</h2><div class="flow"><div class="step">FINANCE / BANKING</div><div class="step">Construction Commerce</div><div class="step">نیاز فردی<br><b>Route 1</b></div><div class="step">خرید تجاری<br><b>Route 2</b></div><div class="step">پروژه و قرارداد<br><b>Route 3</b></div><div class="step">تراکنش، ریسک و تسویه</div></div>
+<div class="core"><div class="core-title">SAKHTNO / ESPINAS PLATFORM = CONSTRUCTION COMMERCE + BUSINESS CREDIT + PROJECT OS + TRANSACTION DATA + CREDIT/RISK + BANK/FINANCIER</div><div class="tiny muted" style="margin-top:1.5mm;">Embedded Finance روش ارائه خدمت در دل تجربه خرید و عملیات پروژه است، نه یک دسته مستقل وام</div></div><footer class="footer"><span>v2.0 / THREE-ROUTE MASTER ARCHITECTURE</span><span>PAGE 1 / 20</span></footer></section>
+<section class="page"><header class="header"><div><div class="head-title">مرزها، لایه مشترک و مسیرهای تبدیل</div><div class="head-sub">حفظ استقلال محصول، ریسک، قرارداد، ledger و KPI در یک پلتفرم واحد</div></div><div class="head-meta">SAKHTNO / GOVERNANCE<br>A3 LANDSCAPE / 2 OF 20</div></header>
+<div class="grid2" style="align-items:start;"><div class="card navy"><h2>هسته مشترک سه مسیر</h2><div class="grid3 tiny"><div><b>Identity & Authority</b><br>هویت، مالکیت و اختیار</div><div><b>Network</b><br>پذیرنده، عرضه‌کننده و پیمانکار</div><div><b>Transaction Object</b><br>Order، Invoice، Contract و Event</div><div><b>Risk Engine</b><br>اعتبار، تقلب، limit و concentration</div><div><b>Evidence Ledger</b><br>تحویل، پیشرفت، QC و اعتراض</div><div><b>Payment & Settlement</b><br>پرداخت کنترل‌شده، وصول و release</div></div></div><div class="card amber"><h2>اصل رسمی معماری</h2><ul class="compact small"><li>سه Route در سطح محصول و بازار مستقل‌اند.</li><li>داده و زیرساخت مشترک، به معنای ادغام lifecycle نیست.</li><li>هر Route قرارداد، state machine، policy و ledger خودش را دارد.</li><li>عبور بین مسیرها فقط با Gate و شناسه جدید انجام می‌شود.</li><li>هیچ مسیر نباید به‌صورت خاموش جای مسیر دیگر استفاده شود.</li></ul></div></div>
+<h2 style="margin-top:4mm;">ماتریس مرزبندی رسمی</h2><table><thead><tr><th>موضوع</th><th>Route 1 | B2C</th><th>Route 2 | B2B</th><th>Route 3 | Project</th></tr></thead><tbody><tr><td>مشتری اصلی</td><td>شخص نهایی</td><td>فروشگاه/مجری/خریدار تجاری</td><td>مالک/کارفرما/پروژه</td></tr><tr><td>مبنای اعتبار</td><td>توان بازپرداخت و خرید</td><td>فروش، گردش، فاکتور و چرخه موجودی</td><td>تعهد، طلب، پیشرفت و پذیرش</td></tr><tr><td>سند کلیدی</td><td>Order / Service</td><td>Invoice / PO</td><td>Contract / WBS / Baseline</td></tr><tr><td>خروجی مالی</td><td>اقساط مشتری</td><td>تسویه سررسیدی و limit گردان</td><td>milestone، payer و SCF</td></tr><tr><td>ریسک غالب</td><td>affordability و تقلب</td><td>گردش، تمرکز، موجودی و نکول</td><td>اجرا، QC، claims و payer</td></tr></tbody></table>
+<div class="grid3" style="margin-top:4mm;"><div class="card teal"><h3>Route 1 → Route 3</h3><div class="small">فقط با Project ID، قرارداد، baseline، نقش‌ها و evidence جدید.</div></div><div class="card blue"><h3>Route 2 → Route 3</h3><div class="small">فقط با تبدیل خرید/فاکتور به بسته قراردادی و lifecycle پروژه.</div></div><div class="card purple"><h3>Embedded Finance</h3><div class="small">شیوه دسترسی و ارائه خدمت مالی در Commerce و Project OS؛ نه Route چهارم.</div></div></div>
+<div class="gate"><strong>قاعده انتشار</strong><div class="small">این سند Master است؛ جزئیات عملیاتی هر Route در بلوک شش‌صفحه‌ای مستقل بعدی حفظ شده و شماره‌گذاری آن در همین سند یکپارچه شده است.</div></div><footer class="footer"><span>v2.0 / ROUTE BOUNDARIES AND SHARED CORE</span><span>PAGE 2 / 20</span></footer></section>
+<section class="page">
+  <header class="header">
+    <div>
+      <div class="head-title">طبقه‌بندی مالی و معماری تفصیلی Route 1 ساخت‌نو</div>
+      <div class="head-sub">نسخه ۲.۰ | مدل دوسویه اعتبار خرید ساختمان با نام‌گذاری یکپارچه اسپیناس</div>
+    </div>
+    <div class="head-meta">SAKHTNO / FINANCIAL ARCHITECTURE<br>A3 LANDSCAPE / 3 OF 20</div>
+  </header>
+
+  <div class="decision">
+    <strong>تصمیم مدیریتی</strong>
+    <div>Route 1 یک محصول واحد نیست؛ دو پرتفوی با هسته مشترک است: <b>مدل B2C اسپیناس</b> برای اعتبار خرید مشتری نهایی و <b>مدل B2B اسپیناس</b> برای اعتبار گردان خرید پذیرنده/مجری. قرارداد، ریسک، وصول و حسابداری این دو باید جدا بماند.</div>
+  </div>
+
+  <div class="route-grid">
+    <div class="card teal route-card">
+      <div class="tag teal"><span class="en">ROUTE 1A</span> | مدل B2C اسپیناس</div>
+      <h3>اعتبار خرید مشتری نهایی</h3>
+      <ul class="small">
+        <li>مالک، مستأجر مجاز، سازنده یا تعمیرکننده خرد</li>
+        <li>اعتبار حلقه‌بسته و غیرنقدی نزد پذیرنده مجاز</li>
+        <li>کالا یا خدمت محدود ساختمانی، نه پروژه کامل</li>
+        <li>بازپرداخت اقساطی و وصول بانکی خودکار</li>
+        <li>مصرف با اسپیناس کارت، کدملی/OTP، QR یا توکن</li>
+      </ul>
+    </div>
+    <div class="card blue route-card">
+      <div class="tag blue"><span class="en">ROUTE 1B</span> | مدل B2B اسپیناس</div>
+      <h3>اعتبار تجاری پذیرنده/مجری</h3>
+      <ul class="small">
+        <li>فروشگاه مصالح، مجری خرد، عمده‌فروش یا عامل توزیع</li>
+        <li>خط اعتباری گردان برای خرید از عرضه‌کننده مجاز</li>
+        <li>سررسید متناسب با فاکتور و چرخه فروش کالا</li>
+        <li>آزادسازی مجدد حد به میزان اصل تسویه‌شده</li>
+        <li>مصرف با اسپیناس کارت، درگاه یا توکن معامله</li>
+      </ul>
+    </div>
+    <div class="card purple route-card">
+      <div class="tag purple"><span class="en">ROUTE 3</span> | پروژه/بسته قراردادی</div>
+      <h3>تأمین مالی پروژه‌محور</h3>
+      <ul class="small">
+        <li>پروژه، قرارداد/PO و نقش‌های قراردادی</li>
+        <li>خط مبنا، پیشرفت، QC و صورت‌وضعیت</li>
+        <li><span class="en">Verified Transaction</span> و پرداخت مرحله‌ای</li>
+        <li>SCF شامل Payables، Receivables و Inventory</li>
+        <li>ماشین وضعیت و حسابداری مستقل از Route 1</li>
+      </ul>
+    </div>
+    <aside class="card amber">
+      <div class="band amber" style="margin:-4mm -4mm 4mm; border-radius:3.5mm 3.5mm 0 0; text-align:center;"><span class="en">NAMING SYSTEM</span></div>
+      <div class="brand-map small">
+        <div class="brand-item"><b>اسپیناس</b>لایه هماهنگ‌سازی اعتبار، خرید، پرداخت، قرارداد و تسویه</div>
+        <div class="brand-item"><b>مدل B2C اسپیناس</b>محصول اعتبار خرید اشخاص در Route 1A</div>
+        <div class="brand-item"><b>مدل B2B اسپیناس</b>محصول اعتبار تجاری در Route 1B</div>
+        <div class="brand-item"><b>اسپیناس کارت</b>یکی از ابزارهای مصرف اعتبار؛ نه خود محصول</div>
+      </div>
+    </aside>
+  </div>
+
+  <h2 style="margin-top:5mm;">شبکه اعتبار دوسویه Route 1</h2>
+  <div class="grid-2">
+    <div class="card blue">
+      <div class="band blue">سمت عرضه و سرمایه در گردش | مدل B2B اسپیناس</div>
+      <div class="flow" style="margin-top:3mm;">
+        <div class="step">تولیدکننده / واردکننده</div><div class="step">پخش / عمده‌فروش</div><div class="step">فروشگاه / مجری خرد</div><div class="step">تسویه سررسیدی</div>
+      </div>
+    </div>
+    <div class="card teal">
+      <div class="band teal">سمت تقاضای نهایی | مدل B2C اسپیناس</div>
+      <div class="flow" style="margin-top:3mm;">
+        <div class="step">مشتری نهایی</div><div class="step">سبد کالا/خدمت</div><div class="step">پذیرنده تأییدشده</div><div class="step">اقساط ماهانه</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="core">
+    <div class="core-title">CONSTRUCTION COMMERCE + TRANSACTION DATA + CREDIT/RISK ENGINE + CONTROLLED PAYMENT + BANK/FINANCIER</div>
+    <div class="small muted" style="margin-top:2mm;">هویت و اختیار + شبکه عرضه + سفارش/خدمت + اعتبارسنجی + مجوز مصرف + شواهد تحویل + تسویه + وصول + اختلاف + داده عملکرد</div>
+  </div>
+
+  <div class="gate">
+    <strong>گیت Route 1 ← Route 3</strong>
+    <div class="small">با ورود پروژه/بسته چندمرحله‌ای، قرارداد وابسته، خط مبنا، پیشرفت، QC مرحله‌ای یا صورت‌وضعیت، باید Project ID، قرارداد، نقش‌ها و خط مبنا ایجاد شود. سابقه سفارش Route 1 حفظ می‌شود و ادغام خاموش ممنوع است.</div>
+  </div>
+
+  <div class="note" style="margin-top:3mm;"><b>Embedded Finance</b> روش ارائه اعتبار در دل خرید و عملیات است، نه یک طبقه مستقل وام و نه نام محصول مشتری‌محور. BNPL و SCF نیز در این معماری نام ریل مالی داخلی هستند.</div>
+  <footer class="footer"><span>v2.0 / ESPINAS NAMING APPLIED / EXTERNAL BRAND NAMES EXCLUDED</span><span>PAGE 3 / 20</span></footer>
+</section>
+<section class="page">
+  <header class="header">
+    <div>
+      <div class="head-title">Operating Model انتها‌به‌انتها Route 1</div>
+      <div class="head-sub">ماشین وضعیت، کنترل خروج هر مرحله، اختلاف، و جریان کالا/پول/داده</div>
+    </div>
+    <div class="head-meta">SAKHTNO / ROUTE 1 OPERATIONS<br>A3 LANDSCAPE / 4 OF 20</div>
+  </header>
+
+  <div class="grid-2" style="align-items:start;">
+    <div>
+      <div class="band teal" style="margin-bottom:3mm;"><span class="en">ROUTE 1A</span> | مدل B2C اسپیناس - اعتبار خرید مشتری نهایی</div>
+      <table class="proc">
+        <thead><tr><th>#</th><th>وضعیت</th><th>اقدام اصلی</th><th>کنترل خروج</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>LEAD</td><td>ثبت موبایل، رضایت‌نامه و نیاز خرید</td><td>موبایل و رضایت تأییدشده</td></tr>
+          <tr><td>2</td><td>KYC_PENDING</td><td>احراز هویت، حساب و مالکیت ابزار پرداخت</td><td>هویت یکتا و حساب معتبر</td></tr>
+          <tr><td>3</td><td>CREDIT_ASSESSMENT</td><td>رتبه بانکی، توان پرداخت، تقلب و affordability</td><td>Approve / Refer / Reject</td></tr>
+          <tr><td>4</td><td>OFFERED</td><td>نمایش سقف، دوره مصرف، اقساط و کل هزینه</td><td>پذیرش آگاهانه و ثبت disclosure</td></tr>
+          <tr><td>5</td><td>CONTRACTED</td><td>امضای دیجیتال و فعال‌سازی ابزار مصرف</td><td>قرارداد معتبر و limit فعال</td></tr>
+          <tr><td>6</td><td>CART_CREATED</td><td>انتخاب کالا/خدمت از پذیرنده مجاز</td><td>SKU/service، قیمت و موجودی معتبر</td></tr>
+          <tr><td>7</td><td>AUTHORIZED</td><td>کنترل حد، دسته، پذیرنده و ریسک تراکنش</td><td>توکن مجوز مصرف یک‌بارمصرف</td></tr>
+          <tr><td>8</td><td>DELIVERED_PENDING</td><td>ثبت تحویل کالا یا انجام خدمت</td><td>شواهد حداقلی کامل</td></tr>
+          <tr><td>9</td><td>ACCEPTED</td><td>تأیید مشتری یا پایان پنجره اعتراض</td><td>واجد شرایط تسویه</td></tr>
+          <tr><td>10</td><td>SETTLED</td><td>تسویه کنترل‌شده با پذیرنده</td><td>ثبت settlement ledger</td></tr>
+          <tr><td>11</td><td>REPAYING</td><td>وصول اقساط از حساب منتخب</td><td>Aging و collection state</td></tr>
+          <tr><td>12</td><td>CLOSED / REVOLVED</td><td>بستن یا آزادسازی مجدد حد طبق سیاست</td><td>ثبت رفتار بازپرداخت و limit update</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <div class="band blue" style="margin-bottom:3mm;"><span class="en">ROUTE 1B</span> | مدل B2B اسپیناس - اعتبار تجاری پذیرنده/مجری</div>
+      <table class="proc blue">
+        <thead><tr><th>#</th><th>وضعیت</th><th>اقدام اصلی</th><th>کنترل خروج</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>MERCHANT_LEAD</td><td>ثبت مالک، واحد کسب و نیاز سرمایه در گردش</td><td>مجوز و مالکیت قابل اثبات</td></tr>
+          <tr><td>2</td><td>KYB_PENDING</td><td>احراز کسب‌وکار، حساب، امضاداران و ذی‌نفع نهایی</td><td>KYB کامل و معتبر</td></tr>
+          <tr><td>3</td><td>CREDIT_ASSESSMENT</td><td>رتبه، فروش، گردش، موجودی، تضامین و تقلب</td><td>حد و tenor مصوب</td></tr>
+          <tr><td>4</td><td>CONTRACTED</td><td>قرارداد مالی/پلتفرمی و ثبت تضامین</td><td>خط اعتباری گردان فعال</td></tr>
+          <tr><td>5</td><td>SUPPLIER_ORDER</td><td>سفارش از عرضه‌کننده مجاز</td><td>فاکتور/PO و قیمت معتبر</td></tr>
+          <tr><td>6</td><td>AUTHORIZED</td><td>کنترل حد، دسته، قیمت، تمرکز و طرف معامله</td><td>Authorization معتبر</td></tr>
+          <tr><td>7</td><td>RECEIVED</td><td>تحویل و ثبت مقدار، کسری یا مرجوعی</td><td>مقدار پذیرفته‌شده قطعی</td></tr>
+          <tr><td>8</td><td>SUPPLIER_SETTLED</td><td>پرداخت طبق سررسید/قاعده به عرضه‌کننده</td><td>Ledger و تعهد بازپرداخت</td></tr>
+          <tr><td>9</td><td>DUE</td><td>اعلان سررسید و تأمین موجودی حساب</td><td>مبلغ قطعی و قابل وصول</td></tr>
+          <tr><td>10</td><td>REPAID</td><td>برداشت اصل و هزینه‌های مصوب</td><td>آزادسازی حد به میزان اصل</td></tr>
+          <tr><td>11</td><td>DELINQUENT</td><td>Freeze، پیگیری و اجرای waterfall وصول</td><td>Recovery action ثبت‌شده</td></tr>
+        </tbody>
+      </table>
+      <div class="note" style="margin-top:3mm;">الگوی مرجع نشان می‌دهد عملیات ممکن است بین پلتفرم و بانک تقسیم شود و کاملاً دیجیتال نباشد؛ در طراحی هدف، هر handoff باید owner، SLA و وضعیت قابل ردیابی داشته باشد.</div>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-top:5mm; align-items:start;">
+    <div class="card">
+      <h2>ماشین اختلاف، اصلاح و تسویه</h2>
+      <div class="state-row">
+        <div class="state">DELIVERED_PENDING</div><div class="arrow">→</div><div class="state">ACCEPTED</div><div class="arrow">→</div><div class="state">SETTLED</div>
+      </div>
+      <div class="grid-3 tiny" style="margin-top:3mm; text-align:center;">
+        <div class="card teal"><b>کسری جزئی</b><br>PARTIAL_ACCEPT<br>PARTIAL_SETTLEMENT</div>
+        <div class="card blue"><b>مرجوعی</b><br>RETURNED<br>REVERSAL</div>
+        <div class="card purple"><b>اختلاف</b><br>DISPUTED → HOLD<br>RESOLVED / CANCELLED</div>
+      </div>
+      <div class="note" style="margin-top:3mm;">برای خدمت اجرایی، swipe یا checkout به‌تنهایی مجوز تسویه نیست؛ scope محدود، شواهد انجام، تأیید مشتری و پنجره اعتراض لازم است.</div>
+    </div>
+    <div class="card navy">
+      <h2>سه جریان هم‌زمان</h2>
+      <div class="swim"><div class="label">کالا / خدمت</div><div class="line">تولیدکننده/پخش ← پذیرنده ← مشتری نهایی | مجری تأییدشده ← انجام خدمت</div></div>
+      <div class="swim"><div class="label">پول</div><div class="line">تأمین‌کننده مالی ← حساب تسویه کنترل‌شده ← پذیرنده/عرضه‌کننده | بازپرداخت ← مشتری/خریدار تجاری</div></div>
+      <div class="swim"><div class="label">داده</div><div class="line"><span class="en">KYC/KYB → Credit Decision → Order/Service Object → Authorization → Evidence → Settlement → Repayment/Dispute → Risk Update</span></div></div>
+      <div class="small muted" style="margin-top:3mm;">Transaction Object باید سفارش، طرفین، SKU/service، قیمت، مجوز، تحویل، اختلاف، تسویه و بازپرداخت را روی یک شناسه یکتا پیوند دهد.</div>
+    </div>
+  </div>
+  <footer class="footer"><span>v2.0 / DETAILED OPERATING MODEL</span><span>PAGE 4 / 20</span></footer>
+</section>
+<section class="page">
+  <header class="header">
+    <div>
+      <div class="head-title">مدل کسب‌وکار و سیاست محصول Route 1</div>
+      <div class="head-sub">ارزش برای بازیگران و منطق Adopt / Adapt / Build / Reject</div>
+    </div>
+    <div class="head-meta">SAKHTNO / BUSINESS MODEL<br>A3 LANDSCAPE / 5 OF 20</div>
+  </header>
+
+  <h2>بازیگر، مسئله و ارزش پیشنهادی</h2>
+  <div class="grid-5" style="display:grid; grid-template-columns:repeat(5,1fr); gap:3mm;">
+    <div class="card teal value"><b>مشتری نهایی</b><div class="tiny">کمبود نقدینگی و ریسک فروشنده نامعتبر</div><div class="small" style="margin-top:2mm;">اعتبار شفاف، شبکه معتبر، سبد کالا/خدمت و بازپرداخت قابل فهم</div></div>
+    <div class="card blue value"><b>فروشگاه / مجری</b><div class="tiny">موجودی ناکافی و سرمایه در گردش محدود</div><div class="small" style="margin-top:2mm;">خط گردان خرید، مشتری دارای اعتبار و افزایش conversion/سبد</div></div>
+    <div class="card navy value"><b>عرضه‌کننده</b><div class="tiny">فروش اعتباری پرریسک و وصول پراکنده</div><div class="small" style="margin-top:2mm;">فروش بیشتر، خریدار اعتبارسنجی‌شده و تسویه کنترل‌شده</div></div>
+    <div class="card purple value"><b>بانک / فاینانسر</b><div class="tiny">مصرف نامشخص اعتبار و نبود visibility</div><div class="small" style="margin-top:2mm;">خرج‌کرد حلقه‌بسته، شواهد تراکنش و limit management پویا</div></div>
+    <div class="card amber value"><b>ساخت‌نو / اسپیناس</b><div class="tiny">نیاز به تراکنش تکرارشونده و داده قابل اتکا</div><div class="small" style="margin-top:2mm;">کارمزد عملیاتی، شبکه عرضه، داده ریسک و رشد کنترل‌شده به Route 3</div></div>
+  </div>
+
+  <div class="grid-2" style="margin-top:5mm; align-items:start;">
+    <div>
+      <h2>ماتریس Adopt / Adapt / Build / Reject</h2>
+      <div class="matrix">
+        <div class="mcol adopt"><h3>ADOPT</h3><ul class="compact-list tiny"><li>اعتبار حلقه‌بسته و غیرنقدی</li><li>دو محصول B2C/B2B روی هسته مشترک</li><li>تفکیک هزینه بانک و پلتفرم</li><li>اعتبار گردان و آزادسازی اصل</li><li>وصول خودکار و freeze حد</li></ul></div>
+        <div class="mcol adapt"><h3>ADAPT</h3><ul class="compact-list tiny"><li>کارت فقط یکی از کانال‌ها</li><li>امتیاز بانکی + affordability + رفتار</li><li>شبکه تخصصی ساختمان و لجستیک</li><li>تحویل با SKU، مقدار، زمان و عکس</li><li>tenor بر اساس دسته و ریسک</li></ul></div>
+        <div class="mcol build"><h3>BUILD</h3><ul class="compact-list tiny"><li>Transaction Object یکپارچه</li><li>اعتبار خدمت اجرایی محدود</li><li>partial settlement و reversal</li><li>dispute workflow و hold</li><li>گیت رسمی تبدیل به Route 3</li></ul></div>
+        <div class="mcol reject"><h3>REJECT</h3><ul class="compact-list tiny"><li>پرداخت نقدی آزاد به مشتری</li><li>POS به‌عنوان تنها evidence</li><li>ادغام خودکار خریدها در پروژه</li><li>ماشین وضعیت مشترک B2C/B2B</li><li>یک tenor برای همه دسته‌ها</li></ul></div>
+      </div>
+    </div>
+    <div>
+      <h2>سیاست محصول و اعتبار</h2>
+      <div class="grid-2">
+        <div class="card teal">
+          <h3>مدل B2C اسپیناس</h3>
+          <ul class="compact-list small"><li>حد اولیه محافظه‌کارانه و افزایش رفتاری</li><li>دوره مصرف محدود پس از تخصیص</li><li>tenor متناسب با مبلغ و دسته</li><li>ممنوعیت cash-out، خرید از خود و تراکنش حلقوی</li><li>سقف پذیرنده، SKU و velocity</li><li>تسویه خدمت پس از evidence</li><li>توقف limit در delinquency یا dispute غیرعادی</li></ul>
+        </div>
+        <div class="card blue">
+          <h3>مدل B2B اسپیناس</h3>
+          <ul class="compact-list small"><li>خط گردان با utilization cap</li><li>حد مبتنی بر فروش، گردش و کیفیت تسویه</li><li>supplier concentration limit</li><li>tenor مبتنی بر چرخه فروش دسته</li><li>اصلاح حد پس از کسری/مرجوعی/افت گردش</li><li>مصرف فقط در شبکه مجاز</li><li>ممنوعیت مصرف برای پروژه Route 3</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer"><span>v2.0 / BUSINESS MODEL AND PRODUCT POLICY</span><span>PAGE 5 / 20</span></footer>
+</section>
+<section class="page">
+  <header class="header">
+    <div>
+      <div class="head-title">مسئولیت، اقتصاد واحد و کنترل ریسک Route 1</div>
+      <div class="head-sub">مرز پاسخگویی، جریان‌های درآمد/هزینه و ریسک‌های اصلی طراحی</div>
+    </div>
+    <div class="head-meta">SAKHTNO / GOVERNANCE AND RISK<br>A3 LANDSCAPE / 6 OF 20</div>
+  </header>
+
+  <div class="grid-2" style="align-items:start;">
+    <div>
+      <h2>مرز مسئولیت عملیاتی</h2>
+      <table>
+        <thead><tr><th>فعالیت</th><th>ساخت‌نو / اسپیناس</th><th>بانک / فاینانسر</th><th>شبکه عرضه</th><th>مشتری</th></tr></thead>
+        <tbody>
+          <tr><td>تجربه و شبکه</td><td><b>مالک</b></td><td>سیاست/مشورت</td><td>مشارکت و داده</td><td>بازخورد</td></tr>
+          <tr><td>KYC/KYB</td><td>هماهنگ‌سازی</td><td><b>تأیید سیاستی</b></td><td>مدارک</td><td>مدارک/رضایت</td></tr>
+          <tr><td>تصمیم نهایی اعتبار</td><td>داده و پیشنهاد</td><td><b>پاسخگو</b></td><td>-</td><td>پذیرش شرایط</td></tr>
+          <tr><td>قیمت و موجودی</td><td>کنترل بازارگاه</td><td>-</td><td><b>پاسخگو</b></td><td>انتخاب</td></tr>
+          <tr><td>مجوز مصرف</td><td>اجرا طبق policy</td><td>تأمین limit</td><td>پذیرش token</td><td>تأیید خرید</td></tr>
+          <tr><td>تحویل/کیفیت</td><td>ثبت evidence/اختلاف</td><td>-</td><td><b>پاسخگو</b></td><td>تأیید/اعتراض</td></tr>
+          <tr><td>تسویه و وصول</td><td>orchestration/ledger</td><td><b>پاسخگو طبق قرارداد</b></td><td>دریافت/همکاری</td><td>بازپرداخت</td></tr>
+        </tbody>
+      </table>
+      <div class="note" style="margin-top:2.5mm;">زیان اعتباری، تقلب، chargeback و اختلاف تجاری باید قراردادی تفکیک شوند؛ وجود بانک پشت محصول به‌تنهایی تخصیص ریسک را روشن نمی‌کند.</div>
+    </div>
+    <div>
+      <h2>درآمد، هزینه و اقتصاد واحد</h2>
+      <div class="grid-2 small">
+        <div class="card"><h3>جریان درآمد پیشنهادی</h3><ul class="compact-list"><li>کارمزد orchestration از اعتبار مصرف‌شده</li><li>Merchant Service Fee بر تراکنش موفق</li><li>Supplier Network Fee برای سفارش/تسویه/گزارش</li><li>هزینه کنترل تحویل، نصب یا تأیید انجام</li><li>Revenue Share فقط طبق قرارداد و مقررات</li></ul></div>
+        <div class="card"><h3>ساختار هزینه</h3><ul class="compact-list"><li>جذب، KYC/KYB و اعتبارسنجی</li><li>اتصال بانکی، ابزار مصرف و پرداخت</li><li>تقلب، عملیات، اختلاف و پشتیبانی</li><li>مشوق شبکه عرضه و لجستیک</li><li>فناوری، امنیت، داده و انطباق</li></ul></div>
+      </div>
+      <div class="formula" style="margin-top:3mm;">NET REVENUE = Platform Fee + Merchant/Supplier Fee + Contracted Revenue Share - Bank/Payment Cost - CAC Allocation - KYC/Credit Cost - Operations - Fraud/Dispute Loss - Contracted Credit Loss</div>
+      <div class="grid-3" style="margin-top:3mm; text-align:center;"><div class="card teal small"><b>Contribution Margin</b><br><span class="en">after expected loss &gt; 0</span></div><div class="card blue small"><b>LTV / CAC</b><br><span class="en">≥ 3</span></div><div class="card purple small"><b>Payback</b><br><span class="en">≤ 12 months</span></div></div>
+    </div>
+  </div>
+
+  <h2 style="margin-top:4mm;">ریسک‌های اصلی و کنترل طراحی</h2>
+  <table class="risk">
+    <thead><tr><th>ریسک</th><th>نمونه</th><th>کنترل</th></tr></thead>
+    <tbody>
+      <tr><td>انحراف مصرف</td><td>تبدیل اعتبار به نقد یا کالای غیرمجاز</td><td>شبکه حلقه‌بسته، whitelist SKU/service، توکن یک‌بارمصرف</td></tr>
+      <tr><td>تبانی</td><td>تراکنش صوری و تقسیم وجه</td><td>velocity، ارتباط طرفین، الگوی غیرعادی و hold تسویه</td></tr>
+      <tr><td>تحویل ناقص</td><td>کسری مقدار یا عدم تطابق مشخصات</td><td>evidence، تأیید مشتری و partial settlement</td></tr>
+      <tr><td>کیفیت خدمت</td><td>اجرای ناقص نصب یا تعمیر</td><td>scope استاندارد، مجری تأییدشده، acceptance و dispute</td></tr>
+      <tr><td>نکول</td><td>عدم موجودی حساب در سررسید</td><td>affordability، auto-debit، reminder، freeze و waterfall وصول</td></tr>
+      <tr><td>تمرکز شبکه</td><td>وابستگی به چند فروشنده/عرضه‌کننده</td><td>concentration limit و توسعه چندمنبعی</td></tr>
+      <tr><td>قیمت‌سازی</td><td>افزایش قیمت در خرید اعتباری</td><td>قیمت مرجع، مقایسه، disclosure و audit</td></tr>
+      <tr><td>عبور پنهان به پروژه</td><td>چند سفارش وابسته برای یک کار کامل</td><td>aggregation rules و گیت Route 1 → Route 3</td></tr>
+      <tr><td>حریم خصوصی</td><td>استفاده ثانویه از داده مالی/ساختمانی</td><td>consent، purpose limitation و access control</td></tr>
+    </tbody>
+  </table>
+  <footer class="footer"><span>v2.0 / GOVERNANCE, ECONOMICS AND RISK</span><span>PAGE 6 / 20</span></footer>
+</section>
+<section class="page">
+  <header class="header">
+    <div>
+      <div class="head-title">MVP، KPI و گیت‌های تصمیم Route 1</div>
+      <div class="head-sub">توالی پایلوت، معیارهای مقیاس و مسائل باز قراردادی</div>
+    </div>
+    <div class="head-meta">SAKHTNO / EXECUTION CONTROL<br>A3 LANDSCAPE / 7 OF 20</div>
+  </header>
+
+  <h2>توالی ورود به بازار و محدوده MVP</h2>
+      <div class="timeline">
+        <div class="phase p0"><b>P0 | شبکه</b><p>پذیرندگی، قیمت/موجودی، checkout، تحویل و تسویه نقدی/عادی</p></div>
+        <div class="phase p1"><b>P1 | B2C</b><p>مدل B2C اسپیناس؛ اعتبار محدود مشتری نهایی و بازپرداخت اقساطی</p></div>
+        <div class="phase p2"><b>P2 | B2B</b><p>مدل B2B اسپیناس؛ خط گردان منتخب برای خرید از عرضه‌کننده</p></div>
+        <div class="phase p3"><b>P3 | Service</b><p>خدمت اجرایی محدود با evidence و settlement کنترل‌شده</p></div>
+      </div>
+      <div class="grid-2" style="margin-top:3mm;">
+        <div class="card teal small"><h3>MVP-1</h3><ul class="compact-list"><li>یک شهر/منطقه و یک فاینانسر</li><li>۱۰ تا ۲۰ پذیرنده فعال</li><li>۲ تا ۳ دسته کم‌اختلاف</li><li>OTP/QR/token و ثبت تحویل</li><li>تسویه/بازپرداخت خودکار</li><li>ریسک و reconciliation روزانه</li></ul></div>
+        <div class="card blue small"><h3>MVP-1B</h3><ul class="compact-list"><li>چند پذیرنده منتخب</li><li>۳ تا ۵ عرضه‌کننده اصلی</li><li>فاکتور و تأیید دریافت استاندارد</li><li>limit/tenor محدود</li><li>بدون پروژه، صورت‌وضعیت یا خدمت چندمرحله‌ای</li></ul></div>
+      </div>
+  <div class="note" style="margin-top:3mm;"><b>خارج از MVP:</b> پروژه کامل/بسته بازسازی، آزادسازی نقدی، milestone چندمرحله‌ای، لجستیک چندحلقه‌ای، اعتبار باز همه کالاها و پذیرنده فاقد قرارداد/KYB.</div>
+
+  <h2 style="margin-top:5mm;">داشبورد KPI کنترل</h2>
+  <div class="grid-4">
+    <div class="card teal kpi"><h3>قیف مشتری</h3><div class="tiny"><span class="pill">KYC Completion</span><span class="pill">Approval / Referral</span><span class="pill">Time to Decision</span><span class="pill">Activation</span><span class="pill">First Purchase</span><span class="pill">Limit Utilization</span></div></div>
+    <div class="card blue kpi"><h3>تراکنش و شبکه</h3><div class="tiny"><span class="pill">Credit GMV</span><span class="pill">Average Order</span><span class="pill">Active Merchants</span><span class="pill">Repeat 30/60/90</span><span class="pill">Acceptance</span><span class="pill">Dispute / Return</span><span class="pill">Concentration</span></div></div>
+    <div class="card purple kpi"><h3>اعتبار و وصول</h3><div class="tiny"><span class="pill">On-time Payment</span><span class="pill">DPD 1/7/30/60</span><span class="pill">Roll Rate</span><span class="pill">Cure Rate</span><span class="pill">Net Credit Loss</span><span class="pill">Fraud / GMV</span></div></div>
+    <div class="card amber kpi"><h3>اقتصاد</h3><div class="tiny"><span class="pill">Net Take Rate</span><span class="pill">Contribution Margin</span><span class="pill">CAC by Segment</span><span class="pill">LTV/CAC</span><span class="pill">Cost per Approval</span><span class="pill">Cost per Transaction</span></div></div>
+  </div>
+
+  <div class="grid-2" style="margin-top:5mm; align-items:start;">
+    <div>
+      <h2>گیت‌های تصمیم</h2>
+      <div class="grid-4">
+        <div class="card gate-card"><span class="n">A</span><h3>Product Ready</h3><div class="tiny">سگمنت، دسته، سقف، tenor، pricing، disclosure، lender-of-record، risk owner و refund تست‌شده</div></div>
+        <div class="card gate-card"><span class="n">B</span><h3>Network Ready</h3><div class="tiny">KYB شبکه، قیمت/موجودی/تحویل قابل ثبت، reconciliation و settlement آزمایش‌شده</div></div>
+        <div class="card gate-card"><span class="n">C</span><h3>Pilot Launch</h3><div class="tiny">تست end-to-end، fraud rules، limit controls، وصول، پشتیبانی و escalation با owner</div></div>
+        <div class="card gate-card"><span class="n">D</span><h3>Scale</h3><div class="tiny">margin پس از زیان مثبت، delinquency/dispute زیر حد، repeat/utilization اقتصادی و شبکه متنوع</div></div>
+      </div>
+    </div>
+    <div>
+      <h2>موارد باز پیش از قرارداد نهایی</h2>
+      <div class="grid-2 tiny">
+        <div class="card"><b>اقتصاد و ریسک</b><ol style="margin:2mm 0 0; padding-right:5mm;"><li>سهم دقیق فاینانسر و پلتفرم</li><li>Merchant/Supplier fee</li><li>مالک حقوقی مطالبات</li><li>تقسیم زیان نکول و تقلب</li><li>فرمول limit و affordability</li></ol></div>
+        <div class="card"><b>عملیات و داده</b><ol start="6" style="margin:2mm 0 0; padding-right:5mm;"><li>نرخ approval، utilization و DPD</li><li>refund، لغو، مرجوعی و chargeback</li><li>reconciliation کارت/OTP/POS/کیف پول</li><li>SLA شبکه، فاینانسر و پشتیبانی</li><li>زمان و قاعده تسویه پذیرنده</li></ol></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note" style="margin-top:4mm;"><b>تصمیم‌های لازم برای قفل‌کردن Pilot:</b> سگمنت شروع Route 1A؛ ۲ تا ۳ دسته نخست؛ زمان فعال‌سازی Route 1B؛ نقش ساخت‌نو/اسپیناس در ریسک؛ فاینانسر و مدل تسویه؛ سقف/tenor/افزایش limit؛ evidence حداقلی تحویل؛ و آستانه رسمی تبدیل به Route 3.</div>
+  <footer class="footer"><span>v2.0 / PILOT AND CONTROL FRAMEWORK</span><span>PAGE 7 / 20</span></footer>
+</section>
+<section class="page">
+  <header class="header">
+    <div>
+      <div class="head-title">کالبدشکافی الگوی مبنا و ترجمه به طراحی اسپیناس</div>
+      <div class="head-sub">پارامترهای مشاهده‌شده، معنای عملیاتی و مرز میان الگوی مرجع و تصمیم محصول</div>
+    </div>
+    <div class="head-meta">SAKHTNO / REVERSE BENCHMARK<br>A3 LANDSCAPE / 8 OF 20</div>
+  </header>
+
+  <div class="note" style="margin-bottom:3mm;"><b>قاعده نام‌گذاری:</b> تمام یافته‌های بنچ‌مارک در این صفحه با نام‌های داخلی «اسپیناس»، «مدل B2C اسپیناس»، «مدل B2B اسپیناس» و «اسپیناس کارت» بیان شده‌اند. این بازنام‌گذاری به معنی تأیید نهایی پارامترها یا ادعای عملیاتی‌شدن محصول نیست.</div>
+
+  <table>
+    <thead><tr><th style="width:40mm;">مولفه</th><th style="width:168mm;">الگوی مشاهده‌شده با نام‌گذاری اسپیناس</th><th>معنای اقتصادی/عملیاتی برای Route 1 ساخت‌نو</th></tr></thead>
+    <tbody>
+      <tr><td><b>معماری محصول</b></td><td>مدل B2C اسپیناس برای اشخاص؛ مدل B2B اسپیناس برای فروشگاه‌ها/کسب‌وکارها؛ مسیر مجزای اشخاص حقوقی</td><td>یک هسته اعتباری با قرارداد، ریسک و تجربه تفکیک‌شده بر اساس سگمنت</td></tr>
+      <tr><td><b>اعتبار B2C</b></td><td>اعتبار خرید محدود به پذیرندگان طرف قرارداد؛ بازپرداخت مشاهده‌شده در چهار قسط</td><td>BNPL حلقه‌بسته؛ اعتبار به وجه نقد آزاد تبدیل نمی‌شود</td></tr>
+      <tr><td><b>ابزار مصرف B2C</b></td><td>اسپیناس کارت یا کدملی/رمز یک‌بارمصرف؛ در طراحی هدف QR و token نیز قابل افزودن است</td><td>چندکاناله‌بودن مصرف و کاهش وابستگی به کارت فیزیکی</td></tr>
+      <tr><td><b>اعتبارسنجی B2C</b></td><td>احراز هویت، رتبه بانکی A/B و امضای دیجیتال؛ الگوی بدون ضامن/چک برای ریسک‌های کم‌تر</td><td>اصطکاک کم برای مشتری کم‌ریسک؛ مسیر Refer/Reject یا تضمین جایگزین برای سایرین</td></tr>
+      <tr><td><b>وصول B2C</b></td><td>برداشت خودکار از حساب منتخب؛ مسدودی حد و هزینه/جریمه طبق قرارداد در تأخیر</td><td>وصول متصل به ریل بانکی و توقف فوری drawdown جدید</td></tr>
+      <tr><td><b>اعتبار B2B</b></td><td>خط اعتباری گردان برای خرید فروشگاه/مجری از عرضه‌کنندگان طرف قرارداد</td><td>تأمین سرمایه در گردش، افزایش تکرار خرید و کنترل محل مصرف</td></tr>
+      <tr><td><b>صدور B2B</b></td><td>ثبت هویت مالک و واحد کسب، اعتبارسنجی، قرارداد و تضامین؛ امکان handoff به شعبه/فاینانسر</td><td>فرایند ممکن است تمام‌دیجیتال نباشد؛ owner و SLA هر handoff باید شفاف باشد</td></tr>
+      <tr><td><b>مصرف B2B</b></td><td>اسپیناس کارت روی POS مجاز یا درگاه آنلاین؛ تحویل در برابر فاکتور/PO</td><td>اتصال drawdown به معامله واقعی، عرضه‌کننده مجاز و شواهد دریافت</td></tr>
+      <tr><td><b>سررسید B2B</b></td><td>سررسید با عرضه‌کننده/فاکتور تعیین می‌شود؛ مبلغ مصرف‌شده و هزینه‌های مصوب وصول می‌شود</td><td>tenor مبتنی بر معامله و چرخه کالا، نه یک وام ثابت عمومی</td></tr>
+      <tr><td><b>تجدید حد</b></td><td>اصل بازپرداخت‌شده دوباره به حد اعتبار برمی‌گردد</td><td>خط گردان، افزایش LTV و امکان limit management بر اساس رفتار</td></tr>
+      <tr><td><b>ارزش عرضه‌کننده</b></td><td>افزایش فروش، کاهش ریسک وصول، مشتریان اعتبارسنجی‌شده و تسویه کنترل‌شده</td><td>عرضه‌کننده نیز مشتری ارزش است؛ مدل صرفاً سمت خریدار نیست</td></tr>
+      <tr><td><b>لایه عملیاتی</b></td><td>اپلیکیشن/وب‌اپ، کیف پول، سفارش، حساب، قرارداد/امضای دیجیتال و اسپیناس کارت</td><td>اسپیناس باید orchestration اعتبار، خرید، پرداخت، قرارداد و تسویه باشد</td></tr>
+      <tr><td><b>درآمد</b></td><td>تفکیک هزینه مالی فاینانسر و کارمزد پلتفرم؛ امکان آبونمان/هزینه اقساط یا خدمات شبکه</td><td>درآمد باید از مصرف واقعی و خدمت قراردادی باشد؛ فرمول و سهم دقیق هنوز نیازمند قرارداد است</td></tr>
+    </tbody>
+  </table>
+
+  <div class="grid-3" style="margin-top:4mm; align-items:stretch;">
+    <div class="card amber">
+      <h3>پارامترهای زمان‌مند</h3>
+      <div class="small">در نمونه‌های عمومی، یک نسخه قدیمی سقف <b>۲۰۰ میلیون ریال و ۳ قسط</b> و نسخه جدیدتر سقف <b>۵۰ میلیون تومان و ۴ قسط</b> نشان داده است. سقف، تعداد اقساط، tenor و pricing باید نسخه‌پذیر و قابل تنظیم باشند و در کد hard-code نشوند.</div>
+    </div>
+    <div class="card teal">
+      <h3>افزوده اختصاصی ساختمان</h3>
+      <div class="small">SKU/مقدار/گیرنده/زمان/عکس، پنجره اعتراض، خدمت محدود و scope استاندارد، partial settlement، reversal، کنترل قیمت، لجستیک و گیت عبور پنهان به پروژه.</div>
+    </div>
+    <div class="card purple">
+      <h3>مرز قطعیت</h3>
+      <div class="small">سهم کارمزد، lender-of-record، مالک مطالبات، زیان نکول/تقلب، نرخ approval/DPD، refund/chargeback، reconciliation و SLA از داده عمومی قطعی نیست و باید در قرارداد، تست واقعی یا مصاحبه بسته شود.</div>
+    </div>
+  </div>
+
+  <div class="core" style="margin-top:4mm;">
+    <div class="core-title">ESPINAS TARGET STACK: APP/WEB + WALLET/ACCOUNT + ORDER/SERVICE OBJECT + E-SIGN + ESPINAS CARD/TOKEN + SETTLEMENT + COLLECTION + RISK DATA</div>
+    <div class="small muted" style="margin-top:1.5mm;">هدف کپی‌کردن پارامترهای ثابت نیست؛ هدف انتقال منطق اعتبار حلقه‌بسته و شبکه دوسویه، سپس افزودن شواهد و کنترل‌های تخصصی ساختمان است.</div>
+  </div>
+  <footer class="footer"><span>v2.0 / REVERSE BENCHMARK RECAST AS ESPINAS</span><span>PAGE 8 / 20</span></footer>
+</section>
+<section class="page"><header class="header"><div><div class="head-title">Route 2 | مدل B2B اسپیناس</div><div class="head-sub">اعتبار تجاری برای فروشگاه، مجری خرد و خریدار کسب‌وکاری</div></div><div class="head-meta">SAKHTNO / ROUTE 2 B2B<br>A3 LANDSCAPE / 9 OF 20</div></header>
+<div class="decision"><strong>تعریف محصول</strong><div>کسب‌وکار برای خرید از عرضه‌کننده مجاز، اعتبار حلقه‌بسته و قابل‌کنترل دریافت می‌کند. وجه نقد آزاد پرداخت نمی‌شود؛ هر drawdown به Order، Invoice یا PO واقعی متصل است و پس از تسویه اصل، حد اعتبار طبق policy آزاد می‌شود.</div></div>
+<h2>Operating Model انتها‌به‌انتها</h2><table class="blue proc"><thead><tr><th>#</th><th>وضعیت</th><th>اقدام اصلی</th><th>کنترل خروج</th></tr></thead><tbody><tr><td>1</td><td>MERCHANT_LEAD</td><td>ثبت مالک، واحد کسب و نیاز سرمایه در گردش</td><td>مجوز و مالکیت قابل اثبات</td></tr><tr><td>2</td><td>KYB_PENDING</td><td>احراز کسب‌وکار، حساب، امضاداران و ذی‌نفع نهایی</td><td>KYB کامل و معتبر</td></tr><tr><td>3</td><td>CREDIT_ASSESSMENT</td><td>بررسی فروش، گردش، موجودی، تضامین و تقلب</td><td>حد و tenor مصوب</td></tr><tr><td>4</td><td>CONTRACTED</td><td>قرارداد مالی/پلتفرمی و ثبت تضامین</td><td>خط گردان فعال</td></tr><tr><td>5</td><td>SUPPLIER_ORDER</td><td>سفارش از عرضه‌کننده مجاز</td><td>فاکتور/PO و قیمت معتبر</td></tr><tr><td>6</td><td>AUTHORIZED</td><td>کنترل حد، قیمت، تمرکز و طرف معامله</td><td>Authorization معتبر</td></tr><tr><td>7</td><td>RECEIVED</td><td>تحویل و ثبت مقدار، کسری یا مرجوعی</td><td>مقدار پذیرفته‌شده</td></tr><tr><td>8</td><td>SUPPLIER_SETTLED</td><td>پرداخت طبق سررسید به عرضه‌کننده</td><td>Ledger و تعهد بازپرداخت</td></tr><tr><td>9</td><td>DUE</td><td>اعلان سررسید و تأمین موجودی حساب</td><td>مبلغ قطعی قابل وصول</td></tr><tr><td>10</td><td>REPAID</td><td>برداشت اصل و هزینه مصوب</td><td>آزادسازی حد به میزان اصل</td></tr><tr><td>11</td><td>DELINQUENT</td><td>Freeze، پیگیری و waterfall وصول</td><td>Recovery action ثبت‌شده</td></tr></tbody></table>
+<div class="grid2" style="margin-top:4mm;"><div class="card blue"><h2>پیشنهاد ارزش</h2><ul class="compact small"><li>خرید فوری از شبکه معتبر</li><li>کاهش فشار نقدینگی و حفظ چرخه فروش</li><li>تسهویه قابل پیش‌بینی برای عرضه‌کننده</li><li>داده واقعی برای بازتنظیم limit</li></ul></div><div class="card amber"><h2>کنترل‌های غیرقابل مذاکره</h2><ul class="compact small"><li>ممنوعیت cash-out و خرید از خود</li><li>whitelist عرضه‌کننده و کالای مجاز</li><li>سقف concentration و velocity</li><li>freeze در تأخیر، تقلب یا کسری</li></ul></div></div><footer class="footer"><span>v2.0 / ROUTE 2 B2B OPERATING MODEL</span><span>PAGE 9 / 20</span></footer></section>
+<section class="page"><header class="header"><div><div class="head-title">Route 2 | KYB، اعتبارسنجی و طراحی limit</div><div class="head-sub">از پذیرش کسب‌وکار تا تعیین سقف، tenor و قواعد استفاده</div></div><div class="head-meta">SAKHTNO / ROUTE 2 RISK<br>A3 LANDSCAPE / 10 OF 20</div></header>
+<div class="stategrid"><div class="state blue">LEAD<br>سرنخ</div><div class="state blue">KYB_READY<br>احراز معتبر</div><div class="state teal">ASSESSED<br>ارزیابی‌شده</div><div class="state purple">APPROVED<br>مصوب</div><div class="state purple">ACTIVE<br>فعال</div><div class="state teal">UTILIZED<br>مصرف‌شده</div><div class="state teal">REPAID<br>بازپرداخت</div><div class="state amber">FROZEN<br>متوقف</div></div>
+<div class="grid2" style="margin-top:4mm;align-items:start;"><div><h2>پرونده حداقلی کسب‌وکار</h2><table><thead><tr><th>موضوع</th><th>داده لازم</th><th>کنترل</th></tr></thead><tbody><tr><td>هویت</td><td>شناسه، مالک، امضادار، ذی‌نفع</td><td>تطبیق KYB و اختیار</td></tr><tr><td>فروش</td><td>فروش، گردش، الگوی سفارش و مشتریان</td><td>منبع معتبر و دوره زمانی</td></tr><tr><td>عملیات</td><td>دسته کالا، تأمین‌کنندگان، چرخه خرید</td><td>تناسب با شبکه</td></tr><tr><td>تعهدات</td><td>بدهی، سررسید، تضامین و سوابق نکول</td><td>توان بازپرداخت</td></tr><tr><td>تقلب</td><td>ارتباط طرفین، خرید از خود، anomaly</td><td>rule و بررسی انسانی</td></tr></tbody></table></div><div><h2>منطق تعیین limit</h2><div class="grid2"><div class="card blue role"><b>Base Limit</b><div class="tiny">بر اساس فروش اثبات‌شده، چرخه خرید و توان پرداخت</div></div><div class="card teal role"><b>Utilization Cap</b><div class="tiny">سقف مصرف هم‌زمان نسبت به limit مصوب</div></div><div class="card purple role"><b>Supplier Cap</b><div class="tiny">حد تمرکز روی یک عرضه‌کننده یا دسته</div></div><div class="card amber role"><b>Dynamic Update</b><div class="tiny">افزایش/کاهش پس از رفتار تسویه، مرجوعی و افت گردش</div></div></div><div class="note" style="margin-top:3mm;"><b>اصل اعتبار:</b> limit حق برداشت نقدی نیست؛ ظرفیت مصرف‌شده برای معامله معتبر است و با اصل بازپرداخت‌شده آزاد می‌شود.</div></div></div>
+<h2 style="margin-top:4mm;">گیت‌های تصمیم</h2><div class="grid4"><div class="card role"><h3>Gate A</h3><div class="tiny">KYB کامل، حساب معتبر و مالک ابزار مشخص</div></div><div class="card role"><h3>Gate B</h3><div class="tiny">فروش/گردش و supplier relationship قابل اثبات</div></div><div class="card role"><h3>Gate C</h3><div class="tiny">limit، tenor، fee، reserve و recourse مصوب</div></div><div class="card role"><h3>Gate D</h3><div class="tiny">رفتار واقعی و پرداخت به‌موقع برای افزایش حد</div></div></div><footer class="footer"><span>v2.0 / ROUTE 2 KYB AND CREDIT POLICY</span><span>PAGE 10 / 20</span></footer></section>
+<section class="page"><header class="header"><div><div class="head-title">Route 2 | شبکه عرضه، سفارش و کنترل مصرف</div><div class="head-sub">اعتبار تجاری فقط در زنجیره مجاز و علیه معامله واقعی مصرف می‌شود</div></div><div class="head-meta">SAKHTNO / ROUTE 2 NETWORK<br>A3 LANDSCAPE / 11 OF 20</div></header>
+<h2>زنجیره معامله B2B</h2><div class="flow"><div class="step">نیاز کسب‌وکار</div><div class="step">Supplier Match</div><div class="step">Quote / PO</div><div class="step">Authorization</div><div class="step">Delivery</div><div class="step">Invoice Match</div><div class="step">Settlement</div><div class="step">Repayment</div></div>
+<div class="grid3" style="margin-top:4mm;"><div class="card blue"><div class="band blue">NETWORK</div><h3 style="margin-top:2mm;">پذیرنده و عرضه‌کننده</h3><ul class="compact small"><li>KYB و مالکیت قابل اثبات</li><li>قیمت، موجودی و شرایط تحویل</li><li>حساب تسویه و قرارداد شبکه</li><li>سابقه کیفیت و برگشتی</li></ul></div><div class="card teal"><div class="band teal">TRANSACTION OBJECT</div><h3 style="margin-top:2mm;">سفارش قابل‌کنترل</h3><ul class="compact small"><li>شناسه یکتا و زمان</li><li>SKU، مقدار، قیمت و تخفیف</li><li>طرفین و limit مصرف</li><li>تحویل، کسری و مرجوعی</li></ul></div><div class="card purple"><div class="band purple">CONTROLLED USE</div><h3 style="margin-top:2mm;">مصرف اعتبار</h3><ul class="compact small"><li>بدون cash-out</li><li>بدون خرید از خود</li><li>سقف category و velocity</li><li>hold در anomaly</li></ul></div></div>
+<div class="grid2" style="margin-top:4mm;align-items:start;"><div><h2>کنترل‌های سفارش</h2><table><thead><tr><th>کنترل</th><th>قاعده Route 2</th></tr></thead><tbody><tr><td>قیمت</td><td>مقایسه با قیمت شبکه و تشخیص انحراف غیرعادی</td></tr><tr><td>موجودی</td><td>تأیید ظرفیت و جلوگیری از سفارش صوری</td></tr><tr><td>تمرکز</td><td>سقف برای supplier، buyer، category و منطقه</td></tr><tr><td>تحویل</td><td>مقدار، گیرنده، زمان، رسید و اختلاف</td></tr><tr><td>مرجوعی</td><td>reversal، اصلاح exposure و ثبت اثر بر limit</td></tr></tbody></table></div><div class="card amber"><h2>Reject / Adapt / Copy</h2><ul class="compact small"><li><b>Reject:</b> پرداخت نقدی آزاد، سفارش بدون supplier معتبر و معامله با طرف مرتبط پنهان</li><li><b>Adapt:</b> اقلام کم‌ریسک، قرارداد شبکه، تسویه کنترل‌شده و evidence تحویل</li><li><b>Copy:</b> تجربه خرید اعتباری، authorization و ledger رفتار</li></ul></div></div><div class="note" style="margin-top:3mm;"><b>مرز با Route 3:</b> اگر سفارش منفرد بخشی از یک بسته چندمرحله‌ای و قرارداد پروژه باشد، باید به Project ID و lifecycle Route 3 ارجاع داده شود.</div><footer class="footer"><span>v2.0 / ROUTE 2 NETWORK AND CONTROLLED USE</span><span>PAGE 11 / 20</span></footer></section>
+<section class="page"><header class="header"><div><div class="head-title">Route 2 | تسویه، وصول و خط اعتبار گردان</div><div class="head-sub">از drawdown تا بازگشت اصل و آزادسازی ظرفیت مصرف</div></div><div class="head-meta">SAKHTNO / ROUTE 2 SETTLEMENT<br>A3 LANDSCAPE / 12 OF 20</div></header>
+<h2>Settlement Waterfall</h2><div class="flow"><div class="step">Approved Limit</div><div class="step">Drawdown</div><div class="step">Supplier Pay</div><div class="step">Delivery / Match</div><div class="step">Due Date</div><div class="step">Collection</div><div class="step">Principal Repaid</div><div class="step">Limit Release</div></div>
+<div class="grid2" style="margin-top:4mm;align-items:start;"><div><h2>رویدادهای مالی</h2><table><thead><tr><th>مرحله</th><th>رویداد</th><th>قاعده</th></tr></thead><tbody><tr><td>1</td><td>Request</td><td>درخواست علیه Invoice/PO واقعی</td></tr><tr><td>2</td><td>Eligibility</td><td>کنترل limit، tenor، supplier و exposure</td></tr><tr><td>3</td><td>Funding</td><td>پرداخت کنترل‌شده به عرضه‌کننده</td></tr><tr><td>4</td><td>Due</td><td>اعلان سررسید و مبلغ قطعی</td></tr><tr><td>5</td><td>Collection</td><td>وصول اصل و هزینه قراردادی</td></tr><tr><td>6</td><td>Release</td><td>آزادسازی فقط به میزان اصل</td></tr><tr><td>7</td><td>Exception</td><td>Freeze، reschedule یا recovery</td></tr></tbody></table></div><div><h2>پارامترهای محصول</h2><div class="grid2"><div class="card tiny"><b>Tenor</b><br>مدت چرخه خرید تا وصول کسب‌وکار</div><div class="card tiny"><b>Advance / Draw</b><br>مبلغ مجاز علیه معامله واجد شرایط</div><div class="card tiny"><b>Fee</b><br>هزینه شفاف معامله و خدمت پلتفرم</div><div class="card tiny"><b>Reserve</b><br>ذخیره برای برگشتی، اختلاف و هزینه وصول</div><div class="card tiny"><b>Recourse</b><br>مسئولیت نکول، کسری و تقلب</div><div class="card tiny"><b>Concentration</b><br>سقف exposure به طرفین و دسته‌ها</div></div><div class="note" style="margin-top:3mm;"><b>اصل ledger:</b> approved، utilized، settled، overdue و released باید جدا و قابل reconciliation باشند.</div></div></div>
+<div class="core"><div class="core-title">NO VALID TRANSACTION → NO CONTROLLED DRAWdown</div><div class="tiny muted" style="margin-top:1.5mm;">هر override باید owner، reason، expiry و تأیید فاینانسر داشته باشد.</div></div><footer class="footer"><span>v2.0 / ROUTE 2 SETTLEMENT AND REVOLVING LIMIT</span><span>PAGE 12 / 20</span></footer></section>
+<section class="page"><header class="header"><div><div class="head-title">Route 2 | Operating Model، RACI و ریسک</div><div class="head-sub">کنترل عملیات، پاسخگویی، اختلاف و حفاظت از پرتفوی اعتبار تجاری</div></div><div class="head-meta">SAKHTNO / ROUTE 2 GOVERNANCE<br>A3 LANDSCAPE / 13 OF 20</div></header>
+<div class="grid2" style="align-items:start;"><div><h2>RACI سطح Route 2</h2><table><thead><tr><th>فعالیت</th><th>اسپیناس</th><th>کسب‌وکار</th><th>عرضه‌کننده</th><th>بانک/فاینانسر</th></tr></thead><tbody><tr><td>KYB و onboarding</td><td>R</td><td><b>A</b></td><td>C</td><td>C</td></tr><tr><td>Policy و limit</td><td>Data/R</td><td>C</td><td>I</td><td><b>A/R</b></td></tr><tr><td>سفارش و تحویل</td><td>Orchestrate</td><td><b>R</b></td><td><b>R</b></td><td>I</td></tr><tr><td>Invoice match</td><td><b>R</b></td><td>C</td><td>C</td><td>I</td></tr><tr><td>تسویه و وصول</td><td>Ledger/Track</td><td>Repay</td><td>Receive</td><td><b>A/R</b></td></tr><tr><td>اختلاف و recovery</td><td>R/Track</td><td>A/Respond</td><td>R/Respond</td><td><b>A/Policy</b></td></tr></tbody></table><div class="note" style="margin-top:3mm;">R=Responsible، A=Accountable، C=Consulted، I=Informed.</div></div><div><h2>ماشین اختلاف و توقف</h2><div class="stategrid"><div class="state blue">NORMAL</div><div class="state teal">FLAGGED</div><div class="state amber">HOLD</div><div class="state purple">REVIEW</div><div class="state teal">RESOLVED</div><div class="state amber">REVERSED</div><div class="state purple">RECOVERY</div><div class="state blue">CLOSED</div></div><div class="card amber" style="margin-top:3mm;"><h3>قواعد توقف</h3><div class="small">تأخیر پرداخت، خرید از خود، anomaly قیمت، invoice تکراری، کسری تحویل یا تغییر مالکیت باید exposure را freeze کند تا بررسی و تصمیم ثبت شود.</div></div><div class="card blue" style="margin-top:3mm;"><h3>قواعد بازگشت</h3><div class="small">رفع hold فقط با evidence، reconciliation، تصمیم owner و ثبت اثر بر limit و رفتار اعتباری مجاز است.</div></div></div></div>
+<h2 style="margin-top:4mm;">ریسک‌های اصلی</h2><table class="risk"><thead><tr><th>ریسک</th><th>نمونه شکست</th><th>کنترل طراحی</th></tr></thead><tbody><tr><td>فروش صوری</td><td>گردش غیرواقعی برای افزایش حد</td><td>منبع داده، cross-check و محدودیت exposure</td></tr><tr><td>تقلب فاکتور</td><td>فاکتور جعلی یا تکراری</td><td>شناسه یکتا، supplier validation و anomaly</td></tr><tr><td>نکول</td><td>عدم تأمین موجودی سررسید</td><td>tenor، reserve، reminder و recovery waterfall</td></tr><tr><td>تمرکز</td><td>وابستگی به یک buyer یا supplier</td><td>concentration cap و diversification</td></tr><tr><td>مرجوعی</td><td>کاهش کالای دریافتی پس از پرداخت</td><td>holdback، reversal و اصلاح exposure</td></tr></tbody></table><footer class="footer"><span>v2.0 / ROUTE 2 GOVERNANCE AND RISK</span><span>PAGE 13 / 20</span></footer></section>
+<section class="page"><header class="header"><div><div class="head-title">Route 2 | مدل کسب‌وکار، MVP و KPI</div><div class="head-sub">ارزش پیشنهادی، اقتصاد واحد، توالی راه‌اندازی و گیت‌های مقیاس</div></div><div class="head-meta">SAKHTNO / ROUTE 2 SCALE<br>A3 LANDSCAPE / 14 OF 20</div></header>
+<h2>بازیگران و ارزش پیشنهادی</h2><div class="grid5"><div class="card blue role"><b>فروشگاه / مجری</b><div class="tiny">خرید سریع، نقدینگی چرخه‌ای و افزایش ظرفیت فروش</div></div><div class="card teal role"><b>عرضه‌کننده</b><div class="tiny">تقاضای سازمان‌یافته و تسویه قابل پیش‌بینی</div></div><div class="card purple role"><b>فاینانسر</b><div class="tiny">مصرف حلقه‌بسته، داده گردش و کنترل drawdown</div></div><div class="card navy role"><b>اسپیناس</b><div class="tiny">شبکه، orchestration، ledger و داده رفتار</div></div><div class="card amber role"><b>مشتری نهایی</b><div class="tiny">دسترسی بهتر به کالا از زنجیره سالم</div></div></div>
+<div class="grid2" style="margin-top:4mm;align-items:start;"><div><h2>درآمد و هزینه</h2><div class="grid2 small"><div class="card"><h3>درآمد</h3><ul class="compact"><li>کارمزد orchestration</li><li>Merchant/Supplier Network Fee</li><li>هزینه ابزار و تسویه</li><li>Revenue Share قراردادی</li><li>گزارش و تحلیل مجاز</li></ul></div><div class="card"><h3>هزینه</h3><ul class="compact"><li>KYB و onboarding</li><li>اعتبارسنجی و تقلب</li><li>پرداخت و reconciliation</li><li>collection و اختلاف</li><li>فناوری و انطباق</li></ul></div></div><div class="formula" style="margin-top:3mm;">NET CONTRIBUTION = Transaction Fee + Network Fee + Revenue Share - Payment - Operations - Fraud/Dispute - Contracted Credit Loss</div></div><div><h2>توالی MVP</h2><div class="grid4"><div class="phase p0"><b>P0 | Network</b><p>KYB، supplier، catalog، قیمت و settlement عادی</p></div><div class="phase p1"><b>P1 | Closed Credit</b><p>اعتبار محدود علیه Invoice/PO و یک فاینانسر</p></div><div class="phase p2"><b>P2 | Revolving</b><p>بازگشت اصل، dynamic limit و چند دسته کالا</p></div><div class="phase p3"><b>P3 | Scale</b><p>شبکه چندلایه، risk automation و portfolio controls</p></div></div></div></div>
+<h2 style="margin-top:4mm;">KPI و گیت مقیاس</h2><div class="grid4"><div class="card blue"><h3>Acquisition</h3><div class="tiny"><span class="pill">KYB Approval</span><span class="pill">Activation</span><span class="pill">Time to Limit</span></div></div><div class="card teal"><h3>Usage</h3><div class="tiny"><span class="pill">Active Merchants</span><span class="pill">Utilization</span><span class="pill">Credit GMV</span></div></div><div class="card purple"><h3>Risk</h3><div class="tiny"><span class="pill">On-time Repaid</span><span class="pill">DPD</span><span class="pill">Supplier Concentration</span></div></div><div class="card amber"><h3>Economics</h3><div class="tiny"><span class="pill">Net Take Rate</span><span class="pill">Contribution</span><span class="pill">Loss after Reserve</span></div></div></div><div class="gate"><strong>تصمیم‌های لازم</strong><div class="small">سگمنت شروع، دسته‌های مجاز، supplierهای اولیه، فاینانسر، limit/tenor، مسئول ریسک، مدل تسویه، threshold افزایش حد و معیار رسمی تبدیل Route 2 به Route 3.</div></div><footer class="footer"><span>v2.0 / ROUTE 2 BUSINESS MODEL AND SCALE GATES</span><span>PAGE 14 / 20</span></footer></section>
+<section class="page"><header class="header"><div><div class="head-title">مدل تفصیلی Route 3 ساخت‌نو</div><div class="head-sub">Construction Project OS + Verified Transaction + Project-linked SCF | نسخه ۲.۰</div></div><div class="head-meta">SAKHTNO / ROUTE 3<br>A3 LANDSCAPE / 15 OF 20</div></header>
+<div class="decision"><strong>تعریف مدیریتی</strong><div>Route 3 یک «وام پروژه» به‌تنهایی نیست؛ یک سیستم عملیاتی پروژه است که رویدادهای معتبر قرارداد، تأمین، تحویل، پیشرفت و QC را به <b>Verified Transaction</b> تبدیل می‌کند تا پرداخت و تأمین مالی مرحله‌ای قابل اتکا شود.</div></div>
+<div class="grid3">
+<div class="card purple"><div class="band purple">۱ | PROJECT OS</div><h3 style="margin-top:2mm;">پروژه قابل کنترل</h3><div class="small">تعریف پروژه، Project ID، کارفرما، پیمانکار، تأمین‌کننده، قرارداد، WBS، بودجه، خط مبنا، برنامه، نقش‌ها و وابستگی‌ها.</div></div>
+<div class="card blue"><div class="band blue">۲ | VERIFIED TRANSACTION</div><h3 style="margin-top:2mm;">معامله قابل اثبات</h3><div class="small">هر drawdown باید به قرارداد/PO، مقدار یا پیشرفت، تحویل، QC، پذیرش، مبلغ، طرفین و شواهد قابل حسابرسی متصل باشد.</div></div>
+<div class="card teal"><div class="band teal">۳ | PROJECT-LINKED SCF</div><h3 style="margin-top:2mm;">تأمین مالی متصل به واقعیت</h3><div class="small">Payables Finance، Receivables Finance و Inventory Finance بر مبنای تعهد و طلب معتبر، نه صرفاً درخواست نقدینگی.</div></div>
+</div>
+<h2 style="margin-top:4mm;">زنجیره اصلی ارزش Route 3</h2>
+<div class="flow"><div class="step">نیاز / فرصت پروژه</div><div class="step">Qualification</div><div class="step">Project ID + قرارداد</div><div class="step">WBS + Baseline</div><div class="step">Procurement</div><div class="step">تحویل / پیشرفت / QC</div><div class="step">Verified Transaction</div><div class="step">SCF + پرداخت</div><div class="step">تسویه / بستن</div></div>
+<div class="grid2" style="margin-top:4mm;"><div class="card navy"><h2>طرف‌های اصلی و نقش اقتصادی</h2><div class="grid3 tiny"><div><b>کارفرما / مالک</b><br>ایجاد نیاز، تأیید تغییر و پذیرش خروجی</div><div><b>سازنده / مدیر پروژه</b><br>برنامه، کنترل پیشرفت و هماهنگی اجرا</div><div><b>پیمانکار / مجری</b><br>تعهد اجرایی، تحویل و پاسخگویی کیفیت</div><div><b>تأمین‌کننده</b><br>قیمت، موجودی، تحویل و اسناد فروش</div><div><b>اسپیناس</b><br>Project OS، evidence ledger، orchestration و کنترل</div><div><b>بانک / فاینانسر</b><br>تصمیم اعتبار، تأمین وجه و سیاست ریسک</div></div></div><div class="card amber"><h2>Route 3 چه چیزی را حل می‌کند؟</h2><ul class="compact-list small" style="margin:0;padding-right:4mm;"><li>تبدیل پیشرفت واقعی به مبنای پرداخت</li><li>کاهش اختلاف درباره مقدار، کیفیت و پذیرش</li><li>کاهش فاصله زمانی میان تحویل و وصول</li><li>قابل مشاهده‌کردن تعهدات زنجیره تأمین</li><li>تخصیص اعتبار بر مبنای معامله و قرارداد</li><li>اتصال تجربه Route 1 به پروژه، فقط پس از گیت رسمی</li></ul></div></div>
+<div class="gate"><strong>مرز با Route 1</strong><div class="small">خرید محدود کالا/خدمت با یک سفارش و تحویل، Route 1 است. با ورود بسته چندمرحله‌ای، قرارداد وابسته، خط مبنا، پیشرفت، QC مرحله‌ای یا صورت‌وضعیت، Route 3 ایجاد می‌شود؛ سابقه Route 1 حفظ و به Project ID جدید ارجاع می‌شود.</div></div>
+<div class="core"><div class="core-title">CONSTRUCTION PROJECT OS + EVIDENCE LEDGER + CREDIT/RISK ENGINE + CONTROLLED PAYMENT + BANK/FINANCIER</div><div class="tiny muted" style="margin-top:1.5mm;">لایه مشترک اما با lifecycle، ریسک، قرارداد، accounting و economics مستقل از Route 1</div></div>
+<footer class="footer"><span>v2.0 / PROJECT-LINKED SCF ARCHITECTURE</span><span>PAGE 15 / 20</span></footer></section>
+<section class="page"><header class="header"><div><div class="head-title">چرخه عمر پروژه و Qualification Gate</div><div class="head-sub">از ورود فرصت تا بستن پروژه؛ وضعیت‌ها، اسناد و معیارهای خروج</div></div><div class="head-meta">SAKHTNO / PROJECT LIFECYCLE<br>A3 LANDSCAPE / 16 OF 20</div></header>
+<div class="stategrid"><div class="state purple">OPPORTUNITY<br>فرصت اولیه</div><div class="state purple">QUALIFIED<br>واجد شرایط</div><div class="state blue">CONTRACTED<br>قرارداد فعال</div><div class="state blue">BASELINED<br>خط مبنا تصویب‌شده</div><div class="state teal">PROCUREMENT<br>تأمین در جریان</div><div class="state teal">IN_PROGRESS<br>پیشرفت ثبت‌شده</div><div class="state teal">VERIFIED<br>معامله تأییدشده</div><div class="state purple">FINANCED<br>تأمین مالی‌شده</div><div class="state purple">SETTLED<br>تسویه‌شده</div><div class="state amber">CLOSED<br>بسته‌شده</div></div>
+<div class="grid2" style="margin-top:4mm;align-items:start;"><div><h2>فرایند Qualification و پذیرش پروژه</h2><table class="proc purple"><thead><tr><th>#</th><th>وضعیت</th><th>اقدام اصلی</th><th>کنترل خروج</th></tr></thead><tbody>
+<tr><td>1</td><td>OPPORTUNITY</td><td>ثبت مالک/کارفرما، نوع پروژه، مکان، نیاز و ارزش تقریبی</td><td>اطلاعات اولیه کامل و طرف پاسخگو</td></tr><tr><td>2</td><td>IDENTIFIED</td><td>شناسایی ذی‌نفعان، scope اولیه و ریسک‌های آشکار</td><td>عدم وجود ابهام بحرانی در دامنه</td></tr><tr><td>3</td><td>QUALIFICATION</td><td>بررسی امکان اجرا، بودجه، مجوز، ظرفیت شبکه و منابع</td><td>امتیاز پذیرش پروژه و تصمیم Go/No-Go</td></tr><tr><td>4</td><td>CONTRACTED</td><td>قرارداد/PO، شرایط پرداخت، تعهدات و نقش‌ها</td><td>سند معتبر و امضاشده</td></tr><tr><td>5</td><td>BASELINED</td><td>WBS، بودجه، برنامه، مقادیر و معیار پذیرش</td><td>Baseline versioned و قفل‌شده</td></tr><tr><td>6</td><td>ACTIVE</td><td>تأمین، اجرا، ثبت رویداد و مدیریت تغییر</td><td>داده به‌روز و مسئول هر رویداد مشخص</td></tr></tbody></table></div>
+<div><h2>Qualification Scorecard</h2><div class="grid2"><div class="card purple role"><b>Commercial Fit</b><div class="tiny">دامنه روشن، ارزش معامله، توان پرداخت، تکرارپذیری و تناسب با شبکه اسپیناس</div></div><div class="card blue role"><b>Contract Fit</b><div class="tiny">قرارداد، طرفین، milestone، تعهد پرداخت، جریمه، change و dispute قابل تعریف</div></div><div class="card teal role"><b>Execution Fit</b><div class="tiny">WBS، برنامه، منابع، مجری، تأمین‌کننده، QC و شواهد عملیاتی قابل ثبت</div></div><div class="card amber role"><b>Finance Fit</b><div class="tiny">طلب/تعهد قابل تأیید، tenor منطقی، payer مشخص، collateral/ضمانت و ریسک قابل قیمت‌گذاری</div></div></div><div class="note" style="margin-top:3mm;"><b>No-Goهای اولیه:</b> scope مبهم، کارفرمای ناشناس، قرارداد فاقد تعهد پرداخت، نبود معیار پذیرش، ادعای پیشرفت بدون evidence، وابستگی شدید به یک طرف یا تلاش برای cash-out.</div></div></div>
+<h2 style="margin-top:4mm;">Minimum Project Record</h2><div class="grid5"><div class="card tiny"><b>Identity</b><br>Project ID، طرفین، مالکیت و اختیار امضا</div><div class="card tiny"><b>Scope</b><br>شرح کار، WBS، بسته‌ها و exclusions</div><div class="card tiny"><b>Commercial</b><br>قیمت، بودجه، PO، پرداخت و تعهدات</div><div class="card tiny"><b>Schedule</b><br>Baseline، milestone، dependencies و تاریخ‌ها</div><div class="card tiny"><b>Evidence</b><br>تحویل، QC، عکس، اندازه‌گیری، تأیید و اعتراض</div></div>
+<div class="gate"><strong>Gate Q</strong><div class="small">هیچ پروژه‌ای وارد تأمین مالی نمی‌شود مگر اینکه Project ID، طرف پرداخت‌کننده، قرارداد، خط مبنا، معیار پذیرش و مدل evidence تصویب شده باشد.</div></div>
+<footer class="footer"><span>v2.0 / QUALIFICATION AND PROJECT CONTROL</span><span>PAGE 16 / 20</span></footer></section>
+<section class="page"><header class="header"><div><div class="head-title">قرارداد، Procurement و Verified Transaction</div><div class="head-sub">چگونه رویداد پروژه از «ادعا» به «معامله قابل تأمین مالی» تبدیل می‌شود</div></div><div class="head-meta">SAKHTNO / EVIDENCE AND PROCUREMENT<br>A3 LANDSCAPE / 17 OF 20</div></header>
+<h2>زنجیره تبدیل رویداد به معامله تأییدشده</h2><div class="flow"><div class="step">Contract / PO</div><div class="step">Purchase Request</div><div class="step">Supplier Allocation</div><div class="step">Delivery / Work</div><div class="step">Measure / QC</div><div class="step">Client Acceptance</div><div class="step">Verified Transaction</div><div class="step">Payment / Finance</div></div>
+<div class="grid2" style="margin-top:4mm;align-items:start;"><div><h2>Evidence Pack حداقلی</h2><table><thead><tr><th>موضوع</th><th>داده لازم</th><th>کنترل اعتبار</th></tr></thead><tbody><tr><td><b>هویت</b></td><td>Project ID، طرفین، نقش، امضا و اختیار</td><td>تطبیق با قرارداد و KYC/KYB</td></tr><tr><td><b>تعهد</b></td><td>Contract/PO، scope، مقدار، قیمت، شرایط پرداخت</td><td>نسخه مصوب و بدون ابهام</td></tr><tr><td><b>تحویل</b></td><td>کالا/خدمت، مقدار، زمان، مکان، گیرنده، رسید</td><td>تطبیق با سفارش و پنجره اعتراض</td></tr><tr><td><b>پیشرفت</b></td><td>فعالیت تکمیل‌شده، مقدار اندازه‌گیری‌شده، milestone</td><td>مقایسه با baseline و تأیید مسئول</td></tr><tr><td><b>کیفیت</b></td><td>QC، تست، عکس، عدم انطباق و corrective action</td><td>معیار پذیرش و closure مورد</td></tr><tr><td><b>مالی</b></td><td>مبلغ واجد پرداخت، کسورات، مالیات/کارمزد و مانده</td><td>تطبیق ledger و عدم double finance</td></tr></tbody></table></div><div><h2>قواعد Verified Transaction</h2><div class="card teal"><ul class="compact-list small"><li>یک شناسه یکتا برای زنجیره Contract → PO → Delivery/Progress → Payment</li><li>طرف پرداخت‌کننده و حساب تسویه مشخص</li><li>مقدار/پیشرفت قابل اندازه‌گیری و قابل بازبینی</li><li>شواهد دارای زمان، منبع، نسخه و صاحب تأیید</li><li>تأیید دوگانه یا نقش‌های مستقل برای موارد پرریسک</li><li>تفکیک مبلغ gross، hold، کسورات، net payable و funded amount</li><li>ثبت dispute، تغییر و reversal بدون حذف سابقه</li></ul></div><div class="card amber" style="margin-top:3mm;"><h3>Verified ≠ Paid</h3><div class="small">تأیید معامله فقط eligibility ایجاد می‌کند. تأمین مالی، پرداخت و تسویه می‌تواند به سیاست فاینانسر، ظرفیت limit، پنجره اعتراض و شروط قرارداد وابسته باشد.</div></div></div></div>
+<h2 style="margin-top:4mm;">Procurement Control Tower</h2><div class="grid4"><div class="card blue role"><b>Plan</b><div class="tiny">نیاز، مقدار، مشخصات، زمان و budget code</div></div><div class="card blue role"><b>Source</b><div class="tiny">لیست تأمین‌کننده، RFQ، مقایسه قیمت و انتخاب</div></div><div class="card teal role"><b>Receive</b><div class="tiny">تحویل، شمارش، بازرسی، کسری و مرجوعی</div></div><div class="card purple role"><b>Close</b><div class="tiny">پذیرش، invoice match، تسویه و بستن تعهد</div></div></div>
+<div class="note" style="margin-top:3mm;"><b>کنترل ضدتقلب:</b> خرید از خود، فاکتور تکراری، قیمت غیرعادی، split order، وابستگی پنهان طرفین، تحویل صوری و چندبار تأمین مالی یک طلب باید با rule، hold و بررسی انسانی کنترل شود.</div>
+<footer class="footer"><span>v2.0 / CONTRACT, PROCUREMENT AND EVIDENCE</span><span>PAGE 17 / 20</span></footer></section>
+<section class="page"><header class="header"><div><div class="head-title">موتورهای SCF و جریان پول Route 3</div><div class="head-sub">Payables، Receivables و Inventory Finance؛ از drawdown تا تسویه نهایی</div></div><div class="head-meta">SAKHTNO / SCF MECHANICS<br>A3 LANDSCAPE / 18 OF 20</div></header>
+<div class="grid3"><div class="card purple"><div class="band purple">PAYABLES FINANCE</div><h3 style="margin-top:2mm;">تعهد پرداخت خریدار</h3><div class="small">پس از تأیید invoice/transaction، فاینانسر می‌تواند پرداخت زودتر به تأمین‌کننده و وصول در سررسید از خریدار را فراهم کند.</div></div><div class="card blue"><div class="band blue">RECEIVABLES FINANCE</div><h3 style="margin-top:2mm;">طلب تأییدشده فروشنده</h3><div class="small">طلب پیمانکار/تأمین‌کننده پس از acceptance، QC یا milestone تأییدشده، مبنای تأمین مالی قرار می‌گیرد.</div></div><div class="card teal"><div class="band teal">INVENTORY FINANCE</div><h3 style="margin-top:2mm;">موجودی متصل به پروژه</h3><div class="small">خرید یا نگهداری موجودی مشخص برای پروژه، با کنترل مالکیت، محل، مقدار، بیمه، release و مصرف.</div></div></div>
+<h2 style="margin-top:4mm;">معماری جریان وجه</h2><div class="flow"><div class="step">فاینانسر</div><div class="step">حساب کنترل‌شده</div><div class="step">تأمین‌کننده / پیمانکار</div><div class="step">تحویل / پیشرفت</div><div class="step">Acceptance</div><div class="step">تعهد پرداخت‌کننده</div><div class="step">وصول سررسید</div><div class="step">تسویه و release limit</div></div>
+<div class="grid2" style="margin-top:4mm;align-items:start;"><div><h2>Drawdown و settlement waterfall</h2><table><thead><tr><th>مرحله</th><th>رویداد</th><th>قاعده مالی</th></tr></thead><tbody><tr><td>1</td><td>Request</td><td>درخواست فقط علیه Contract/PO/Transaction Object</td></tr><tr><td>2</td><td>Eligibility</td><td>بررسی limit، tenor، payer، evidence و عدم double finance</td></tr><tr><td>3</td><td>Approval</td><td>تصمیم فاینانسر و ثبت مبلغ مصوب</td></tr><tr><td>4</td><td>Funding</td><td>پرداخت کنترل‌شده، نه cash-out به مشتری</td></tr><tr><td>5</td><td>Collection</td><td>وصول از payer/خریدار طبق سررسید یا milestone</td></tr><tr><td>6</td><td>Waterfall</td><td>هزینه قراردادی → اصل → کسورات → مانده → آزادسازی تعهد</td></tr><tr><td>7</td><td>Exception</td><td>Hold، dispute، reversal، reschedule یا recovery طبق policy</td></tr></tbody></table></div><div><h2>پارامترهای محصول پروژه</h2><div class="grid2"><div class="card tiny"><b>Basis</b><br>تعهد خریدار، طلب تأییدشده یا موجودی کنترل‌شده</div><div class="card tiny"><b>Tenor</b><br>چرخه تأمین، milestone، invoice و توان payer</div><div class="card tiny"><b>Advance Rate</b><br>درصد قابل تأمین از مبلغ واجد شرایط</div><div class="card tiny"><b>Concentration</b><br>سقف هر پروژه، payer، پیمانکار و تأمین‌کننده</div><div class="card tiny"><b>Reserve / Holdback</b><br>ذخیره برای کیفیت، کسری، claims و retention</div><div class="card tiny"><b>Recourse</b><br>تخصیص ریسک نکول، اختلاف و عدم تحویل</div></div><div class="note" style="margin-top:3mm;"><b>اصل طراحی:</b> پارامترهای سقف، tenor، advance rate، fee و reserve نسخه‌پذیر باشند؛ تغییر شرایط پروژه نباید با ویرایش خام رکورد قبلی پنهان شود.</div></div></div>
+<div class="core"><div class="core-title">NO VERIFIED TRANSACTION → NO PROJECT-LINKED DRAWdown</div><div class="tiny muted" style="margin-top:1.5mm;">استثناها فقط با override ثبت‌شده، owner مشخص، expiry و تأیید فاینانسر مجاز هستند.</div></div>
+<footer class="footer"><span>v2.0 / PAYABLES, RECEIVABLES AND INVENTORY FINANCE</span><span>PAGE 18 / 20</span></footer></section>
+<section class="page"><header class="header"><div><div class="head-title">Operating Model، نقش‌ها و ریسک‌های Route 3</div><div class="head-sub">کنترل اجرا، پاسخگویی، تغییرات، claims و ریسک‌های عملیاتی/اعتباری</div></div><div class="head-meta">SAKHTNO / OPERATING MODEL<br>A3 LANDSCAPE / 19 OF 20</div></header>
+<div class="grid2" style="align-items:start;"><div><h2>ماشین وضعیت تغییر و اختلاف</h2><div class="stategrid"><div class="state blue">BASELINE</div><div class="state teal">CHANGE REQUEST</div><div class="state amber">IMPACT REVIEW</div><div class="state purple">APPROVED / REJECTED</div><div class="state teal">REBASELINE</div><div class="state blue">EXECUTE</div><div class="state amber">CLAIM / DISPUTE</div><div class="state purple">RESOLVE / ESCALATE</div></div><div class="card" style="margin-top:3mm;"><h3>قاعده کنترل تغییر</h3><div class="small">هر تغییر باید علت، درخواست‌کننده، اثر زمانی/مالی/کیفی، تصمیم، نسخه baseline جدید و اثر آن بر eligibility مالی را ثبت کند. تغییر شفاهی یا اصلاح retroactive ممنوع است.</div></div><div class="card amber" style="margin-top:3mm;"><h3>Claim و Dispute</h3><div class="small">مبلغ مورد اختلاف جداگانه hold می‌شود؛ بخش غیرمورد اختلاف می‌تواند طبق policy تسویه شود. حل اختلاف باید evidence، طرف پاسخگو، مهلت و تصمیم نهایی داشته باشد.</div></div></div><div><h2>RACI خلاصه</h2><table><thead><tr><th>فعالیت</th><th>اسپیناس</th><th>کارفرما</th><th>پیمانکار/تأمین‌کننده</th><th>بانک/فاینانسر</th></tr></thead><tbody><tr><td>Project Setup</td><td><b>A/R</b></td><td>C</td><td>C</td><td>C</td></tr><tr><td>Contract / Baseline</td><td>R</td><td><b>A</b></td><td>C</td><td>C</td></tr><tr><td>Procurement</td><td>R</td><td>A/C</td><td><b>R</b></td><td>I</td></tr><tr><td>Delivery / Progress</td><td>R/Verify</td><td>A/Accept</td><td><b>R</b></td><td>I</td></tr><tr><td>Finance Decision</td><td>Data/R</td><td>C</td><td>C</td><td><b>A/R</b></td></tr><tr><td>Settlement</td><td>Orchestrate</td><td>I</td><td>Receive</td><td><b>A/R</b></td></tr><tr><td>Dispute / Claim</td><td>R/Track</td><td>A/Decide</td><td>R/Respond</td><td>Hold/Policy</td></tr></tbody></table><div class="note" style="margin-top:3mm;">R=Responsible، A=Accountable، C=Consulted، I=Informed. پاسخگویی نهایی هر رویداد باید در قرارداد و سیستم ثبت شود.</div></div></div>
+<h2 style="margin-top:4mm;">ریسک‌های اصلی و کنترل طراحی</h2><table class="risk"><thead><tr><th>ریسک</th><th>نمونه شکست</th><th>کنترل Route 3</th></tr></thead><tbody><tr><td>پیشرفت صوری</td><td>اعلام پیشرفت بدون کار قابل مشاهده</td><td>اندازه‌گیری، عکس/بازدید، تأیید مستقل، baseline comparison</td></tr><tr><td>تحویل ناقص/بی‌کیفیت</td><td>مقدار یا کیفیت کمتر از قرارداد</td><td>QC، acceptance، holdback و partial settlement</td></tr><tr><td>Double Financing</td><td>یک طلب نزد چند فاینانسر</td><td>Transaction ID، lien/assignment register و reconciliation</td></tr><tr><td>تأخیر payer</td><td>تعهد پرداخت‌کننده در سررسید تأمین نمی‌شود</td><td>payer risk، reserve، recourse، reminder و recovery waterfall</td></tr><tr><td>تغییر scope</td><td>افزایش هزینه و زمان خارج از baseline</td><td>change control، rebaseline و توقف drawdown خارج از مجوز</td></tr><tr><td>تمرکز طرفین</td><td>وابستگی به یک کارفرما/پیمانکار/تأمین‌کننده</td><td>concentration limit و diversification</td></tr><tr><td>تقلب اسنادی</td><td>فاکتور، رسید یا عکس جعلی</td><td>source validation، cross-check، anomaly detection و review</td></tr><tr><td>حریم خصوصی/محرمانگی</td><td>افشای قیمت، قرارداد یا داده مالی</td><td>consent، role-based access، audit log و retention policy</td></tr></tbody></table>
+<footer class="footer"><span>v2.0 / OPERATIONS, GOVERNANCE AND RISK</span><span>PAGE 19 / 20</span></footer></section>
+<section class="page"><header class="header"><div><div class="head-title">مدل کسب‌وکار، MVP و KPI Route 3</div><div class="head-sub">ارزش پیشنهادی، اقتصاد واحد، توالی راه‌اندازی و گیت‌های مقیاس</div></div><div class="head-meta">SAKHTNO / BUSINESS MODEL<br>A3 LANDSCAPE / 20 OF 20</div></header>
+<h2>بازیگران و ارزش پیشنهادی</h2><div class="grid5"><div class="card purple role"><b>کارفرما / مالک</b><div class="tiny">شفافیت هزینه و پیشرفت، کاهش اختلاف و امکان پرداخت مرحله‌ای</div></div><div class="card blue role"><b>سازنده / پیمانکار</b><div class="tiny">تأمین نقدینگی علیه کار/طلب معتبر، visibility و کاهش زمان وصول</div></div><div class="card teal role"><b>تأمین‌کننده</b><div class="tiny">فروش پروژه‌ای، تعهد پرداخت قابل اتکا و اتصال به تقاضای سازمان‌یافته</div></div><div class="card navy role"><b>بانک / فاینانسر</b><div class="tiny">ریسک قابل مشاهده، transaction evidence و کنترل drawdown</div></div><div class="card amber role"><b>اسپیناس</b><div class="tiny">درآمد orchestration، داده پروژه، شبکه و تبدیل رویداد عملیاتی به دارایی مالی</div></div></div>
+<div class="grid2" style="margin-top:4mm;align-items:start;"><div><h2>مدل درآمد و هزینه</h2><div class="grid2 small"><div class="card"><h3>درآمد</h3><ul class="compact-list"><li>Project OS / subscription</li><li>کارمزد orchestration تراکنش تأییدشده</li><li>Supplier / Contractor Network Fee</li><li>کارمزد evidence، QC یا reconciliation</li><li>Revenue Share قراردادی با فاینانسر</li><li>گزارش و تحلیل پروژه با مجوز</li></ul></div><div class="card"><h3>هزینه</h3><ul class="compact-list"><li>جذب و qualification پروژه</li><li>پیاده‌سازی Project OS و پشتیبانی</li><li>تحقق‌یابی، QC، بازدید و عملیات</li><li>پرداخت، reconciliation و collection</li><li>تقلب، اختلاف، بیمه و حقوقی</li><li>فناوری، امنیت، داده و انطباق</li></ul></div></div><div class="formula" style="margin-top:3mm;">NET CONTRIBUTION = Platform / Project Fee + Transaction Fee + Network Fee + Contracted Revenue Share - Verification - Payment - Operations - Dispute/Fraud - Contracted Credit Loss</div></div><div><h2>توالی MVP</h2><div class="grid4"><div class="phase p0"><b>P0 | Data</b><p>Project ID، قرارداد، WBS، baseline و ثبت evidence بدون تأمین مالی</p></div><div class="phase p1"><b>P1 | Commerce</b><p>تأمین‌کننده، PO، تحویل، invoice match و settlement عادی</p></div><div class="phase p2"><b>P2 | SCF</b><p>یک فاینانسر، چند پروژه منتخب، Payables/Receivables محدود</p></div><div class="phase p3"><b>P3 | Scale</b><p>Inventory، چند payer، dashboard و limit management پویا</p></div></div><div class="note" style="margin-top:3mm;"><b>خارج از MVP:</b> پروژه بدون قرارداد، پرداخت نقدی آزاد، پیشرفت تأییدنشده، اعتبار باز برای تمام پروژه‌ها، چند فاینانسر بدون register مشترک و milestone پیچیده بدون owner.</div></div></div>
+<h2 style="margin-top:4mm;">KPI و گیت‌های مقیاس</h2><div class="grid4"><div class="card purple"><h3>Project Funnel</h3><div class="tiny"><span class="pill">Qualification Rate</span><span class="pill">Time to Contract</span><span class="pill">Baseline Completeness</span><span class="pill">Active Projects</span></div></div><div class="card teal"><h3>Execution / Evidence</h3><div class="tiny"><span class="pill">On-time Progress</span><span class="pill">Evidence Completeness</span><span class="pill">QC Pass Rate</span><span class="pill">Acceptance Time</span><span class="pill">Dispute Rate</span></div></div><div class="card blue"><h3>Finance / Risk</h3><div class="tiny"><span class="pill">Verified GMV</span><span class="pill">Funded Amount</span><span class="pill">Advance Rate</span><span class="pill">DPD / Default</span><span class="pill">Double Finance</span></div></div><div class="card amber"><h3>Economics</h3><div class="tiny"><span class="pill">Net Take Rate</span><span class="pill">Contribution Margin</span><span class="pill">Cost / Verified Tx</span><span class="pill">Repeat Payer</span><span class="pill">Loss after Reserve</span></div></div></div>
+<div class="grid4" style="margin-top:3mm;"><div class="card role"><h3>Gate A | Data Ready</h3><div class="tiny">Project ID، contract، WBS، baseline، evidence schema و access controls</div></div><div class="card role"><h3>Gate B | Execution Ready</h3><div class="tiny">شبکه، QC، acceptance، reconciliation، change و dispute فعال</div></div><div class="card role"><h3>Gate C | Finance Ready</h3><div class="tiny">payer، lender-of-record، limit، tenor، recourse، reserve و settlement روشن</div></div><div class="card role"><h3>Gate D | Scale</h3><div class="tiny">margin مثبت، evidence کامل، dispute/DPD زیر حد و تمرکز کنترل‌شده</div></div></div>
+<div class="gate"><strong>تصمیم‌های لازم</strong><div class="small">انتخاب تیپ پروژه اول؛ تعیین role ساخت‌نو/اسپیناس؛ مدل قرارداد و payer؛ فاینانسر و recourse؛ استاندارد evidence/QC؛ policy تغییر و اختلاف؛ آستانه Verified Transaction؛ و معیار رسمی عبور از Route 1 به Route 3.</div></div>
+<footer class="footer"><span>v2.0 / ROUTE 3 BUSINESS MODEL AND SCALE GATES</span><span>PAGE 20 / 20</span></footer></section></body></html>
