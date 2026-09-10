@@ -2,10 +2,12 @@
 
 **Document ID:** `SN-DEC-001`  
 **Version:** `1.1`  
-**Status:** Approved / Current  
+**Status:** Superseded  
 **Decision Type:** Business & Financial Architecture  
 **Impact:** Minor clarification of approved architecture  
 **Approval Date:** 2026-09-10  
+**Superseded Date:** 2026-09-10  
+**Superseded By:** `SN-DEC-001 v2.0`  
 **Supersedes:** `SN-DEC-001 v1.0`  
 **Affected Baselines:** Vision / Business Model / Financial Model / Operating Model / Product & PRD / Architecture
 
@@ -288,6 +290,6 @@ Operating Model نیز پس از تثبیت اسناد فوق برای Impact As
 - توسعه Target Flow به جریان غیرخطی Commerce + Execution + Evidence + Finance؛
 - افزودن Decisions D11 تا D13.
 
-## 22. Approval
+## 22. Lifecycle Status
 
-این نسخه در تاریخ 2026-09-10 تأیید و به‌عنوان Current Decision جایگزین `SN-DEC-001 v1.0` شد.
+این نسخه در تاریخ 2026-09-10 تأیید و به‌عنوان Current Decision جایگزین `SN-DEC-001 v1.0` شد. در همان تاریخ، پس از تصویب Major Revision، توسط `SN-DEC-001 v2.0` جایگزین و **Superseded** شد.
