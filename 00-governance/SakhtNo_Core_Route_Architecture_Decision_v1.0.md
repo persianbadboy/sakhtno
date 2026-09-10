@@ -2,10 +2,11 @@
 
 **Document ID:** `SN-DEC-001`  
 **Version:** `1.0`  
-**Status:** Approved / Current  
+**Status:** Superseded  
 **Decision Type:** Business & Financial Architecture  
 **Impact:** Major  
 **Approval Date:** 2026-09-10  
+**Superseded By:** `SN-DEC-001 v1.1`  
 **Affected Baselines:** Vision / Business Model / Financial Model / Operating Model / Product & PRD / Architecture
 
 ## 1. مسئله
@@ -66,7 +67,7 @@
 
 ## 4. Route با Customer Segment یکسان نیست
 
-Actorهای مختلف می‌توانند وارد Routeهای مختلف شوند. Individual می‌تواند در R1، R3 یا R4 باشد؛ Supplier می‌تواند در R2 فعالیت کند و در پرونده‌ای دیگر از R4 استفاده کند؛ Contractor می‌تواند برای سرمایه در گردش وارد R2 و برای قرارداد پروژه وارد R3 شود؛ Developer می‌تواند برای تملک زمین در R4، برای اجرای پروژه در R3 و برای فعالیت تجاری عمومی در R2 قرار گیرد.
+Actorهای مختلف می‌توانند وارد Routeهای مختلف شوند. Individual می‌تواند در R1، R3 یا R4 باشد؛ Supplier می‌تواند در R2 فعالیت کند و در پرونده‌ای دیگر از R4 استفاده کند؛ Contractor می‌تواند برای سرمایه در گردش وارد R2 و برای یک قرارداد پروژه وارد R3 شود؛ Developer می‌تواند برای تملک زمین در R4، برای اجرای پروژه در R3 و برای فعالیت تجاری عمومی در R2 قرار گیرد.
 
 > **Actor identifies who the party is; Route identifies what economic/operational activity is being performed.**
 
@@ -224,4 +225,4 @@ Operating Model نیز پس از تثبیت سه سند فوق برای Impact A
 
 این Decision در تاریخ 2026-09-10 توسط Product Owner تأیید و به‌عنوان مبنای بازنگری Major اسناد مرجع ساخت‌نو تثبیت شد.
 
-تغییر این Decision در آینده نیازمند Decision جدید یا نسخه Major جایگزین و ثبت Traceability خواهد بود.
+این نسخه با `SN-DEC-001 v1.1` تکمیل و جایگزین شده است.
