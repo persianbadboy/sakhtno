@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ساخت‌نو — مدل مالی چهارمسیره v3.0 — Current / Approved for Demo</title>
+<style>
+:root{--ink:#17283a;--muted:#637489;--navy:#0d2b45;--blue:#176b9b;--cyan:#dff4f7;--gold:#c98b21;--green:#24734d;--red:#a63e49;--paper:#fff;--wash:#f3f7fa;--line:#d5e0e7;--shadow:0 18px 44px #08253b12}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e8eef2;color:var(--ink);font-family:Vazirmatn,Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.9;font-size:15px}main{max-width:1480px;margin:28px auto;padding:0 18px}.sheet{background:var(--paper);margin:0 auto 22px;padding:34px 42px;box-shadow:var(--shadow);border:1px solid #dce5eb;break-inside:avoid}.cover{background:linear-gradient(135deg,#09283f,#145d7e 62%,#2d8e91);color:#fff;border:0;min-height:450px;display:flex;flex-direction:column;justify-content:space-between}.cover h1,.cover h2,.cover h3{color:#fff}.kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.78}.cover h1{font-size:42px;line-height:1.35;margin:30px 0 8px}.cover .lead{font-size:20px;max-width:940px;color:#e4f2f5}.meta{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:30px}.meta div{padding:10px 13px;border:1px solid #ffffff2c;background:#ffffff12;border-radius:8px;font-size:13px}.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700}.review{background:#fff1d7;color:#744b08}.a{background:#e2f4e9;color:#1f633f}.b{background:#fff0d4;color:#805b10}.c{background:#ffe3e6;color:#8d2937}.d0{background:#e2f4e9;color:#1f633f}.d1{background:#fff0d4;color:#805b10}.d2{background:#ffe3e6;color:#8d2937}.source{background:#edf3f7;color:#38566b}.note,.warning,.decision{padding:16px 18px;border-radius:10px;margin:16px 0;border-right:5px solid}.note{background:#eef8f4;border-color:var(--green)}.warning{background:#fff0f2;border-color:var(--red)}.decision{background:#edf5fb;border-color:var(--blue)}h2{font-size:24px;color:var(--navy);margin:0 0 12px;border-bottom:2px solid var(--cyan);padding-bottom:7px}h3{font-size:18px;color:var(--blue);margin:22px 0 8px}h4{font-size:15px;color:var(--navy);margin:14px 0 5px}p{margin:8px 0}a{color:#126c9d}code,.mono{font-family:Consolas,"Courier New",monospace;direction:ltr;unicode-bidi:embed;color:#24556d}.flow{direction:ltr;text-align:center;background:#f4fafb;border:1px solid #c7e3e8;border-radius:10px;padding:14px 12px;font-family:Consolas,"Courier New",monospace;font-weight:700;color:#145b73;margin:16px 0;overflow:auto}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{border:1px solid var(--line);border-radius:12px;padding:16px;background:#fff}.card.soft{background:var(--wash)}.card h3{margin-top:0}.route{border-top:6px solid var(--blue)}.route.r1{border-top-color:#1a8b87}.route.r2{border-top-color:#2373af}.route.r3{border-top-color:#9c6b1e}.route.r4{border-top-color:#7b4e9f}.route .route-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.route .route-id{font-size:26px;font-weight:800;color:var(--navy);line-height:1.3}.route .subtitle{color:var(--muted);font-size:13px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;margin:10px 0 18px;min-width:680px}th,td{border:1px solid var(--line);padding:9px 10px;vertical-align:top;text-align:right}th{background:#eaf2f6;color:#173f5a;font-size:13px}tr:nth-child(even) td{background:#fbfcfd}.tight td,.tight th{padding:7px 8px}.tag{display:inline-block;border-radius:5px;padding:1px 7px;font-size:12px;font-weight:800}.formula{background:#102c42;color:#e8f6f7;border-radius:10px;padding:15px;direction:ltr;text-align:left;font:600 14px/1.9 Consolas,"Courier New",monospace;overflow:auto;margin:12px 0}.formula small{color:#abd3d7;display:block;font:12px/1.8 Tahoma,Arial,sans-serif;direction:rtl;text-align:right}.toc{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.toc a{text-decoration:none;border:1px solid var(--line);padding:8px 10px;border-radius:7px;background:#fbfdfe}.legend{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 14px}.input-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.input{display:flex;flex-direction:column;gap:3px}.input label{font-size:12px;color:var(--muted)}input,select{font:inherit;border:1px solid #b9cad5;border-radius:7px;padding:7px 8px;color:var(--ink);background:#fff;direction:ltr;text-align:left}.calc{border:1px solid #b9dce0;background:#f7fcfc;border-radius:12px;padding:18px}.calc h3{margin-top:0}.result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:12px}.metric{background:#fff;border:1px solid var(--line);border-radius:8px;padding:9px}.metric b{display:block;font-size:18px;direction:ltr;text-align:left;color:var(--navy)}.metric span{display:block;font-size:11px;color:var(--muted)}.small{font-size:12px;color:var(--muted)}.ok{color:var(--green);font-weight:700}.bad{color:var(--red);font-weight:700}.center{text-align:center}.footer{font-size:12px;color:#71808c;text-align:center;padding:14px}.no-print{display:block}@media(max-width:900px){.grid,.grid3{grid-template-columns:1fr}.meta,.input-grid{grid-template-columns:repeat(2,1fr)}.result-grid{grid-template-columns:repeat(2,1fr)}.cover h1{font-size:32px}.sheet{padding:24px 22px}}@media(max-width:560px){.meta,.input-grid,.result-grid,.toc{grid-template-columns:1fr}.cover{min-height:520px}}@media print{body{background:#fff;font-size:10.5px}.no-print{display:none!important}main{max-width:none;margin:0;padding:0}.sheet{box-shadow:none;border:0;margin:0;padding:22mm 18mm;min-height:260mm;page-break-after:always}.cover{page-break-after:always}.sheet:last-child{page-break-after:auto}h2{font-size:19px}h3{font-size:14px}table{min-width:0;font-size:9px}th,td{padding:5px}.formula{font-size:10px}}
+/* Persian typography layer: use a locally available Persian face when present,
+   then fall back to Segoe UI/Tahoma so the standalone file stays self-contained. */
+body{font-family:"Vazirmatn","IRANSansX","Shabnam","Sahel","B Yekan","B Mitra","Segoe UI",Tahoma,Arial,sans-serif;line-height:2;font-weight:400;font-kerning:normal}
+h1,h2,h3,h4{font-family:"Vazirmatn","IRANSansX","Shabnam","Sahel","B Yekan","Segoe UI",Tahoma,Arial,sans-serif;font-feature-settings:"kern" 1}
+.cover h1{font-weight:800;letter-spacing:-.025em;line-height:1.45}
+h2,h3{font-weight:750}
+h4{font-weight:700}
+</style>
+</head>
+<body>
+<main>
+<section class="sheet cover" id="top">
+  <div>
+    <div class="kicker">SN-FIN-001 · Four-Route Financial Architecture</div>
+    <h1>مدل مالی چهارمسیره ساخت‌نو</h1>
+    <p class="lead">مدلی عمیق، قابل توضیح و قابل ویرایش برای تبدیل «نیاز» به تطبیق تأمین‌کننده/خدمت و محصول مالی؛ با ردیابی حقوقی، تفکیک چهار جریان اقتصادی و مرز روشن بین درآمد ساخت‌نو و پولی که نزد Provider جابه‌جا می‌شود.</p>
+    <div class="legend"><span class="pill a">CURRENT — تأییدشده برای Demo</span><span class="pill source">Demo/Homepage Baseline</span><span class="pill source">No Pilot Assumption</span></div>
+  </div>
+  <div>
+    <div class="meta">
+      <div><b>Document ID</b><br>SN-FIN-001</div><div><b>Version</b><br>v3.0</div><div><b>Lifecycle</b><br>CURRENT_APPROVED_FOR_DEMO</div><div><b>Prepared</b><br>2026-09-11</div>
+      <div><b>Business Baseline</b><br>SN-BM-001 v4.0 Current</div><div><b>Legal Baseline</b><br>SN-LEG-001 v1.0 Current</div><div><b>Scope</b><br>Demo / Homepage</div><div><b>Commit</b><br>Not committed</div>
+    </div>
+    <p class="small" style="color:#d1e7eb;margin-top:18px">این نسخه برای مبنای Demo/Homepage تأیید شده است؛ اعداد Provider، فعال‌سازی عملیاتی و مجوز عملیات مالی واقعی همچنان مستقل و مشروط باقی می‌مانند.</p>
+  </div>
+</section>
+
+<section class="sheet" id="summary">
+  <h2>۱. تصمیم طراحی مدل مالی</h2>
+  <div class="decision"><b>تز مدل:</b> چهار Route «محل رخداد اقتصادی» هستند؛ چهار Flow «چگونگی تحقق و قابل‌ردیابی شدن ارزش». محصول مالی یک Overlay مشروط بر فعالیت واقعی است، نه جایگزین Route یا منبع پیش‌فرض درآمد.</div>
+  <p>مدل مالی باید بتواند برای هر پیشنهاد Demo پنج سؤال را جواب دهد: چه نیازی شناسایی شد؟ چه کالا/خدمت یا دارایی‌ای مبنای آن است؟ چه شواهدی آن را پشتیبانی می‌کند؟ چه محصول مالی به آن نزدیک است؟ و کدام Actor مجاز، در صورت پذیرش، تصمیم و جابه‌جایی پول را انجام می‌دهد؟</p>
+  <div class="flow">Need → Route → Economic Event → Supplier / Service Match → Evidence → Financial Need → Product Family → Authorized Provider → Outcome</div>
+  <div class="grid">
+    <div class="card soft"><h3>چه چیز مدل می‌شود؟</h3><p>حجم و ارزش فعالیت واقعی، نرخ تبدیل، نرخ اتصال مالی، هزینه خدمت، درآمد قراردادی، زمان وصول، ریسک قراردادی/عملیاتی و سهم قابل انتساب هر Route.</p></div>
+    <div class="card soft"><h3>چه چیز مدل نمی‌شود؟</h3><p>اعطای اعتبار توسط ساخت‌نو، نگهداری وجه مشتری، صدور ضمانت‌نامه، پذیرش وثیقه، ثبت رسمی ملک یا عدد قطعی قیمت/سقف Provider بدون منبع و قرارداد جاری.</p></div>
+  </div>
+  <div class="warning"><b>قاعده ضدتوهم Demo:</b> هر کارت محصول مالی در Homepage باید هم‌زمان برچسب Route، وضعیت حقوقی <span class="pill b">A/B/C</span>، سطح نمایش <span class="pill d0">D0/D1/D2</span>، Provider/Actor مسئول و جمله «تصمیم نهایی با نهاد مجاز» را داشته باشد.</div>
+</section>
+
+<section class="sheet" id="spine">
+  <h2>۲. ستون فقرات Source-to-Model</h2>
+  <div class="flow">SN-LEG-001 → SN-BM-001 v4.0 → 4 Routes × 4 Flows → Product Catalog → Route Economics → Portfolio Model → Demo Guardrails</div>
+  <div class="table-wrap"><table class="tight"><thead><tr><th>مبنای تصمیم</th><th>آنچه از منبع گرفته می‌شود</th><th>ترجمه به مدل مالی</th><th>وضعیت این نسخه</th></tr></thead><tbody>
+  <tr><td><b>SN-BM-001 v4.0</b><br>Business Model Current</td><td>چهار Route، چهار Flow، Payer architecture، Revenue families، Finance به‌عنوان Enablement، اصل جدایی Route از Product.</td><td>ابعاد Volume، Charging Event، Unit of Account، Revenue/Cost Pool، Cross-route transition.</td><td><span class="pill source">Baseline used</span></td></tr>
+  <tr><td><b>SN-LEG-001 v1.0</b><br>Current / Approved for Demo</td><td>A/B/C، نقش محدود SakhtNo، Provider dependency، Identity/Authority/Consent، D0/D1/D2 guardrails.</td><td>قفل‌کردن درآمدهای غیرمجاز، ریسک انتقال نقش، شرط فعال شدن محصول و متن UI.</td><td><span class="pill source">Traceability required</span></td></tr>
+  <tr><td><b>Provider Policy</b></td><td>محصول واقعی، پذیرش مشتری، مدارک، Pricing، API، Settlement، SLA و Risk appetite.</td><td>پارامترهای متغیر Provider؛ بدون آن فقط Scenario / Illustrative می‌ماند.</td><td><span class="pill b">Open per provider</span></td></tr>
+  <tr><td><b>Inference / Architecture</b></td><td>نتیجه‌گیری محدود و تصمیم طراحی ساخت‌نو.</td><td>فیلد، State، Gate، attribution و فرمول قابل آزمون.</td><td><span class="pill review">Review required</span></td></tr>
+  </tbody></table></div>
+  <h3>قواعد تفکیک گزاره‌ها</h3>
+  <div class="grid3"><div class="card"><h4>[LAW] / [REG]</h4><p>دامنه قانونی، Actor، مجوز، شرط یا تکلیف. به‌خودی‌خود مجوز ساخت‌نو یا پذیرش Provider خاص نیست.</p></div><div class="card"><h4>[POLICY]</h4><p>قواعد جاری بانک/مؤسسه/نهاد مالی؛ باید از منبع همان Provider و در تاریخ استفاده احراز شود.</p></div><div class="card"><h4>[INFERENCE] / [ARCH]</h4><p>نتیجه تحلیلی یا طراحی ساخت‌نو؛ نباید به‌عنوان حکم قانون یا وعده محصول نمایش داده شود.</p></div></div>
+</section>
+
+<section class="sheet" id="four-flows">
+  <h2>۳. چهار Flow و اثر مالی آنها</h2>
+  <p>چهار Flow یک زنجیره واحد نیستند که یکی جای دیگری را بگیرد. هر کدام مالک داده، هزینه، تعهد و ریسک متفاوت دارد؛ مدل مالی باید اتصال آنها را نشان دهد.</p>
+  <div class="table-wrap"><table><thead><tr><th>Flow</th><th>رخدادهای قابل‌اندازه‌گیری</th><th>محرک درآمد</th><th>هزینه/ریسک اصلی</th><th>کنترل مدل</th></tr></thead><tbody>
+  <tr><td><b>Goods / Service / Execution</b></td><td>Match، Quote، Order، Dispatch، Delivery، Service Completion، Acceptance، Progress.</td><td>Completed order، خدمت تکمیل‌شده، workflow اجرایی، commission قراردادی.</td><td>Fulfillment support، کیفیت، تأخیر، مرجوعی، اختلاف، Cost-to-Serve.</td><td>Revenue قبل از رویداد واقعی فقط Hypothesis است؛ تحویل/پذیرش باید State داشته باشد.</td></tr>
+  <tr><td><b>Money / Finance</b></td><td>Funding request، approval، disbursement، payment instruction، repayment، collection، settlement.</td><td>فقط fee/share قراردادی و مجاز بابت enablement یا workflow.</td><td>Payment cost، settlement timing، reconciliation، liquidity gap؛ credit risk عموماً نزد Provider.</td><td><code>Revenue Earned ≠ Money Movement ≠ Settlement</code></td></tr>
+  <tr><td><b>Data / Evidence</b></td><td>Identity، authority، consent، invoice، shipment، QC، certificate، provenance، verification.</td><td>Service/workflow در صورت Deliverable روشن؛ نه فروش پیش‌فرض داده شخصی/اعتباری.</td><td>جمع‌آوری، راستی‌آزمایی، نگهداری، privacy، fraud، mismatch، audit.</td><td>Evidence depth متناسب با Value-at-Risk؛ فقدان منبع = Open، نه صفر ریسک.</td></tr>
+  <tr><td><b>Rights / Obligations</b></td><td>Contract، PO، invoice، claim، acceptance، assignment، lien/encumbrance، entitlement.</td><td>قرارداد/خدمت مدیریت تعهد یا transaction support، با نقش مجاز.</td><td>مشروط‌بودن پرداخت، dispute، recourse، تعارض حق، claim handling، مسئولیت حرفه‌ای.</td><td>هیچ نقش رسمی با نام ساخت‌نو ساخته نمی‌شود؛ Actor مجاز در پرونده ثبت می‌شود.</td></tr>
+  </tbody></table></div>
+  <div class="formula">Economic value = Activity value × Evidence quality × Rights enforceability × Settlement reliability
+    <small>فرمول تحلیلی است؛ ضریب‌ها باید در مرحله اعتبارسنجی و بر اساس داده واقعی تعریف شوند.</small></div>
+</section>
+
+<section class="sheet" id="routes">
+  <h2>۴. ماتریس مالی چهار Route</h2>
+  <div class="grid">
+    <article class="card route r1"><div class="route-head"><div><div class="route-id">R1</div><div class="subtitle">Procurement &amp; Consumption · تأمین و مصرف</div></div><span class="pill b">عمدتاً B / D1</span></div><p><b>واحد مالی:</b> Completed Order / Service Case</p><p><b>نیاز:</b> خرید مشخص کالا یا خدمت برای مصرف، تعمیر، تکمیل یا نیاز محدود.</p><p><b>محصولات مالی:</b> خرید اعتباری، پرداخت مرحله‌ای، اعتبار حلقه‌بسته/BNPL در صورت Provider مجاز.</p><p><b>نقش SakhtNo:</b> Need intake، مقایسه، matching، ثبت پیشنهاد سفارش، جمع‌آوری رضایت و ارجاع.</p><p><b>گاردریل:</b> بدون cash-out، نگهداری وجه، «اعتبار شما تأیید شد» یا تضمین کیفیت/تحویل.</p></article>
+    <article class="card route r2"><div class="route-head"><div><div class="route-id">R2</div><div class="subtitle">Trade &amp; Working Capital · تجارت و سرمایه در گردش</div></div><span class="pill b">B / D1</span></div><p><b>واحد مالی:</b> Completed Trade / Business Cohort</p><p><b>نیاز:</b> سفارش کسب‌وکاری، موجودی، طلب، خرید تکرارشونده و فشار سرمایه در گردش.</p><p><b>محصولات مالی:</b> Payables Finance، Reverse Factoring، Factoring، Receivables Finance، Dynamic Discounting، PO/Pre-shipment.</p><p><b>نقش SakhtNo:</b> KYB intake، اتصال PO/Invoice، Assignment Readiness، Duplicate Financing Check و Provider Routing.</p><p><b>گاردریل:</b> ساخت‌نو خریدار مطالبه یا پذیرنده قانونی نیست؛ PO به‌تنهایی تعهد قطعی نیست.</p></article>
+    <article class="card route r3"><div class="route-head"><div><div class="route-id">R3</div><div class="subtitle">Project &amp; Development · پروژه و توسعه</div></div><span class="pill b">B/C / D1</span></div><p><b>واحد مالی:</b> Project / Contract / Work Package Cohort</p><p><b>نیاز:</b> پروژه، قرارداد، بسته کاری، صورت‌وضعیت/مطالبه تأییدشده و نقدینگی اجرای کار.</p><p><b>محصولات مالی:</b> Contract Finance، PO/Pre-shipment، Progress/Claim Finance، Payables/Receivables، Controlled Payment با Actor مجاز.</p><p><b>نقش SakhtNo:</b> ساختاردهی Context و Evidence، matching، workflow و ارجاع؛ نه Engineer/Inspector/Employer/Provider.</p><p><b>گاردریل:</b> progress تأییدنشده، retention، اختلاف یا NCR به‌عنوان entitlement قطعی مدل نشود.</p></article>
+    <article class="card route r4"><div class="route-head"><div><div class="route-id">R4</div><div class="subtitle">Property &amp; Asset · ملک و دارایی</div></div><span class="pill c">B/C / D1-D2</span></div><p><b>واحد مالی:</b> Asset Case / Completed Asset Transaction</p><p><b>نیاز:</b> دارایی، تجهیزات، موجودی انبار یا ملک با مسئله مالکیت، ارزش، رهن یا نقدینگی.</p><p><b>محصولات مالی:</b> Leasing، Equipment Finance، Asset-backed، Inventory/Warehouse Finance، Property-backed در صورت Provider مجاز.</p><p><b>نقش SakhtNo:</b> Asset Context، Due Diligence checklist، Collateral Intelligence، match و ارجاع.</p><p><b>گاردریل:</b> نمایش «وثیقه ثبت شد»، «مالکیت منتقل شد» یا «ارزش رسمی» بدون Actor/رویداد رسمی ممنوع.</p></article>
+  </div>
+  <div class="note"><b>Route Boundary:</b> Route بر مبنای ماهیت اقتصادی Transaction اصلی تعیین می‌شود، نه نوع مشتری، محصول مالی، Provider یا ورودی Homepage. Finance روی Route سوار می‌شود و آن را عوض نمی‌کند.</div>
+</section>
+
+<section class="sheet" id="catalog">
+  <h2>۵. کاتالوگ محصولات مالی و سطح نمایش</h2>
+  <p>نام محصول مالی در Demo «خانواده قابل بررسی» است، مگر اینکه Provider، سیاست پذیرش، قرارداد و Actor مسئول در پرونده حاضر باشد. Instrument یا Control نباید با Product یکی تلقی شود.</p>
+  <div class="table-wrap"><table class="tight"><thead><tr><th>خانواده/محصول</th><th>Route</th><th>محرک اقتصادی</th><th>Actor تصمیم‌گیر/اجرا</th><th>وضعیت حقوقی برای SakhtNo</th><th>نمایش UI</th><th>پارامترهای مدل</th></tr></thead><tbody>
+  <tr><td><b>Closed-loop Purchase Credit / BNPL</b></td><td>R1/R2</td><td>Order + supplier/service + purpose-linked spend</td><td>Provider اعتباری/بانک/واسط مجاز</td><td><span class="pill b">B</span></td><td><span class="pill d1">D1</span></td><td>Ticket، attach، approval، tenor، provider fee، loss ownership</td></tr>
+  <tr><td><b>Payables Finance / Reverse Factoring</b></td><td>R2/R3</td><td>تأیید پرداختنی/فاکتور و رابطه Buyer-Supplier</td><td>بانک/مؤسسه اعتباری/پذیرنده مجاز</td><td><span class="pill b">B</span></td><td><span class="pill d1">D1</span></td><td>Payable value، approval rate، days، discount، recourse</td></tr>
+  <tr><td><b>Factoring / Receivables Finance</b></td><td>R2/R3</td><td>مطالبه قراردادی قابل بررسی، assignment و collection path</td><td>پذیرنده مطالبات مجاز</td><td><span class="pill b">B</span></td><td><span class="pill d1">D1</span></td><td>Receivable، advance، haircut، fee، duplicate exposure، recovery</td></tr>
+  <tr><td><b>PO / Pre-shipment Finance</b></td><td>R2/R3</td><td>PO/Contract قبل از تحویل یا تولید</td><td>Provider مالی/پذیرنده قرارداد</td><td><span class="pill b">B</span> / <span class="pill c">C</span></td><td><span class="pill d1">D1</span></td><td>PO strength، fulfilment probability، tenor، delivery evidence</td></tr>
+  <tr><td><b>Progress / Claim Finance</b></td><td>R3</td><td>Progress/Claim با QC/Certificate و entitlement path</td><td>Employer/Engineer + Provider مجاز</td><td><span class="pill b">B</span> / <span class="pill c">C</span></td><td><span class="pill d1">D1</span></td><td>certified value، retention، dispute، advance، recovery</td></tr>
+  <tr><td><b>Leasing / Equipment Finance</b></td><td>R4</td><td>دارایی مولد، استفاده/تملک قراردادی</td><td>شرکت واسپاری/Provider مجاز</td><td><span class="pill b">B</span></td><td><span class="pill d1">D1</span></td><td>asset value، residual، tenor، instalment، custody</td></tr>
+  <tr><td><b>Asset-backed / Property-backed</b></td><td>R4</td><td>دارایی/ملک و مسیر رسمی وثیقه/ثبت</td><td>نهاد وثیقه‌پذیر/ثبت/Provider</td><td><span class="pill c">C</span> for direct SakhtNo execution</td><td><span class="pill d2">D2</span> for execution claim</td><td>LTV، valuation source، lien، perfection، enforcement</td></tr>
+  <tr><td><b>GAM / LC / Guarantee / Controlled Payment</b></td><td>R1-R4</td><td>ابزار اعتباری، تضمین یا کنترل پرداخت</td><td>نهاد صادرکننده/ضامن/مؤسسه اعتباری مجاز</td><td><span class="pill b">B</span> / <span class="pill c">C</span></td><td><span class="pill d1">D1</span></td><td>issuer، face value، expiry، conditions، fee، event trigger</td></tr>
+  </tbody></table></div>
+  <div class="warning"><b>دستور UI:</b> عبارت‌هایی مانند «واجد شرایط اولیه برای بررسی» یا «نزدیک‌ترین خانواده محصول» مجازند؛ «تأیید شد»، «صدور شد»، «وجه آماده است» و «تضمین شد» تا زمان رویداد رسمی Provider ممنوع‌اند.</div>
+</section>
+
+<section class="sheet" id="economics">
+  <h2>۶. معماری درآمد، هزینه و ریسک</h2>
+  <div class="grid3"><div class="card"><h3>درآمد Core</h3><p>Subscription / Platform Fee، Transaction Fee، Service Fee، Enterprise/Workflow Fee و Partner Fee؛ مستقل از اینکه Finance واقعاً فعال شود.</p></div><div class="card"><h3>درآمد Finance Enablement</h3><p>فقط fee یا سهم قراردادیِ مجاز بابت origination support، workflow، integration یا servicing؛ به نام «سود اعتبار» برای ساخت‌نو ثبت نمی‌شود.</p></div><div class="card"><h3>پول عبوری</h3><p>Principal، disbursement، repayment و settlement درآمد ساخت‌نو نیست؛ مگر قرارداد و نقش قانونی آن صریحاً خلاف این را ثابت کند.</p></div></div>
+  <div class="formula">SakhtNo Revenue = Core Revenue + Legally-permitted Contracted Finance Enablement Revenue
+Route Contribution = Net Revenue − Variable Service Cost − Payment/Provider Cost borne by SakhtNo − Fraud/Dispute Cost borne by SakhtNo − Attributable Contractual Risk
+Portfolio Contribution = Σ Route Contribution − Shared Fixed Cost − Compliance/Technology/Corporate Overhead</div>
+  <div class="table-wrap"><table><thead><tr><th>Route</th><th>درآمدهای قابل مدل‌سازی</th><th>هزینه‌های متغیر</th><th>ریسک قابل انتساب</th><th>واحد Contribution</th></tr></thead><tbody>
+  <tr><td>R1</td><td>Transaction، service، subscription، finance enablement قراردادی</td><td>matching/support، payment/provider، fulfilment coordination، refund handling</td><td>fraud، return/dispute، service failure، timing gap</td><td>Order / Service Case</td></tr>
+  <tr><td>R2</td><td>Business account، trade workflow، invoice/receivable readiness، provider fee</td><td>KYB، document verification، matching، integration، collection workflow</td><td>duplicate assignment، invoice dispute، dilution، counterparty/recourse</td><td>Trade / Account Cohort</td></tr>
+  <tr><td>R3</td><td>project setup، managed workflow، execution evidence، provider routing</td><td>project operations، QC/evidence coordination، integration، support</td><td>delay، NCR، uncertified claim، retention، dispute، concentration</td><td>Project / Work Package</td></tr>
+  <tr><td>R4</td><td>asset case، due diligence workflow، listing/transaction support، provider routing</td><td>verification، valuation coordination، registry/partner integration، support</td><td>title/encumbrance، valuation، registration، enforcement، long cycle</td><td>Asset Case / Transaction</td></tr>
+  </tbody></table></div>
+  <div class="note"><b>اصلاح خطای رایج:</b> GMV، حجم اسمی تسهیلات، ارزش فاکتور یا ارزش ملک هیچ‌کدام به‌تنهایی Revenue یا Contribution نیستند. هر رقم باید owner، event، source، timing و attribution داشته باشد.</div>
+</section>
+
+<section class="sheet" id="driver-map">
+  <h2>۷. نقشه Driverها و فرمول‌های عملیاتی</h2>
+  <div class="table-wrap"><table class="tight"><thead><tr><th>Driver</th><th>تعریف</th><th>فرمول/رابطه</th><th>مالک داده</th><th>اثر روی مدل</th></tr></thead><tbody>
+  <tr><td><b>Qualified Need</b></td><td>نیازی که حداقل Context، مقصد/محدوده و هدف اقتصادی آن مشخص است.</td><td><code>raw needs × qualification rate</code></td><td>Product / Marketplace</td><td>ورودی قابل تبدیل؛ Lead خام نیست.</td></tr>
+  <tr><td><b>Supplier/Service Match</b></td><td>نتیجه‌ای با ظرفیت، مجوز/اهلیت و fit قابل توضیح.</td><td><code>qualified need × match rate</code></td><td>Network / Category</td><td>Marketplace value و هزینه verification.</td></tr>
+  <tr><td><b>Completed Activity</b></td><td>Order/Service/Trade/Project/Asset event با evidence لازم.</td><td><code>matched opportunities × conversion × completion</code></td><td>Ops / Provider</td><td>مبنای اصلی Core Revenue.</td></tr>
+  <tr><td><b>Finance Attach</b></td><td>فعالیت واقعی که Need مالی قابل بررسی دارد.</td><td><code>completed activity × finance attach rate</code></td><td>Finance Enablement</td><td>فقط لایه افزایشی؛ ضمانت approval نیست.</td></tr>
+  <tr><td><b>Provider Approval</b></td><td>پرونده‌ای که Provider پس از تصمیم خود پذیرفته است.</td><td><code>finance applications × provider approval rate</code></td><td>Provider</td><td>برای live economics؛ در Demo فقط illustrative.</td></tr>
+  <tr><td><b>Financed Volume</b></td><td>مبلغ واقعاً disbursed/settled توسط Provider، نه درخواست.</td><td><code>approved cases × average financed ticket</code></td><td>Provider / Settlement</td><td>مبنای share فقط در قرارداد مجاز.</td></tr>
+  <tr><td><b>Cash Conversion</b></td><td>زمان بین earned revenue و وصول، با زمان تعهدات پرداختی.</td><td><code>collection days − payable days</code></td><td>Finance / Ops</td><td>Working capital exposure ساخت‌نو.</td></tr>
+  <tr><td><b>Evidence Cost</b></td><td>هزینه گردآوری، تطبیق، راستی‌آزمایی و نگهداری evidence.</td><td><code>events × verification cost per event</code></td><td>Trust / Compliance</td><td>Cost-to-serve و price floor.</td></tr>
+  </tbody></table></div>
+  <h3>قانون Attribution</h3><p>اگر یک هزینه یا درآمد بین چند Route مشترک است، ابتدا مستقیم‌ترین owner ثبت شود؛ باقی‌مانده با قاعده ثابت و قابل‌تکرار تخصیص یابد. Shared Core نباید زیان یک Route را پنهان کند یا سود Route دیگر را دوباره‌شماری کند.</p>
+</section>
+
+<section class="sheet" id="calculator">
+  <h2>۸. ماشین‌حساب قابل‌ویرایش سناریوی Route</h2>
+  <div class="warning"><b>هشدار داده:</b> اعداد زیر صرفاً Illustrative هستند تا منطق مدل دیده شود و هیچ‌کدام فرض مصوب بازار، Provider یا Forecast ساخت‌نو نیستند. برای تصمیم‌گیری باید با داده مالک‌دار و منبع‌دار جایگزین شوند.</div>
+  <div class="calc">
+    <h3>سناریوی انتخاب‌شده</h3>
+    <div class="input-grid">
+      <div class="input"><label for="route">Route</label><select id="route"><option value="r1">R1 — Procurement</option><option value="r2">R2 — Trade</option><option value="r3">R3 — Project</option><option value="r4">R4 — Property/Asset</option></select></div>
+      <div class="input"><label for="cases">تعداد فعالیت / ماه</label><input id="cases" type="number" min="0" value="100"></div>
+      <div class="input"><label for="ticket">میانگین ارزش هر فعالیت (میلیون ریال)</label><input id="ticket" type="number" min="0" value="500"></div>
+      <div class="input"><label for="attach">نرخ اتصال مالی (%)</label><input id="attach" type="number" min="0" max="100" value="30"></div>
+      <div class="input"><label for="approval">نرخ پذیرش Provider (%)</label><input id="approval" type="number" min="0" max="100" value="50"></div>
+      <div class="input"><label for="take">درآمد Core به ازای فعالیت (میلیون ریال)</label><input id="take" type="number" min="0" value="3"></div>
+      <div class="input"><label for="financeShare">درآمد Finance Enablement به ازای پرونده پذیرفته (میلیون ریال)</label><input id="financeShare" type="number" min="0" value="1"></div>
+      <div class="input"><label for="variable">هزینه متغیر به ازای فعالیت (میلیون ریال)</label><input id="variable" type="number" min="0" value="1.5"></div>
+      <div class="input"><label for="evidence">هزینه Evidence به ازای فعالیت (میلیون ریال)</label><input id="evidence" type="number" min="0" value="0.5"></div>
+      <div class="input"><label for="loss">نرخ زیان قراردادی/عملیاتی (%)</label><input id="loss" type="number" min="0" max="100" value="1"></div>
+      <div class="input"><label for="fixed">هزینه ثابت تخصیص‌یافته ماهانه (میلیون ریال)</label><input id="fixed" type="number" min="0" value="120"></div>
+    </div>
+    <div class="result-grid"><div class="metric"><b id="gross">—</b><span>ارزش فعالیت / ماه (میلیون ریال)</span></div><div class="metric"><b id="financed">—</b><span>حجم پرونده مالی پذیرفته (میلیون ریال)</span></div><div class="metric"><b id="revenue">—</b><span>درآمد ساخت‌نو (میلیون ریال)</span></div><div class="metric"><b id="cost">—</b><span>هزینه متغیر + Evidence (میلیون ریال)</span></div><div class="metric"><b id="lossValue">—</b><span>زیان انتسابی سناریو (میلیون ریال)</span></div><div class="metric"><b id="contribution">—</b><span>Contribution پس از هزینه ثابت (میلیون ریال)</span></div><div class="metric"><b id="margin">—</b><span>حاشیه Contribution</span></div><div class="metric"><b id="status">—</b><span>وضعیت خوانش مدل</span></div></div>
+    <p class="small">فرمول این ابزار: <code>gross = cases × ticket</code>؛ <code>accepted files = cases × attach × approval</code>؛ <code>revenue = cases × core fee + accepted files × finance fee</code>؛ <code>loss = gross × loss rate</code>. این ماشین‌حساب هنوز هزینه سرمایه Provider، مالیات، برگشت، NPV، cohort و زمان وصول را مدل نمی‌کند.</p>
+  </div>
+</section>
+
+<section class="sheet" id="portfolio">
+  <h2>۹. مدل تجمیعی Portfolio و چهار مسیر جریان</h2>
+  <div class="flow">Homepage Need → Route Classification → Supplier/Service Match → Product Match → Provider Routing → Evidence/Consent → Decision by Provider → Activity/Settlement State → Revenue Attribution</div>
+  <div class="table-wrap"><table><thead><tr><th>لایه</th><th>سؤال مدل</th><th>خروجی قابل نمایش در Demo</th><th>خروجی ممنوع بدون Evidence/Provider</th></tr></thead><tbody>
+  <tr><td><b>Demand</b></td><td>چه نیازی و با چه Contextی وارد شده؟</td><td>Need Card، Route confidence، missing fields.</td><td>تفسیر قطعی نیت یا اعتبار مشتری.</td></tr>
+  <tr><td><b>Market</b></td><td>چه Supplier/Service Providerی fit دارد؟</td><td>پروفایل، ظرفیت ادعایی، دلیل match، status source.</td><td>تضمین کیفیت، موجودی یا تحویل قطعی بدون سند.</td></tr>
+  <tr><td><b>Finance</b></td><td>چه خانواده محصولی به context نزدیک است؟</td><td>Product Family، شروط، Provider dependency، D1.</td><td>approval، سقف، قیمت قطعی یا disbursement.</td></tr>
+  <tr><td><b>Rights</b></td><td>چه تعهد/مطالبه/حق قابل بررسی است؟</td><td>Contract/Invoice/Claim checklist، evidence gap.</td><td>ثبت حق، پذیرش وثیقه، انتقال مالکیت یا enforceability قطعی.</td></tr>
+  <tr><td><b>Money</b></td><td>چه کسی payer/beneficiary/provider است؟</td><td>مسیر مفهومی وجه و state مورد انتظار.</td><td>نمایش موجودی، حساب امانی یا receipt واقعی ساخت‌نو.</td></tr>
+  </tbody></table></div>
+  <h3>فرمول Portfolio</h3>
+  <div class="formula">Portfolio Net Contribution = (R1 + R2 + R3 + R4 Route Contributions)
+  − Shared Product / Technology / Compliance Cost
+  − Unallocated Corporate Overhead
+  − Working Capital Cost of SakhtNo
+  + Cross-route Conversion Value (only once, with explicit attribution)</div>
+  <p>Transitionهایی مانند «R4 خرید زمین → R3 توسعه → R4 فروش/تأمین مالی مجدد» باید یک شناسه Economic Case مشترک، تاریخچه قرارداد/شواهد و exposure مالی قابل تفکیک داشته باشند؛ ارزش Cross-route نباید در هر سه مرحله سه بار به‌عنوان یک درآمد واحد شمرده شود.</p>
+</section>
+
+<section class="sheet" id="scenarios">
+  <h2>۱۰. سناریوها و ورودی‌های لازم برای بازنویسی عددی</h2>
+  <p>در این نسخه، ساختار و فرمول تثبیت می‌شود و اعداد واقعی به‌دلیل نبود داده مالک‌دار و سیاست Provider عمداً باز گذاشته شده‌اند. جدول زیر باید هنگام نسخه عددی تکمیل شود.</p>
+  <div class="table-wrap"><table class="tight"><thead><tr><th>بسته ورودی</th><th>فیلدهای اجباری</th><th>منبع قابل قبول</th><th>مالک</th><th>Gate</th></tr></thead><tbody>
+  <tr><td>Demand &amp; Activity</td><td>qualified need، conversion، completion، ticket، geography، category</td><td>مصاحبه/داده داخلی/رویداد Demo با برچسب فرض</td><td>Product / GTM</td><td>هر عدد source و date داشته باشد.</td></tr>
+  <tr><td>Supplier / Service</td><td>فعال، ظرفیت، fee، SLA، fulfilment، dispute/return</td><td>قرارداد/اظهار تامین‌کننده/داده عملیات</td><td>Marketplace / Ops</td><td>ادعا از fact جدا شود.</td></tr>
+  <tr><td>Provider</td><td>product، eligibility، approval، pricing، tenor، limits، loss owner، settlement</td><td>سیاست و قرارداد جاری Provider</td><td>Finance Partnerships</td><td>بدون آن فقط D1 و Illustrative.</td></tr>
+  <tr><td>Legal / Role</td><td>A/B/C، role، consent، authorization، official system، blocked wording</td><td>SN-LEG-001 + منبع رسمی جاری</td><td>Legal / Governance</td><td>هیچ capability بدون status.</td></tr>
+  <tr><td>Cost / Cash</td><td>variable cost، evidence cost، payment cost، collection days، payable days، fixed cost</td><td>قرارداد، فاکتور، accounting policy، time study</td><td>Finance / Ops</td><td>cash و P&amp;L جدا.</td></tr>
+  </tbody></table></div>
+  <div class="grid3"><div class="card"><h3>Conservative</h3><p>تبدیل کمتر، approval کمتر، evidence cost و support بالاتر، attach مالی پایین‌تر؛ برای سنجش کف تاب‌آوری.</p></div><div class="card"><h3>Base</h3><p>مقادیر بر اساس داده قابل استناد هر Route و Provider؛ هر assumption با confidence و owner.</p></div><div class="card"><h3>Upside</h3><p>فقط پس از مشاهده ظرفیت و تکرارپذیری؛ نباید با افزایش GMV، ریسک و هزینه را حذف کند.</p></div></div>
+</section>
+
+<section class="sheet" id="guardrails">
+  <h2>۱۱. Guardrailهای حقوقی/مالی Demo</h2>
+  <div class="table-wrap"><table class="tight"><thead><tr><th>موضوع</th><th>نمایش مجاز</th><th>نمایش/رفتار ممنوع</th><th>کنترل فنی/محتوایی</th><th>مبنای SN-LEG-001</th></tr></thead><tbody>
+  <tr><td>اعتبار</td><td>«این نیاز به خانواده اعتبار خرید نزدیک است»</td><td>«اعتبار شما تأیید شد»، cash-out، سقف قطعی</td><td>Provider decision field اجباری؛ default = pending.</td><td>A/B/C + D1/D2</td></tr>
+  <tr><td>وجه</td><td>نمودار مفهومی money flow</td><td>نمایش حساب ساخت‌نو، موجودی، receipt یا escrow واقعی</td><td>جمله ثابت: «وجوه نزد نهاد مجاز جابه‌جا می‌شود».</td><td>مرز ماده ۳۷/۳۸ و آیین‌نامه ماده ۲۳</td></tr>
+  <tr><td>مطالبه</td><td>Assignment readiness، duplicate check، provider routing</td><td>«ساخت‌نو مطالبه را خرید» یا پذیرش/قیمت‌گذاری قطعی</td><td>holder/assignee/recourse را nullable و ownerدار نگه دارد.</td><td>Factoring boundary</td></tr>
+  <tr><td>وثیقه</td><td>دارایی/پشتوانه برای بررسی</td><td>«وثیقه ثبت شد»، «آزاد شد»، «وصول قطعی»</td><td>perfection/registration event و Actor رسمی اجباری.</td><td>ماده ۷ + آیین‌نامه</td></tr>
+  <tr><td>ملک</td><td>فرصت ملکی/دارایی، checklist استعلام رسمی</td><td>«مالکیت منتقل شد» یا قرارداد Marketplace به‌جای سند</td><td>registration status جدا از listing/intent.</td><td>ثبت رسمی معاملات اموال غیرمنقول</td></tr>
+  <tr><td>ضمانت/بیمه</td><td>خانواده ابزار و نهاد احتمالی</td><td>تضمین ساخت‌نو، صدور ضمانت یا پوشش بیمه توسط ساخت‌نو</td><td>issuer و policy شماره‌دار اجباری.</td><td>Provider/authorization dependency</td></tr>
+  <tr><td>داده/اعتبارسنجی</td><td>Risk intelligence / matching signal با consent</td><td>Credit decision یا استفاده بی‌رضایت از داده</td><td>Identity ≠ authority ≠ consent ≠ credit decision.</td><td>هویت، اختیار و اعتبار</td></tr>
+  </tbody></table></div>
+  <div class="warning"><b>Kill switch:</b> اگر وضعیت Provider، نقش قانونی، منبع قیمت/شرط، consent یا evidence پایه نامشخص است، کارت محصول باید به <span class="pill d2">D2</span> تنزل کند یا به‌کلی پنهان شود. هیچ رتبه‌بندی بصری نباید D2 را شبیه پیشنهاد فعال نشان دهد.</div>
+</section>
+
+<section class="sheet" id="demo-output">
+  <h2>۱۲. قرارداد خروجی Homepage برای سه تطبیق</h2>
+  <p>خروجی Homepage باید یک «Recommendation Packet» باشد، نه پیش‌فاکتور اعتباری. هر Packet حداقل اجزای زیر را دارد:</p>
+  <div class="grid3"><div class="card"><h3>Need Card</h3><p>Need text، Structured Need، Route، missing fields، budget/time/location و confidence.</p></div><div class="card"><h3>Supplier/Service Card</h3><p>نام/نوع، category، capacity، source date، دلیل تطبیق، status، مدارک قابل ارائه و disclaimer.</p></div><div class="card"><h3>Financial Card</h3><p>Product family، purpose، trigger، Provider class، A/B/C، D0/D1/D2، مدارک، و next step مجاز.</p></div></div>
+  <div class="formula">Recommendation Quality = Need Fit + Supplier/Service Fit + Product Fit + Evidence Completeness − Legal/Provider Uncertainty</div>
+  <p>این امتیاز یک <b>Matching Signal</b> است و نباید به «احتمال تأیید اعتبار» یا «امتیاز ریسک رسمی» تبدیل شود. ترتیب نمایش باید ابتدا fit و evidence را نشان دهد و سپس عدم قطعیت و وابستگی را آشکار کند.</p>
+  <h3>متن پایه پیشنهادی برای کارت مالی</h3>
+  <div class="decision">«این گزینه یک خانواده محصول مالیِ قابل بررسی برای Route انتخاب‌شده است. بررسی، قیمت‌گذاری، احراز شرایط، تصمیم اعتباری و جابه‌جایی وجه توسط Provider/نهاد مجاز انجام می‌شود. ساخت‌نو در این مرحله نقش دریافت نیاز، ساختاربندی اطلاعات، تطبیق و ارجاع دارد.»</div>
+</section>
+
+<section class="sheet" id="acceptance">
+  <h2>۱۳. معیار پذیرش نسخه مالی</h2>
+   <div class="table-wrap"><table class="tight"><thead><tr><th>Gate</th><th>معیار پذیرش</th><th>مدرک لازم</th><th>وضعیت Current</th></tr></thead><tbody>
+  <tr><td>Four-Route completeness</td><td>هر چهار Route تعریف، واحد مالی، Flow و product family دارد.</td><td>ماتریس Route و کارت‌های R1-R4</td><td><span class="pill a">Covered structurally</span></td></tr>
+  <tr><td>Four-Flow traceability</td><td>درآمد/هزینه/ریسک به Goods، Money، Data، Rights قابل نسبت دادن است.</td><td>Flow matrix + attribution rules</td><td><span class="pill a">Covered structurally</span></td></tr>
+  <tr><td>Legal status</td><td>هر capability مالی A/B/C و سطح Demo دارد.</td><td>SN-LEG-001 mapping</td><td><span class="pill b">Needs line-by-line reconciliation</span></td></tr>
+  <tr><td>Provider reality</td><td>نام/سیاست/قیمت/approval/settlement از Provider جاری آمده است.</td><td>Provider source + contract/acceptance</td><td><span class="pill b">Open</span></td></tr>
+  <tr><td>Numeric model</td><td>همه اعداد owner، source، date، unit، scenario و confidence دارند.</td><td>Input register + calculation sheet</td><td><span class="pill review">Not populated</span></td></tr>
+  <tr><td>Demo guardrail</td><td>هیچ پیام D2 با CTA فعال یا زبان approval نمایش داده نمی‌شود.</td><td>UI copy audit + automated rule test</td><td><span class="pill review">To test in PRD/UI</span></td></tr>
+  <tr><td>Lifecycle</td><td>فایل پس از تأیید صریح به Current منتقل شده و وضعیت Demo آن مشخص است.</td><td>metadata + approval decision</td><td><span class="pill a">Applied</span></td></tr>
+  </tbody></table></div>
+  <div class="note"><b>گام بعدی پیشنهادی:</b> بعد از بررسی این HTML، یک Input Register عددی برای هر Route بسازیم؛ سپس با حداقل یک Provider/Policy واقعی، economics مربوط به محصولات مالی را پر کنیم و یک Cross-document Reconciliation بین SN-LEG-001، SN-BM-001 و SN-FIN-001 انجام دهیم.</div>
+</section>
+
+<section class="sheet" id="sources">
+  <h2>۱۴. منابع و یادداشت lineage</h2>
+  <div class="table-wrap"><table class="tight"><thead><tr><th>منبع</th><th>موقعیت/شناسه</th><th>کاربرد</th></tr></thead><tbody>
+  <tr><td>SN-LEG-001</td><td><code>90-research/research/SN-LEG-001_Iran_Legal_Regulatory_Capability_Map_v1.0.md</code><br><span class="small">Current / Approved for Demo Baseline · Pass 2026-09-11</span></td><td>A/B/C، نقش SakhtNo، Provider dependency و D0/D1/D2 guardrails.</td></tr>
+  <tr><td>SN-BM-001 v4.0</td><td><a href="https://github.com/persianbadboy/sakhtno/blob/main/02-business-model/01-current/SakhtNo_Master_Business_Model_v4.0.html">GitHub main / 02-business-model/01-current/…v4.0.html</a><br><span class="small">Remote blob verified before drafting</span></td><td>چهار Route، چهار Flow، Payer، Revenue Architecture و Finance Enablement.</td></tr>
+  <tr><td>رابطه با منابع رسمی</td><td>ارجاع‌های قانونی و مقرراتی در SN-LEG-001 نگهداری می‌شوند.</td><td>این مدل مالی منبع حقوقی مستقل ایجاد نمی‌کند؛ اگر گزاره‌ای تغییر کند باید ابتدا SN-LEG-001 به‌روزرسانی شود.</td></tr>
+  </tbody></table></div>
+  <div class="warning"><b>Lifecycle note:</b> این سند پس از تأیید در مسیر <code>02-business-model/01-current</code> قرار گرفته است. نسخه قبلی مدل مالی از مسیر Review خارج و در آرشیو نگهداری شده است. هیچ Commit یا انتشار Git در این اقدام انجام نشده است.</div>
+  <div class="footer">SN-FIN-001 · SakhtNo Financial Model Four-Route v3.0 · Prepared 2026-09-11 · Current / Approved for Demo</div>
+</section>
+</main>
+<script>
+(()=>{
+  const ids=['cases','ticket','attach','approval','take','financeShare','variable','evidence','loss','fixed'];
+  const el=id=>document.getElementById(id);
+  const n=id=>Math.max(0,Number(el(id).value)||0);
+  const fmt=x=>new Intl.NumberFormat('fa-IR',{maximumFractionDigits:1}).format(x);
+  const update=()=>{
+    const cases=n('cases'),ticket=n('ticket'),attach=n('attach')/100,approval=n('approval')/100;
+    const core=n('take'),share=n('financeShare'),variable=n('variable'),evidence=n('evidence'),loss=n('loss')/100,fixed=n('fixed');
+    const gross=cases*ticket,accepted=cases*attach*approval,financed=accepted*ticket;
+    const revenue=cases*core+accepted*share,cost=cases*(variable+evidence),lossValue=gross*loss;
+    const contribution=revenue-cost-lossValue-fixed,margin=revenue?contribution/revenue*100:0;
+    el('gross').textContent=fmt(gross);el('financed').textContent=fmt(financed);el('revenue').textContent=fmt(revenue);el('cost').textContent=fmt(cost);el('lossValue').textContent=fmt(lossValue);el('contribution').textContent=fmt(contribution);el('margin').textContent=fmt(margin)+'٪';
+    const s=el('status');s.textContent=contribution>=0?'قابل بررسی':'نیازمند بازطراحی';s.className=contribution>=0?'ok':'bad';
+  };
+  ids.forEach(id=>el(id).addEventListener('input',update));el('route').addEventListener('change',update);update();
+})();
+</script>
+</body>
+</html>
